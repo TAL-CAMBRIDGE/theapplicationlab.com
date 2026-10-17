@@ -145,6 +145,16 @@
         .collection-hd p { font-size: 0.94rem; color: var(--muted); max-width: 560px; margin: 0; }
         .collection-tag { flex-shrink: 0; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blue); background: var(--blue-050); border: 1px solid rgba(46,139,192,0.25); border-radius: 20px; padding: 6px 14px; white-space: nowrap; }
 
+        /* COLLECTION ACCORDION (Chevening / Commonwealth dropdowns) */
+        .collection-summary { display: flex; align-items: center; gap: 20px; cursor: pointer; list-style: none; }
+        .collection-summary::-webkit-details-marker { display: none; }
+        .collection-summary::marker { content: ''; }
+        .collection-summary .collection-hd { flex: 1; margin-bottom: 0; }
+        .collection-chevron { flex-shrink: 0; width: 12px; height: 12px; margin-right: 6px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg); transition: transform 0.18s ease; }
+        details[open] .collection-chevron { transform: rotate(225deg); }
+        .collection-body { margin-top: 28px; }
+        @media (max-width: 480px) { .collection-summary { align-items: flex-start; } }
+
         .video-feature { max-width: 720px; margin: 40px auto 0; padding-top: 36px; border-top: 1px solid var(--border); text-align: center; }
         .video-label { display: inline-block; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); background: var(--blue-050); border: 1px solid rgba(46,139,192,0.25); border-radius: 20px; padding: 5px 14px; margin-bottom: 14px; }
         .video-feature h3 { font-size: 1.2rem; color: var(--navy); margin-bottom: 8px; }
@@ -152,7 +162,7 @@
         .video-embed { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; border-radius: 6px; overflow: hidden; box-shadow: 0 10px 34px rgba(15,30,53,0.14); }
         .video-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
-        .dl-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+        .dl-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 260px)); gap: 16px; justify-content: center; }
         .dl-card {
             display: flex; flex-direction: column; background: #fff; border: 1px solid var(--border);
             border-top: 3px solid var(--blue); border-radius: 4px; padding: 18px 16px;
@@ -402,16 +412,20 @@
 <!-- block"> block, give it a new id, and reuse the .dl-grid /       -->
 <!-- .dl-card pattern for its resource cards.                       -->
 <!-- ============================================================ -->
-<section class="collection-block" id="chevening">
-    <div class="collection-hd">
-        <div>
-            <span class="eyebrow">Scholarship Guide</span>
-            <h2>Chevening Scholarship</h2>
-            <p>Five free guides covering the strategy behind a winning application and all four essays, available to read online or download as a PDF.</p>
+<details class="collection-block" id="chevening">
+    <summary class="collection-summary">
+        <div class="collection-hd">
+            <div>
+                <span class="eyebrow">Scholarship Guide</span>
+                <h2>Chevening Scholarship</h2>
+                <p>Five free guides covering the strategy behind a winning application and all four essays, available to read online or download as a PDF.</p>
+            </div>
+            <span class="collection-tag">5 Guides · Free</span>
         </div>
-        <span class="collection-tag">5 Guides · Free</span>
-    </div>
+        <span class="collection-chevron" aria-hidden="true"></span>
+    </summary>
 
+    <div class="collection-body">
     <div class="dl-grid">
         <div class="dl-card">
             <span class="dl-num">Guide 1 / 5</span>
@@ -468,21 +482,26 @@
             <iframe src="https://www.youtube.com/embed/W14vM16_Hu8?si=itS-QaQeyQCsFDgG" title="Unlocking the Chevening Scholarship: Strategy, Stories, Success | 3 Scholars Share What Works" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
         </div>
     </div>
-</section>
+    </div>
+</details>
 
 <!-- ============================================================ -->
 <!-- COLLECTION: Commonwealth Master's Scholarship                  -->
 <!-- ============================================================ -->
-<section class="collection-block" id="commonwealth">
-    <div class="collection-hd">
-        <div>
-            <span class="eyebrow">Scholarship Guide</span>
-            <h2>Commonwealth Master's Scholarship</h2>
-            <p>Six free guides covering the strategy behind a strong application and every written answer on the CSC form, available to read online or download as a PDF.</p>
+<details class="collection-block" id="commonwealth">
+    <summary class="collection-summary">
+        <div class="collection-hd">
+            <div>
+                <span class="eyebrow">Scholarship Guide</span>
+                <h2>Commonwealth Master's Scholarship</h2>
+                <p>Six free guides covering the strategy behind a strong application and every written answer on the CSC form, available to read online or download as a PDF.</p>
+            </div>
+            <span class="collection-tag">6 Guides · Free</span>
         </div>
-        <span class="collection-tag">6 Guides · Free</span>
-    </div>
+        <span class="collection-chevron" aria-hidden="true"></span>
+    </summary>
 
+    <div class="collection-body">
     <div class="dl-grid">
         <div class="dl-card">
             <span class="dl-num">Guide 1 / 6</span>
@@ -548,7 +567,8 @@
             <iframe src="https://www.youtube.com/embed/0SARYiKZo8Q?si=Awk2vasXFv1Gqs7F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
         </div>
     </div>
-</section>
+    </div>
+</details>
 
 <div class="more-collections">
     <p>More collections, including CV &amp; SOP guides and a video library, are coming soon.</p>
