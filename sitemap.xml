@@ -43,6 +43,42 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.theapplicationlab.com/resources/commonwealth/general-guide.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.theapplicationlab.com/resources/commonwealth/development-impact.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.theapplicationlab.com/resources/commonwealth/career-plans.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.theapplicationlab.com/resources/commonwealth/study-proposal.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.theapplicationlab.com/resources/commonwealth/personal-statement.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.theapplicationlab.com/resources/commonwealth/voluntary-leadership.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.theapplicationlab.com/apply.html</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
