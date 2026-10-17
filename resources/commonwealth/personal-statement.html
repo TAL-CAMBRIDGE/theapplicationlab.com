@@ -1,96 +1,300 @@
 <!DOCTYPE html>
-<html lang="en-GB"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Personal Statement | The Application Lab</title>
-<meta name="description" content="How to write the 500-word personal statement for the Commonwealth Master&#x27;s Scholarship, with two full worked examples.">
-<meta property="og:title" content="Personal Statement | The Application Lab">
-<meta property="og:description" content="How to write the 500-word personal statement for the Commonwealth Master&#x27;s Scholarship, with two full worked examples.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://www.theapplicationlab.com/resources/csc/personal-statement.html">
-<link rel="canonical" href="https://www.theapplicationlab.com/resources/csc/personal-statement.html">
-<meta name="robots" content="index, follow">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Statement | The Application Lab</title>
+    <meta name="description" content="How to write the 500-word personal statement for the Commonwealth Master's Scholarship, with two full worked examples.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.theapplicationlab.com/resources/commonwealth/personal-statement.html">
+    <meta property="og:title" content="Personal Statement | The Application Lab">
+    <meta property="og:description" content="How to write the 500-word personal statement for the Commonwealth Master's Scholarship, with two full worked examples.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.theapplicationlab.com/resources/commonwealth/personal-statement.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { overflow-x: hidden; max-width: 100%; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; color: #0f1e35; background: #f7f9fc; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+        :root {
+            --navy: #0f1e35; --blue: #2e8bc0; --blue-050: #eaf4fb; --bg: #f7f9fc;
+            --muted: #6b7c93; --border: #dde4ee; --body-text: #3d4f63; --gold: #c9a84c; --amber-bg: #fbf3e6;
+        }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 800; color: var(--navy); line-height: 1.25; }
+        section[id] { scroll-margin-top: 24px; }
+        body { padding-top: 72px; }
+        @media (min-width: 769px) { #desktop-nav { display: flex; } #mob-burger { display: none; } }
+        @media (max-width: 768px) {
+            #desktop-nav { display: none !important; } #mob-burger { display: flex !important; }
+            #hdr { height: 64px !important; } #hdr img { height: 42px !important; }
+            #mob-menu { top: 64px !important; } body { padding-top: 64px; }
+        }
+
+        .breadcrumb { max-width: 1180px; margin: 0 auto; padding: 22px 24px 0; font-size: 0.78rem; color: var(--muted); }
+        .breadcrumb a { color: var(--blue); text-decoration: none; font-weight: 600; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        #hero-guide {
+            position: relative; min-height: 46vh; display: flex; align-items: flex-end;
+            background-image: url('../../oxford-hero.jpg'); background-size: cover; background-position: center center;
+            margin-top: 18px;
+        }
+        .hero-guide-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,15,24,0.35) 0%, rgba(8,15,24,0.55) 55%, rgba(8,15,24,0.94) 100%); }
+        .hero-guide-inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 44px 24px 40px; text-align: center; }
+        .hero-guide-inner .kicker { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 18px; }
+        .hero-guide-inner h1 { color: #fff; font-size: clamp(1.8rem, 4vw, 2.7rem); letter-spacing: -1px; line-height: 1.18; margin-bottom: 18px; text-shadow: 0 2px 24px rgba(0,0,0,0.4); }
+        .hero-guide-inner .byline { font-family: 'Lora', serif; font-style: italic; font-size: 1.02rem; color: rgba(255,255,255,0.88); line-height: 1.75; max-width: 580px; margin: 0 auto; }
+
+        #facts { background: var(--navy); padding: 0 24px 40px; }
+        .facts-strip { max-width: 800px; margin: 0 auto; display: flex; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 26px; }
+        .facts-strip > div { flex: 1; text-align: center; padding: 0 12px; border-right: 1px solid rgba(255,255,255,0.12); }
+        .facts-strip > div:last-child { border-right: none; }
+        .facts-strip strong { display: block; font-size: 1.3rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; line-height: 1; }
+        .facts-strip span { display: block; font-size: 0.58rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.55); font-weight: 600; margin-top: 8px; line-height: 1.5; }
+
+        .pdf-strip { background: var(--blue-050); border-bottom: 1px solid var(--border); text-align: center; padding: 16px 24px; }
+        .pdf-strip a { font-size: 0.82rem; font-weight: 700; color: var(--blue); text-decoration: none; }
+        .pdf-strip a:hover { text-decoration: underline; }
+
+        .guide-layout { max-width: 1180px; margin: 0 auto; padding: 48px 24px 0; display: flex; gap: 56px; align-items: flex-start; }
+        .guide-sidebar { display: none; }
+        .toc-wrap {
+            background: var(--navy); border-radius: 4px; max-width: 760px; margin: 0 auto 8px; padding: 28px 32px;
+            background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px);
+        }
+        .toc-wrap h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 16px; }
+        .toc-list { list-style: none; columns: 2; column-gap: 32px; }
+        .toc-list li { break-inside: avoid; margin-bottom: 10px; }
+        .toc-list a { font-size: 0.86rem; color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 600; }
+        .toc-list a:hover { color: #fff; }
+
+        article.guide-main { max-width: 720px; margin: 0 auto; padding: 8px 24px 0; flex: 1; min-width: 0; counter-reset: section 0; }
+        .guide-section { padding: 56px 0; border-bottom: 1px solid var(--border); counter-increment: section; }
+        .guide-section:last-of-type { border-bottom: none; }
+        .section-label { display: flex; align-items: center; gap: 12px; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 18px; }
+        .section-label::before {
+            content: counter(section, decimal-leading-zero);
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+            width: 34px; height: 34px; border-radius: 50%; background: var(--blue-050); color: var(--blue);
+            font-family: 'Lora', serif; font-style: italic; font-weight: 600; font-size: 0.9rem; letter-spacing: 0;
+        }
+        .guide-section h2 { font-size: clamp(1.3rem, 2.5vw, 1.65rem); letter-spacing: -0.5px; margin-bottom: 20px; }
+        .guide-section h3 { font-size: 1.08rem; margin: 32px 0 14px; scroll-margin-top: 90px; }
+        .guide-section h3:first-of-type { margin-top: 0; }
+        .guide-section h4 { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 22px 0 8px; }
+        .guide-section p { font-size: 0.96rem; color: var(--body-text); margin-bottom: 16px; }
+        .guide-section p:last-child { margin-bottom: 0; }
+        .guide-section ul, .guide-section ol { margin: 0 0 16px 22px; color: var(--body-text); font-size: 0.96rem; }
+        .guide-section li { margin-bottom: 8px; }
+        .guide-section li::marker { color: var(--blue); }
+        .guide-section strong { color: var(--navy); }
+        .guide-section.alt-bg { background: #fff; border-radius: 6px; padding: 48px 36px; margin: 8px 0; border-bottom: none; box-shadow: 0 1px 0 var(--border); }
+        .guide-section blockquote { border-left: 3px solid var(--blue); padding: 2px 0 2px 18px; margin: 0 0 16px; color: var(--navy); font-style: italic; }
+        .guide-section blockquote p { margin-bottom: 0; }
+        .guide-section hr { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+
+        .callout { border-radius: 4px; padding: 18px 22px; margin: 0 0 20px; font-size: 0.92rem; line-height: 1.8; }
+        .callout p { margin: 0 0 12px; font-size: 0.9rem; }
+        .callout p:last-child { margin-bottom: 0; }
+        .callout strong { display: block; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); margin-bottom: 4px; }
+        .callout-rule { background: var(--blue-050); border: 1px solid rgba(46,139,192,0.25); color: var(--navy); }
+        .callout-trap { background: var(--amber-bg); border: 1px solid rgba(184,134,58,0.3); color: #6b4f1f; font-size: 0.84rem; }
+        .callout-trap strong { color: #8a6a2a; }
+        .meta-wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 0; }
+
+        .table-scroll { overflow-x: auto; margin: 18px 0; -webkit-overflow-scrolling: touch; }
+        table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 0.85rem; }
+        table th, table td { padding: 11px 13px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.6; }
+        table thead th { background: var(--navy); color: #fff; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+        table thead th:first-child { border-top-left-radius: 4px; }
+        table thead th:last-child { border-top-right-radius: 4px; }
+        table tbody th { background: var(--bg); color: var(--navy); font-weight: 700; white-space: nowrap; }
+        table tbody td { color: var(--body-text); }
+        table tbody tr:last-child td, table tbody tr:last-child th { border-bottom: none; }
+
+        ul.checklist { list-style: none; margin: 0 0 8px; }
+        ul.checklist li.chk { display: flex; gap: 12px; align-items: flex-start; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--body-text); }
+        ul.checklist li.chk:last-child { border-bottom: none; }
+        ul.checklist li.chk::before { content: ''; flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; border: 1.5px solid var(--blue); border-radius: 3px; }
+
+        .series-nav { max-width: 720px; margin: 0 auto; padding: 8px 24px 56px; display: flex; justify-content: space-between; gap: 16px; }
+        .series-nav a { flex: 1; text-decoration: none; border: 1px solid var(--border); border-radius: 4px; padding: 16px 18px; background: #fff; transition: box-shadow 0.2s ease, transform 0.2s ease; }
+        .series-nav a:hover { box-shadow: 0 10px 28px rgba(15,30,53,0.1); transform: translateY(-2px); }
+        .series-nav .dir { display: block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+        .series-nav .lbl { display: block; font-size: 0.88rem; font-weight: 700; color: var(--navy); }
+        .series-nav .next-item { text-align: right; }
+
+        #mentorship-cta { background: var(--navy); background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px); padding: 72px 24px; text-align: center; }
+        #mentorship-cta .kicker { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #4a9fd4; margin-bottom: 16px; }
+        #mentorship-cta h2 { color: #fff; font-size: clamp(1.4rem, 3vw, 1.9rem); max-width: 640px; margin: 0 auto 18px; }
+        #mentorship-cta p { color: rgba(255,255,255,0.78); font-size: 0.96rem; line-height: 1.85; max-width: 600px; margin: 0 auto 32px; }
+        .cta-paths { display: flex; gap: 20px; max-width: 800px; margin: 0 auto 8px; text-align: left; }
+        .cta-path { flex: 1; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.14); border-top: 3px solid var(--blue); border-radius: 4px; padding: 28px 26px; display: flex; flex-direction: column; }
+        .cta-path:nth-child(2) { border-top-color: var(--gold); }
+        .cta-path-kicker { display: block; font-size: 0.64rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 12px; }
+        .cta-path:nth-child(2) .cta-path-kicker { color: #e4cb7a; }
+        .cta-path h3 { color: #fff; font-size: 1.15rem; margin-bottom: 10px; }
+        .cta-path p { color: rgba(255,255,255,0.68); font-size: 0.86rem; line-height: 1.75; margin: 0 0 16px; max-width: none; }
+        .cta-path-list { list-style: none; margin: 0 0 22px; flex: 1; }
+        .cta-path-list li { color: rgba(255,255,255,0.6); font-size: 0.82rem; line-height: 1.6; padding-left: 18px; position: relative; margin-bottom: 8px; }
+        .cta-path-list li::before { content: '→'; position: absolute; left: 0; color: var(--blue); }
+        .cta-path:nth-child(2) .cta-path-list li::before { color: var(--gold); }
+        .btn { display: inline-block; padding: 14px 26px; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: all 0.25s ease; text-align: center; }
+        .btn-blue { background: var(--blue); color: #fff; border: none; }
+        .btn-blue:hover { background: #1a6fa0; box-shadow: 0 8px 24px rgba(46,139,192,0.4); transform: translateY(-2px); }
+        .btn-outline-white { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.4); }
+        .btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+        .cta-note { margin-top: 30px; font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+        .cta-note a { color: #7ac8e8; text-decoration: none; font-weight: 600; }
+
+        footer { background: #080f18; padding: 48px 7% 28px; }
+        footer .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; }
+        footer img { height: 60px; width: auto; filter: brightness(0) invert(1); }
+        .footer-links { display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; }
+        .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.55); text-decoration: none; }
+        .footer-links a:hover { color: #fff; }
+        .footer-bottom { font-size: 0.68rem; color: rgba(255,255,255,0.25); margin-top: 6px; }
+
+        @media (min-width: 1024px) {
+            .toc-wrap { display: none; }
+            .guide-sidebar {
+                display: block; position: sticky; top: 88px; width: 230px; flex-shrink: 0;
+                max-height: calc(100vh - 112px); overflow-y: auto;
+                background: var(--navy); border-radius: 4px; padding: 26px 22px;
+                background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px);
+            }
+            .guide-sidebar h2 { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 18px; }
+            .guide-sidebar ul { list-style: none; }
+            .guide-sidebar li { margin-bottom: 4px; }
+            .guide-sidebar a {
+                display: block; font-size: 0.79rem; font-weight: 600; color: rgba(255,255,255,0.6); text-decoration: none;
+                padding: 8px 0 8px 14px; border-left: 2px solid rgba(255,255,255,0.14); transition: all 0.15s ease; line-height: 1.4;
+            }
+            .guide-sidebar a:hover { color: #fff; border-left-color: rgba(255,255,255,0.4); }
+            .guide-sidebar a.active { color: #7ac8e8; border-left-color: var(--blue); font-weight: 700; }
+        }
+        @media (max-width: 640px) {
+            .toc-list { columns: 1; }
+            .hero-guide-inner { padding: 32px 20px 32px; }
+            .facts-strip { flex-wrap: wrap; }
+            .facts-strip > div { flex: 1 1 45%; padding-bottom: 14px; }
+            .guide-section { padding: 40px 0; }
+            .guide-section.alt-bg { padding: 32px 20px; }
+            table { min-width: 460px; }
+            .cta-paths { flex-direction: column; }
+            .series-nav { flex-direction: column; }
+            .series-nav .next-item { text-align: left; }
+        }</style>
+</head>
+
 <style>
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:#1b1f2a;background:#fff;line-height:1.65;font-size:17px}
-a{color:#0f6b5c}
-.wrap{max-width:820px;margin:0 auto;padding:0 20px}
-.site-nav{border-bottom:1px solid #dfe5e3;background:#fff}
-.site-nav .wrap{padding-top:14px;padding-bottom:14px;max-width:1000px}
-.brand{font-weight:700;font-size:18px;color:#0f3d36;text-decoration:none;letter-spacing:.2px}
-.site-nav a.nl{margin-left:18px;font-size:14px;color:#33413e;text-decoration:none}
-.site-nav .links{float:right}
-.crumbs{font-size:13px;color:#5b6a67;margin:26px 0 10px}
-.crumbs a{color:#5b6a67}
-.eyebrow{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#0f6b5c;font-weight:700;margin:0 0 6px}
-h1{font-size:38px;line-height:1.15;margin:0 0 12px;color:#0f2a26}
-.lead{font-size:19px;color:#3a4744;margin:0 0 22px}
-.stats{margin:0 0 22px;overflow:hidden}
-.stat{float:left;margin:0 28px 10px 0}
-.stat b{display:block;font-size:24px;color:#0f6b5c;line-height:1.1}
-.stat span{font-size:12px;color:#5b6a67;text-transform:uppercase;letter-spacing:.8px}
-.btn{display:inline-block;background:#0f6b5c;color:#fff;text-decoration:none;padding:10px 18px;border-radius:6px;font-size:15px;font-weight:600}
-.callout{background:#f4f7f6;border-left:4px solid #0f6b5c;padding:12px 18px;margin:18px 0;border-radius:0 6px 6px 0}
-.callout.warn{background:#fff6ec;border-left-color:#c8691a}
-.callout p{margin:6px 0}
-.toc{background:#fff;border:1px solid #dfe5e3;border-radius:8px;padding:6px 20px 12px;margin:30px 0}
-.toc h3{margin:12px 0 6px;font-size:15px;text-transform:uppercase;letter-spacing:1px;color:#0f6b5c}
-.toc ul{margin:0;padding-left:0;list-style:none}
-.toc li{margin:3px 0;font-size:15px}
-.sec-label{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#0f6b5c;font-weight:700;margin:46px 0 -6px}
-h2{font-size:27px;line-height:1.25;margin:10px 0 14px;color:#0f2a26;border-top:1px solid #dfe5e3;padding-top:14px}
-h3{font-size:20px;margin:28px 0 8px;color:#0f2a26}
-h4{font-size:17px;margin:20px 0 6px;color:#0f2a26}
-table{border-collapse:collapse;width:100%;margin:16px 0;font-size:15px}
-th,td{border:1px solid #dfe5e3;padding:8px 10px;text-align:left;vertical-align:top}
-th{background:#f4f7f6;font-weight:700}
-blockquote{margin:12px 0;padding:2px 16px;border-left:3px solid #b9c8c4;color:#26302d;background:#fbfcfc}
-.sample{border:1px solid #dfe5e3;border-radius:8px;margin:20px 0;padding:0 0 4px;background:#fcfdfd}
-.sample-head{margin:0;padding:10px 16px;background:#e9f1ef;border-radius:8px 8px 0 0;font-size:14px;overflow:hidden}
-.sample-title{font-weight:700;color:#0f3d36}
-.sample-count{float:right;color:#4a5a56}
-.sample blockquote{border-left:0;background:transparent;margin:10px 4px;padding:0 14px}
-.beat{display:inline-block;background:#0f6b5c;color:#fff;font-size:11px;font-weight:700;border-radius:3px;padding:0 5px;margin-left:4px;vertical-align:1px}
-.pager{margin:44px 0 10px;overflow:hidden;font-size:15px}
-.pager .prev{float:left}.pager .next{float:right}
-.cta{background:#0f2a26;color:#e9f1ef;padding:34px 0;margin-top:50px}
-.cta h2{color:#fff;border:0;padding:0;font-size:24px;margin:0 0 10px}
-.cta h3{color:#fff;margin:16px 0 6px}
-.cta a{color:#9be0d0}
-.cta .col{margin:12px 0}
-.foot{font-size:13px;color:#5b6a67;padding:18px 0 40px}
-.guide-list .g{border:1px solid #dfe5e3;border-radius:8px;padding:14px 18px;margin:12px 0}
-.guide-list .g b{color:#0f2a26}
-@media screen{.cta .cols{display:flex;gap:30px}.cta .col{flex:1}}
-@media (max-width:640px){h1{font-size:30px}.site-nav .links{display:none}}
-@media print{
- body{font-size:12.5px;line-height:1.5}
- .site-nav,.cta,.btn,.pager,.crumbs{display:none}
- h1{font-size:28px}.lead{font-size:14.5px}
- h2{page-break-after:avoid}
- table,.sample,.callout{page-break-inside:avoid}
- a{color:#0f2a26;text-decoration:none}
+@media print {
+    #hdr, #mob-menu, .breadcrumb, .pdf-strip, .toc-wrap, .guide-sidebar,
+    .series-nav, #mentorship-cta, footer { display: none !important; }
+    #hero-guide { min-height: 0; background: none !important; margin-top: 0; }
+    .hero-guide-overlay { display: none; }
+    .hero-guide-inner { text-align: left; padding: 0 0 20px; color: #0f1e35; }
+    .hero-guide-inner .kicker { color: #2e8bc0; }
+    .hero-guide-inner h1 { color: #0f1e35; text-shadow: none; }
+    .hero-guide-inner .byline { color: #3d4f63; }
+    #facts { background: none; padding: 0 0 20px; }
+    .facts-strip { border-top: 1px solid #dde4ee; }
+    .facts-strip strong, .facts-strip span { color: #0f1e35; }
+    .guide-layout { display: block; padding: 0; }
+    article.guide-main { max-width: 100%; padding: 0; }
+    .guide-section { padding: 18px 0; }
+    .guide-section.alt-bg { box-shadow: none; padding: 18px 0; }
+    body { padding-top: 0; }
 }
-</style></head><body>
-<div class="site-nav"><div class="wrap"><a class="brand" href="https://www.theapplicationlab.com/index.html">The Application Lab</a><span class="links"><a class="nl" href="https://www.theapplicationlab.com/index.html#about">About</a><a class="nl" href="https://www.theapplicationlab.com/index.html#services">Mentorship</a><a class="nl" href="https://www.theapplicationlab.com/community.html">Community</a><a class="nl" href="https://www.theapplicationlab.com/resources.html">Resources</a><a class="nl" href="https://www.theapplicationlab.com/apply.html">Apply Now</a></span></div></div>
-<div class="wrap">
-<div class="crumbs"><a href="https://www.theapplicationlab.com/resources.html">Resources</a> / <a href="https://www.theapplicationlab.com/resources.html#csc">CSC Master's</a> / Personal Statement</div>
-<p class="eyebrow">CSC Master's Guide &middot; 5 of 6</p>
-<h1>Personal Statement</h1>
-<p class="lead">How your background led you to want to make a difference at home, what you have already done, and the barriers you crossed.</p>
-<div class="stats"><div class="stat"><b>500</b><span>Words</span></div><div class="stat"><b>3</b><span>Beats</span></div><div class="stat"><b>2</b><span>Worked Examples</span></div><div class="stat"><b>Free</b><span>To Read & Download</span></div></div>
-<p><a class="btn" href="personal-statement.pdf">Download this guide as a PDF &darr;</a></p>
-<div class="callout">
-<p><strong>About the examples.</strong> All names, places, institutions and statistics below are anonymised and reinvented versions of successful Commonwealth Master's applications, changed to show technique. The personal details are invented. Your story must be yours, and must be true.</p>
+</style>
+<body>
+
+<header id="hdr" style="position:fixed; top:0; left:0; right:0; width:100%; height:72px; z-index:9999; display:flex; align-items:center; justify-content:space-between; padding:0 5%; background:rgba(15,30,53,0.97); box-shadow:0 2px 20px rgba(0,0,0,0.3);">
+  <a href="../../index.html" style="display:flex; align-items:center; text-decoration:none; flex-shrink:0; margin-right:20px;">
+    <img src="../../logo.png" alt="The Application Lab" width="1920" height="1080" style="height:56px; width:auto; display:block; object-fit:contain; filter:brightness(0) invert(1);"/>
+  </a>
+  <nav id="desktop-nav" style="align-items:center; gap:26px; margin-left:auto;">
+    <a href="../../index.html#about" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">About</a>
+    <a href="../../index.html#services" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Mentorship</a>
+    <a href="../../index.html#how" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">How It Works</a>
+    <a href="../../index.html#founders" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Founders</a>
+    <a href="../../community.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Community</a>
+    <a href="../../resources.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Resources</a>
+    <a href="../../immersive.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">The Immersive Lab</a>
+    <a href="../../apply.html" style="font-size:0.7rem; font-weight:700; color:#fff; letter-spacing:1px; text-transform:uppercase; text-decoration:none; background:#2e8bc0; padding:10px 20px; border-radius:2px;">Apply Now</a>
+  </nav>
+  <button id="mob-burger" aria-label="Open menu" style="flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; margin-left:16px;">
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+  </button>
+</header>
+
+<div id="mob-menu" style="display:none; position:fixed; top:72px; left:0; right:0; z-index:9998; background:rgba(15,30,53,0.98); flex-direction:column; padding:16px 5%; border-top:1px solid rgba(255,255,255,0.08);">
+  <a href="../../index.html#about" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">About</a>
+  <a href="../../index.html#services" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Mentorship</a>
+  <a href="../../index.html#how" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">How It Works</a>
+  <a href="../../index.html#founders" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Founders</a>
+  <a href="../../community.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Community</a>
+  <a href="../../resources.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Resources</a>
+  <a href="../../immersive.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">The Immersive Lab</a>
+  <a href="../../apply.html" style="display:block; margin-top:16px; padding:13px 20px; font-size:0.82rem; font-weight:700; color:#fff; text-transform:uppercase; letter-spacing:1px; text-decoration:none; background:#2e8bc0; text-align:center; border-radius:2px;">Apply Now</a>
 </div>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../resources.html">Resources</a> / <a href="../../resources.html#commonwealth">Commonwealth Master's</a> / Personal Statement
+</nav>
+
+<section id="hero-guide">
+    <div class="hero-guide-overlay" aria-hidden="true"></div>
+    <div class="hero-guide-inner">
+        <span class="kicker">CSC Master's Guide &middot; 5 of 6</span>
+        <h1>Personal Statement</h1>
+        <p class="byline">How your background led you to want to make a difference at home, what you have already done, and the barriers you crossed.</p>
+    </div>
+</section>
+
+<div id="facts">
+    <div class="facts-strip">
+        <div><strong>500</strong><span>Words</span></div><div><strong>3</strong><span>Beats</span></div><div><strong>2</strong><span>Worked Examples</span></div><div><strong>Free</strong><span>To Read & Download</span></div>
+    </div>
+</div>
+
+<div class="pdf-strip">
+    <a href="personal-statement.pdf" target="_blank" rel="noopener">Download this guide as a PDF &darr;</a>
+</div>
+
+<div class="meta-wrap"><div class="callout callout-trap"><p><strong>About the examples.</strong> All names, places, institutions and statistics below are anonymised and reinvented versions of successful Commonwealth Master's applications, changed to show technique. The personal details are invented. Your story must be yours, and must be true.</p></div></div>
+<div class="meta-wrap"><div class="callout callout-rule"><p><strong>The live question (2027/28), 500 words.</strong> The CSC encourages applications from candidates who have faced significant disadvantage or personal barriers to higher education, or who are under-represented in their field of study or workplace. Summarise the ways in which your personal background has encouraged you to want to make an impact in your home country. You may highlight areas where you have already made significant contributions, including overcoming personal or community barriers in accessing higher education or within your field.</p><p><strong>What is being scored.</strong> The personal statement is not graded as a separate criterion, but it carries evidence for two. For <strong>candidate merit</strong>, the CSC's panel advice says that if external factors affected your academic performance, this is the place to explain it. For <strong>development impact</strong>, it shows the commitment, community engagement and standing that make your plan believable. The CSC calls it your opportunity to give the panel a sense of who you are and why you want to be a Commonwealth Scholar.</p></div></div>
+
+<nav class="toc-wrap" aria-label="Table of contents">
+    <h2>In This Guide</h2>
+    <ul class="toc-list">
+        <li><a href="#s0">01. Part one: what this answer is for</a></li><li><a href="#s1">02. Part two: choosing your thread</a></li><li><a href="#s2">03. Part three: writing it, beat by beat</a></li><li><a href="#s3">04. Part four: what to leave out</a></li><li><a href="#s4">05. Part five: two full sample answers</a></li><li><a href="#s5">06. Part six: dos and don'ts</a></li><li><a href="#s6">07. Part seven: common mistakes, and the fix</a></li><li><a href="#s7">08. Part eight: checklists</a></li>
+    </ul>
+</nav>
+
+<div class="guide-layout">
+<nav class="guide-sidebar" aria-label="Section navigation">
+    <h2>In This Guide</h2>
+    <ul>
+        <li><a href="#s0" data-nav>01. Part one: what this answer is for</a></li><li><a href="#s1" data-nav>02. Part two: choosing your thread</a></li><li><a href="#s2" data-nav>03. Part three: writing it, beat by beat</a></li><li><a href="#s3" data-nav>04. Part four: what to leave out</a></li><li><a href="#s4" data-nav>05. Part five: two full sample answers</a></li><li><a href="#s5" data-nav>06. Part six: dos and don'ts</a></li><li><a href="#s6" data-nav>07. Part seven: common mistakes, and the fix</a></li><li><a href="#s7" data-nav>08. Part eight: checklists</a></li>
+    </ul>
+</nav>
+<article class="guide-main">
+
+<section class="guide-section" id="s0">
+    <span class="section-label">Section 1</span>
+    <h2>Part one: what this answer is for</h2>
 <div class="callout warn">
 <p><strong>A note on difficult experiences.</strong> You decide what to share. Nothing in this guide asks you to disclose more than you are comfortable with. A barrier can be stated in two or three plain sentences and still be powerful. What matters to the panel is what you did next.</p>
-</div>
-<p><strong>The live question (2027/28), 500 words.</strong> The CSC encourages applications from candidates who have faced significant disadvantage or personal barriers to higher education, or who are under-represented in their field of study or workplace. Summarise the ways in which your personal background has encouraged you to want to make an impact in your home country. You may highlight areas where you have already made significant contributions, including overcoming personal or community barriers in accessing higher education or within your field.</p>
-<p><strong>What is being scored.</strong> The personal statement is not graded as a separate criterion, but it carries evidence for two. For <strong>candidate merit</strong>, the CSC's panel advice says that if external factors affected your academic performance, this is the place to explain it. For <strong>development impact</strong>, it shows the commitment, community engagement and standing that make your plan believable. The CSC calls it your opportunity to give the panel a sense of who you are and why you want to be a Commonwealth Scholar.</p>
-<p><strong>Structure.</strong> Five beats: scene, contributions, barrier, turning point, forward.</p>
-<p><strong>Word plan at 500 words.</strong></p>
-<table>
+</div><p><strong>Structure.</strong> Five beats: scene, contributions, barrier, turning point, forward.</p><p><strong>Word plan at 500 words.</strong></p><div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Beat</th>
@@ -119,25 +323,18 @@ blockquote{margin:12px 0;padding:2px 16px;border-left:3px solid #b9c8c4;color:#2
 <td>50</td>
 </tr>
 </tbody>
-</table>
-
-<div class="toc"><h3>In This Guide</h3><ul><li><a href="#s0">01. Part one: what this answer is for</a></li><li><a href="#s1">02. Part two: choosing your thread</a></li><li><a href="#s2">03. Part three: writing it, beat by beat</a></li><li><a href="#s3">04. Part four: what to leave out</a></li><li><a href="#s4">05. Part five: two full sample answers</a></li><li><a href="#s5">06. Part six: dos and don'ts</a></li><li><a href="#s6">07. Part seven: common mistakes, and the fix</a></li><li><a href="#s7">08. Part eight: checklists</a></li></ul></div>
-<div class="sec-label">Section 1</div><h2 id="s0">Part one: what this answer is for</h2>
-<p>It answers one question: <strong>why are you the person who will do this, and how do we know?</strong> It is not a second CV, a biography, a catalogue of hardships, or a repeat of your ambitions. Your qualifications, employment and prizes are already on the form. Your Development Impact statement already contains your plan. The personal statement is the only place the panel hears <strong>why this matters to you</strong> and sees <strong>what you did when it was difficult</strong>.</p>
-<h3>What the panel is reading for</h3>
-<ul>
+</table></div><p>It answers one question: <strong>why are you the person who will do this, and how do we know?</strong> It is not a second CV, a biography, a catalogue of hardships, or a repeat of your ambitions. Your qualifications, employment and prizes are already on the form. Your Development Impact statement already contains your plan. The personal statement is the only place the panel hears <strong>why this matters to you</strong> and sees <strong>what you did when it was difficult</strong>.</p><h3>What the panel is reading for</h3><ul>
 <li><strong>Origin.</strong> A real, specific reason this problem is yours.</li>
 <li><strong>Action.</strong> Something you have already done about it, however small.</li>
 <li><strong>Resilience with agency.</strong> A barrier you faced, and what you did, not only what happened to you.</li>
 <li><strong>Coherence.</strong> A line from your background to your plan to the course.</li>
-</ul>
-<h3>The three failure modes</h3>
-<p><strong>Hardship without agency.</strong> A paragraph of difficulty with no action leaves the panel sympathetic but unconvinced. State the barrier briefly and spend the words on what you did.</p>
-<p><strong>Ambition without evidence.</strong> "I have always wanted to help my community" is an assertion. A tutoring group that grew from nine children to 120 is evidence.</p>
-<p><strong>A CV in prose.</strong> A list of roles and awards duplicates the form. Use only what advances the story.</p>
-<div class="sec-label">Section 2</div><h2 id="s1">Part two: choosing your thread</h2>
-<p>You have 500 words, so choose <strong>one origin</strong>, <strong>one barrier</strong> and <strong>two or three contributions</strong>. Everything else belongs elsewhere on the form.</p>
-<table>
+</ul><h3>The three failure modes</h3><p><strong>Hardship without agency.</strong> A paragraph of difficulty with no action leaves the panel sympathetic but unconvinced. State the barrier briefly and spend the words on what you did.</p><p><strong>Ambition without evidence.</strong> "I have always wanted to help my community" is an assertion. A tutoring group that grew from nine children to 120 is evidence.</p><p><strong>A CV in prose.</strong> A list of roles and awards duplicates the form. Use only what advances the story.</p>
+</section>
+
+<section class="guide-section alt-bg" id="s1">
+    <span class="section-label">Section 2</span>
+    <h2>Part two: choosing your thread</h2>
+<p>You have 500 words, so choose <strong>one origin</strong>, <strong>one barrier</strong> and <strong>two or three contributions</strong>. Everything else belongs elsewhere on the form.</p><div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Choose</th>
@@ -162,55 +359,32 @@ blockquote{margin:12px 0;padding:2px 16px;border-left:3px solid #b9c8c4;color:#2
 <td>Is it the moment your problem became a plan?</td>
 </tr>
 </tbody>
-</table>
-<h3>Under-represented applicants</h3>
-<p>The CSC specifically invites applications from people who have faced disadvantage or who are under-represented in their field. This can mean first-generation university students, applicants from remote or under-served regions, women in fields where they are few, and people with disabilities or those who have overcome other barriers. Say it plainly, and connect it to your work: your standing is part of your evidence.</p>
-<p>Disabled applicants who do not hold a 2:1 may be considered for a contextualised nomination through the Commonwealth Disabled People's Forum nominator, and the CSC publishes a disability support statement. Check the CSC's pages for details.</p>
-<h3>Explaining a dip in your record</h3>
-<p>The CSC's panel guidance says that if there are reasons why an applicant has not scored well in part of their academic career, they should be explained here. Do it in three steps: the circumstance in a sentence, what you did, and the result with a number. "My grades fell from 8.7 to 6.4 in my second year. I arranged to submit coursework in stages, and I finished with 8.9." Do not make excuses and do not over-explain.</p>
-<div class="sec-label">Section 3</div><h2 id="s2">Part three: writing it, beat by beat</h2>
-<h3>Scene, around 80 words</h3>
-<p>Open on one small, concrete moment, not on your biography, a quotation or a statement about your passion. The strongest scenes are specific enough to be seen, short enough to read in fifteen seconds, and connected to the problem in your plan.</p>
-<p><strong>Variant one, the witnessed moment.</strong></p>
-<blockquote>
+</table></div><h3>Under-represented applicants</h3><p>The CSC specifically invites applications from people who have faced disadvantage or who are under-represented in their field. This can mean first-generation university students, applicants from remote or under-served regions, women in fields where they are few, and people with disabilities or those who have overcome other barriers. Say it plainly, and connect it to your work: your standing is part of your evidence.</p><p>Disabled applicants who do not hold a 2:1 may be considered for a contextualised nomination through the Commonwealth Disabled People's Forum nominator, and the CSC publishes a disability support statement. Check the CSC's pages for details.</p><h3>Explaining a dip in your record</h3><p>The CSC's panel guidance says that if there are reasons why an applicant has not scored well in part of their academic career, they should be explained here. Do it in three steps: the circumstance in a sentence, what you did, and the result with a number. "My grades fell from 8.7 to 6.4 in my second year. I arranged to submit coursework in stages, and I finished with 8.9." Do not make excuses and do not over-explain.</p>
+</section>
+
+<section class="guide-section" id="s2">
+    <span class="section-label">Section 3</span>
+    <h2>Part three: writing it, beat by beat</h2>
+<h3>Scene, around 80 words</h3><p>Open on one small, concrete moment, not on your biography, a quotation or a statement about your passion. The strongest scenes are specific enough to be seen, short enough to read in fifteen seconds, and connected to the problem in your plan.</p><p><strong>Variant one, the witnessed moment.</strong></p><blockquote>
 <p>"When I was fifteen, the mechanic who repaired our family's three-wheeler lit a fire behind his workshop to melt the lead out of old batteries. The smoke drifted across the lane where I did my homework."</p>
-</blockquote>
-<p><strong>Variant two, the inheritance.</strong></p>
-<blockquote>
+</blockquote><p><strong>Variant two, the inheritance.</strong></p><blockquote>
 <p>"My mother counted bricks for a contractor all day. One night she watched me copy out a sum and said, 'The people who can read the ledger decide what the ledger says.'"</p>
-</blockquote>
-<p><strong>Variant three, the first encounter with the gap.</strong></p>
-<blockquote>
+</blockquote><p><strong>Variant three, the first encounter with the gap.</strong></p><blockquote>
 <p>"In my first week as a clinical trainee, I met a patient who had walked nine hours to reach us and could not be given the test he needed, because the one machine in the district was broken."</p>
-</blockquote>
-<p><strong>Convert the scene within a few sentences.</strong> A scene with no point is decoration. After it, say what you understood, even if you only understood it later. "He said it paid for his children's school books, and that nobody had ever told him where else the batteries could go."</p>
-<p><strong>Avoid</strong> openings like "Since childhood I have wanted to serve my country", "Poverty has always been my greatest teacher" or a dictionary definition.</p>
-<h3>Contributions, around 150 words</h3>
-<p>What you have already done, chosen for relevance to your plan. Give two or three, each with a verb you own and a number.</p>
-<p><strong>The test for each contribution:</strong> did something change because of you, and can you say how much? "I organised a collection drive that gathered 3.1 tonnes of discarded electronics from 14 hostels" is a contribution. "I participated in several sustainability initiatives" is not.</p>
-<p><strong>Connect your contributions to each other.</strong> They should form a trajectory: from a drive on campus, to a survey in settlements, to a role at a youth forum. Show that you widened the scope of what you attempted over time.</p>
-<p><strong>Include one external signal</strong> if you have it: an invitation, a committee seat, a grant, a selection. Someone else bet on you.</p>
-<h3>Barrier, around 140 words</h3>
-<p>Name the barrier plainly, say what you did, and give the result.</p>
-<p><strong>The shape of a good barrier paragraph.</strong></p>
-<ol>
+</blockquote><p><strong>Convert the scene within a few sentences.</strong> A scene with no point is decoration. After it, say what you understood, even if you only understood it later. "He said it paid for his children's school books, and that nobody had ever told him where else the batteries could go."</p><p><strong>Avoid</strong> openings like "Since childhood I have wanted to serve my country", "Poverty has always been my greatest teacher" or a dictionary definition.</p><h3>Contributions, around 150 words</h3><p>What you have already done, chosen for relevance to your plan. Give two or three, each with a verb you own and a number.</p><p><strong>The test for each contribution:</strong> did something change because of you, and can you say how much? "I organised a collection drive that gathered 3.1 tonnes of discarded electronics from 14 hostels" is a contribution. "I participated in several sustainability initiatives" is not.</p><p><strong>Connect your contributions to each other.</strong> They should form a trajectory: from a drive on campus, to a survey in settlements, to a role at a youth forum. Show that you widened the scope of what you attempted over time.</p><p><strong>Include one external signal</strong> if you have it: an invitation, a committee seat, a grant, a selection. Someone else bet on you.</p><h3>Barrier, around 140 words</h3><p>Name the barrier plainly, say what you did, and give the result.</p><p><strong>The shape of a good barrier paragraph.</strong></p><ol>
 <li><strong>The circumstance (one or two sentences).</strong> What happened, factually.</li>
 <li><strong>What it cost you (one sentence).</strong> A number if possible.</li>
 <li><strong>What you did (two or three sentences).</strong> The decisions, the help you sought, the changes you made.</li>
 <li><strong>The result (one sentence).</strong> Where you ended up.</li>
 <li><strong>The lesson, tied to your work (one sentence).</strong> What it taught you about the problem you will work on.</li>
-</ol>
-<p><strong>Credit those who helped.</strong> A named professor, mentor or foundation who stepped in is not a sign of weakness. It is evidence of how systems can work, and it often links to your plan.</p>
-<p><strong>Keep the tone steady.</strong> Avoid words like "tragedy", "despair" and "turmoil". The facts will carry the weight. State them and move on.</p>
-<h3>Turning point, around 80 words</h3>
-<p>The moment the problem became a plan. It might be a conversation, a project, a data set or a meeting. It answers why this problem and why you.</p>
-<blockquote>
+</ol><p><strong>Credit those who helped.</strong> A named professor, mentor or foundation who stepped in is not a sign of weakness. It is evidence of how systems can work, and it often links to your plan.</p><p><strong>Keep the tone steady.</strong> Avoid words like "tragedy", "despair" and "turmoil". The facts will carry the weight. State them and move on.</p><h3>Turning point, around 80 words</h3><p>The moment the problem became a plan. It might be a conversation, a project, a data set or a meeting. It answers why this problem and why you.</p><blockquote>
 <p>"Each described the same gap from a different side: the engineers could recover the metals, the regulators could write the rules, and neither had a route for the informal workers who handle most of the batteries. I recognised the mechanic behind his workshop."</p>
-</blockquote>
-<p>Good turning points return to the opening scene, which gives the statement a shape.</p>
-<h3>Forward, around 50 words</h3>
-<p>Connect to the course, to home and to the Commonwealth. Keep it short and concrete: what you will learn, where you will use it and why you will return. Do not repeat the Development Impact statement.</p>
-<div class="sec-label">Section 4</div><h2 id="s3">Part four: what to leave out</h2>
+</blockquote><p>Good turning points return to the opening scene, which gives the statement a shape.</p><h3>Forward, around 50 words</h3><p>Connect to the course, to home and to the Commonwealth. Keep it short and concrete: what you will learn, where you will use it and why you will return. Do not repeat the Development Impact statement.</p>
+</section>
+
+<section class="guide-section" id="s3">
+    <span class="section-label">Section 4</span>
+    <h2>Part four: what to leave out</h2>
 <ul>
 <li>Your prizes and publications, which are on the form</li>
 <li>A list of every role or club</li>
@@ -220,34 +394,30 @@ blockquote{margin:12px 0;padding:2px 16px;border-left:3px solid #b9c8c4;color:#2
 <li>Plans you describe in detail elsewhere</li>
 <li>Names of famous people you have met, unless the relationship produced something</li>
 </ul>
-<div class="sec-label">Section 5</div><h2 id="s4">Part five: two full sample answers</h2>
-<p><em>Bracketed labels show structure. Do not include them. All details are invented.</em></p>
-<h3>Sample one, battery circularity</h3>
-<div class="sample">
-<p class="sample-head"><span class="sample-title">Sample one, Personal statement</span><span class="sample-count">481 words &middot; limit 500</span></p>
-<blockquote>
-<p>When I was fifteen, the mechanic who repaired our family's three-wheeler lit a fire behind his workshop to melt the lead out of old batteries. The smoke drifted across the lane where I did my homework, and for a week my younger sister coughed through the night. I asked him why he did it. He said it paid for his children's school books, and that nobody had ever told him where else the batteries could go. I had no answer then. I have spent the years since trying to find one. <span class="beat">Scene</span></p>
-<p>That question followed me into engineering. I ran a hostel collection drive that gathered 3.1 tonnes of discarded electronics from 14 hostels, and spent weekends teaching waste segregation to children at a government school in Ashbury. After graduating I worked as an analyst at Meridian Insights, where a client weighing a switch to electric drivetrains showed me how much of a vehicle's sustainability is decided by what happens to its battery at the end of its life. At the Tidewater Youth Forum I led a team that surveyed 300 households in informal settlements about waste and income. It taught me that the people who handle our waste are rarely asked what would make their work safer. <span class="beat">Contributions</span></p>
-<p>My own path was not smooth. In my second year my father, the only earner in our home, fell seriously ill with kidney failure. I took on evening tutoring to cover fees and travelled two hours each way to the dialysis centre, and my grades fell from 8.7 to 6.4 out of 10. I nearly deferred. A professor, Dr Leena Rao, sat down with my results and asked what I needed rather than what I had failed to do, and arranged for me to submit coursework in stages. I recovered and finished with 8.9, and my final project, a low-cost water-quality monitor for urban canals, was chosen for my department's showcase. My father recovered enough to see me graduate. That year taught me that a system can look like failure when it simply lacks one missing support. <span class="beat">Barrier</span></p>
-<p>At a regional mobility forum I met two battery start-ups and a researcher from an energy policy institute. Each described the same gap from a different side: the engineers could recover the metals, the regulators could write the rules, and neither had a route for the informal workers who handle most of the batteries. I recognised the mechanic behind his workshop. The problem was never that workers did not care. It was that no one had built a system they could join. <span class="beat">Turning point</span></p>
-<p>That is why I want to study circular systems engineering, which joins engineering, policy and the economics of recovery. I want to bring those tools back to Port Marrow and, as a Commonwealth Scholar, to learn from countries that have faced the same questions, so that the next mechanic has somewhere to send his batteries. <span class="beat">Forward</span></p>
-</blockquote>
-</div>
-<h3>Sample two, child labour</h3>
-<div class="sample">
-<p class="sample-head"><span class="sample-title">Sample two, Personal statement</span><span class="sample-count">477 words &middot; limit 500</span></p>
-<blockquote>
-<p>In the cold season when I was ten, I did my homework by the glow of a brick kiln, because our hamlet in Dunmore District lost its electricity at six. My mother spent her days counting bricks for a contractor. One night she watched me copy out a sum and said, "The people who can read the ledger decide what the ledger says." My two elder brothers had left school at twelve to work in the kiln, to pay off a debt my father owed its owner. I was the one who stayed. I have never forgotten that the difference was a decision my mother made. <span class="beat">Scene</span></p>
-<p>I walked seven kilometres each way to the nearest high school and became the first in my family to finish secondary school, supported by a foundation scholarship that covered my fees. At university I began tutoring the children of kiln workers on Sundays. The group grew from nine children to 120, and with a $2,400 youth grant I organised a campaign with the Dunmore Women's Savings Federation that brought 214 children back to class. I was invited to sit on the Provincial Child Protection Commission's district reform committee, and later represented my province at a national youth consultation on education. Each step taught me that the barrier was rarely the child's willingness. It was money, distance, and officials who did not visit. <span class="beat">Contributions</span></p>
-<p>My background shaped what was possible. Dunmore has the lowest school completion rate in the province, and few from my village had reached university. My family's debt meant my fees were never certain, and in my first year I lived in a hostel with no reliable money for books. I worked as a library assistant and taught evening classes, and I told no one how close I came to leaving. When a lecturer, Dr Samira Qadir, noticed I had stopped attending seminars, she asked me directly, and arranged a book allowance and a place on a research assistantship. I finished with first-class honours. Because someone asked, I stayed, and I now try to ask the same question of every child I tutor. <span class="beat">Barrier</span></p>
-<p>While working on a research project about rural livelihoods, I noticed that the savings groups of women in Dunmore already held more trust, and more money, than any government scheme. They knew which families were in debt and which children had stopped coming to school. No policy used that knowledge. I began to see child labour not as a failure of families but as a gap in design, and the gap as something a policy could close. <span class="beat">Turning point</span></p>
-<p>I want to study public policy to learn how to turn that idea into a funded, tested and measured model. I will return to Dunmore, because the children in the kilns are not an abstraction to me, and because the evidence I need is in the district I come from. <span class="beat">Forward</span></p>
-</blockquote>
-</div>
-<p><strong>What both samples do.</strong> They open on a small, concrete scene and convert it into a question within a few sentences. They give contributions with numbers and a trajectory. They state the barrier plainly, name the person who helped, and give the result with a figure. They return to the opening image in the turning point. They end on the course, home and the Commonwealth, without repeating the plan.</p>
-<div class="sec-label">Section 6</div><h2 id="s5">Part six: dos and don'ts</h2>
-<p><strong>Do</strong></p>
-<ul>
+</section>
+
+<section class="guide-section alt-bg" id="s4">
+    <span class="section-label">Section 5</span>
+    <h2>Part five: two full sample answers</h2>
+<p><em>Bracketed labels show structure. Do not include them. All details are invented.</em></p><h3>Sample one, battery circularity</h3><p><strong>Sample one, Personal statement</strong></p><blockquote>
+<p>When I was fifteen, the mechanic who repaired our family's three-wheeler lit a fire behind his workshop to melt the lead out of old batteries. The smoke drifted across the lane where I did my homework, and for a week my younger sister coughed through the night. I asked him why he did it. He said it paid for his children's school books, and that nobody had ever told him where else the batteries could go. I had no answer then. I have spent the years since trying to find one. </p>
+<p>That question followed me into engineering. I ran a hostel collection drive that gathered 3.1 tonnes of discarded electronics from 14 hostels, and spent weekends teaching waste segregation to children at a government school in Ashbury. After graduating I worked as an analyst at Meridian Insights, where a client weighing a switch to electric drivetrains showed me how much of a vehicle's sustainability is decided by what happens to its battery at the end of its life. At the Tidewater Youth Forum I led a team that surveyed 300 households in informal settlements about waste and income. It taught me that the people who handle our waste are rarely asked what would make their work safer. </p>
+<p>My own path was not smooth. In my second year my father, the only earner in our home, fell seriously ill with kidney failure. I took on evening tutoring to cover fees and travelled two hours each way to the dialysis centre, and my grades fell from 8.7 to 6.4 out of 10. I nearly deferred. A professor, Dr Leena Rao, sat down with my results and asked what I needed rather than what I had failed to do, and arranged for me to submit coursework in stages. I recovered and finished with 8.9, and my final project, a low-cost water-quality monitor for urban canals, was chosen for my department's showcase. My father recovered enough to see me graduate. That year taught me that a system can look like failure when it simply lacks one missing support. </p>
+<p>At a regional mobility forum I met two battery start-ups and a researcher from an energy policy institute. Each described the same gap from a different side: the engineers could recover the metals, the regulators could write the rules, and neither had a route for the informal workers who handle most of the batteries. I recognised the mechanic behind his workshop. The problem was never that workers did not care. It was that no one had built a system they could join. </p>
+<p>That is why I want to study circular systems engineering, which joins engineering, policy and the economics of recovery. I want to bring those tools back to Port Marrow and, as a Commonwealth Scholar, to learn from countries that have faced the same questions, so that the next mechanic has somewhere to send his batteries. </p>
+</blockquote><h3>Sample two, child labour</h3><p><strong>Sample two, Personal statement</strong></p><blockquote>
+<p>In the cold season when I was ten, I did my homework by the glow of a brick kiln, because our hamlet in Dunmore District lost its electricity at six. My mother spent her days counting bricks for a contractor. One night she watched me copy out a sum and said, "The people who can read the ledger decide what the ledger says." My two elder brothers had left school at twelve to work in the kiln, to pay off a debt my father owed its owner. I was the one who stayed. I have never forgotten that the difference was a decision my mother made. </p>
+<p>I walked seven kilometres each way to the nearest high school and became the first in my family to finish secondary school, supported by a foundation scholarship that covered my fees. At university I began tutoring the children of kiln workers on Sundays. The group grew from nine children to 120, and with a $2,400 youth grant I organised a campaign with the Dunmore Women's Savings Federation that brought 214 children back to class. I was invited to sit on the Provincial Child Protection Commission's district reform committee, and later represented my province at a national youth consultation on education. Each step taught me that the barrier was rarely the child's willingness. It was money, distance, and officials who did not visit. </p>
+<p>My background shaped what was possible. Dunmore has the lowest school completion rate in the province, and few from my village had reached university. My family's debt meant my fees were never certain, and in my first year I lived in a hostel with no reliable money for books. I worked as a library assistant and taught evening classes, and I told no one how close I came to leaving. When a lecturer, Dr Samira Qadir, noticed I had stopped attending seminars, she asked me directly, and arranged a book allowance and a place on a research assistantship. I finished with first-class honours. Because someone asked, I stayed, and I now try to ask the same question of every child I tutor. </p>
+<p>While working on a research project about rural livelihoods, I noticed that the savings groups of women in Dunmore already held more trust, and more money, than any government scheme. They knew which families were in debt and which children had stopped coming to school. No policy used that knowledge. I began to see child labour not as a failure of families but as a gap in design, and the gap as something a policy could close. </p>
+<p>I want to study public policy to learn how to turn that idea into a funded, tested and measured model. I will return to Dunmore, because the children in the kilns are not an abstraction to me, and because the evidence I need is in the district I come from. </p>
+</blockquote><p><strong>What both samples do.</strong> They open on a small, concrete scene and convert it into a question within a few sentences. They give contributions with numbers and a trajectory. They state the barrier plainly, name the person who helped, and give the result with a figure. They return to the opening image in the turning point. They end on the course, home and the Commonwealth, without repeating the plan.</p>
+</section>
+
+<section class="guide-section" id="s5">
+    <span class="section-label">Section 6</span>
+    <h2>Part six: dos and don'ts</h2>
+<p><strong>Do</strong></p><ul>
 <li>Open on one small, concrete scene</li>
 <li>Convert the scene into an insight within a few sentences</li>
 <li>Choose two or three contributions with a number each</li>
@@ -256,9 +426,7 @@ blockquote{margin:12px 0;padding:2px 16px;border-left:3px solid #b9c8c4;color:#2
 <li>Explain any dip in your academic record, with the result</li>
 <li>Return to your opening image in the turning point</li>
 <li>Connect the end to the course, home and the Commonwealth</li>
-</ul>
-<p><strong>Don't</strong></p>
-<ul>
+</ul><p><strong>Don't</strong></p><ul>
 <li>Open with a quotation, a definition or a claim of passion</li>
 <li>List prizes, roles and clubs already on the form</li>
 <li>Describe hardship without describing what you did</li>
@@ -268,8 +436,12 @@ blockquote{margin:12px 0;padding:2px 16px;border-left:3px solid #b9c8c4;color:#2
 <li>Name famous people with nothing attached</li>
 <li>Overclaim a team achievement</li>
 </ul>
-<div class="sec-label">Section 7</div><h2 id="s6">Part seven: common mistakes, and the fix</h2>
-<table>
+</section>
+
+<section class="guide-section" id="s6">
+    <span class="section-label">Section 7</span>
+    <h2>Part seven: common mistakes, and the fix</h2>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Mistake</th>
@@ -329,10 +501,13 @@ blockquote{margin:12px 0;padding:2px 16px;border-left:3px solid #b9c8c4;color:#2
 <td>Choose one origin and one barrier</td>
 </tr>
 </tbody>
-</table>
-<div class="sec-label">Section 8</div><h2 id="s7">Part eight: checklists</h2>
-<h3>While drafting</h3>
-<ul>
+</table></div>
+</section>
+
+<section class="guide-section alt-bg" id="s7">
+    <span class="section-label">Section 8</span>
+    <h2>Part eight: checklists</h2>
+<h3>While drafting</h3><ul>
 <li>One small, concrete opening scene</li>
 <li>The scene converted into an insight</li>
 <li>Two or three contributions, each with a verb you own and a number</li>
@@ -341,9 +516,7 @@ blockquote{margin:12px 0;padding:2px 16px;border-left:3px solid #b9c8c4;color:#2
 <li>Any dip in grades explained with the result</li>
 <li>A turning point that connects to the opening scene</li>
 <li>An ending on the course, home and the Commonwealth</li>
-</ul>
-<h3>Before submitting</h3>
-<ul>
+</ul><h3>Before submitting</h3><ul>
 <li>No list of prizes or roles repeated from the form</li>
 <li>No melodramatic wording</li>
 <li>I have shared only what I am comfortable sharing</li>
@@ -351,18 +524,91 @@ blockquote{margin:12px 0;padding:2px 16px;border-left:3px solid #b9c8c4;color:#2
 <li>Nothing contradicts my employment entries or Development Impact statement</li>
 <li>A person who knows me would recognise the voice</li>
 <li>Within the 500-word limit in the live form</li>
-</ul>
-<div class="pager"><a class="prev" href="study-proposal.html">&larr; Previous: Study Proposal</a><a class="next" href="voluntary-leadership.html">Next: Voluntary and Leadership &rarr;</a></div>
+</ul><div class="pager"><a class="prev" href="study-proposal.html">← Previous: Study Proposal</a><a class="next" href="voluntary-leadership.html">Next: Voluntary and Leadership →</a></div>
+</section>
+
+</article>
 </div>
-<div class="cta"><div class="wrap">
-<p class="eyebrow" style="color:#9be0d0">Two Ways To Keep Going With TAL</p>
-<h2>Everything in this guide is easy to see in someone else's application and hard to see in your own.</h2>
-<p>That is what a second pair of eyes is for. Whether you want a mentor who has been through an application like this one reading your drafts, or just a place to ask questions as you go, TAL has a path that costs nothing to start.</p>
-<div class="cols">
-<div class="col"><h3>Work with a mentor</h3><p>A mentor who knows what each sub-question is really asking and will tell you honestly where your draft is decoration.</p><p><a href="https://www.theapplicationlab.com/apply.html">Apply for Mentorship</a></p></div>
-<div class="col"><h3>Join the community</h3><p>Thousands of applicants figuring this out together. No cost, no commitment, and a place to ask the questions that come up between drafts.</p><p><a href="https://www.theapplicationlab.com/community.html">Join the Free Community</a></p></div>
+
+<div class="series-nav">
+    <a href="study-proposal.html" class="prev-item"><span class="dir">&larr; Previous</span><span class="lbl">Study Proposal</span></a>
+    <a href="voluntary-leadership.html" class="next-item"><span class="dir">Next &rarr;</span><span class="lbl">Voluntary and Leadership</span></a>
 </div>
-<p style="font-size:14px">Prefer email? <a href="mailto:info@theapplicationlab.com?subject=CSC Essay Support">info@theapplicationlab.com</a></p>
-</div></div>
-<div class="wrap foot">The Application Lab &middot; Edspire Labs Ltd &middot; Company No. 16751243 &middot; Cambridge, UK</div>
-</body></html>
+
+<section id="mentorship-cta">
+    <span class="kicker">Two Ways To Keep Going With TAL</span>
+    <h2>Everything in this guide is easy to see in someone else's application and hard to see in your own.</h2>
+    <p>That is what a second pair of eyes is for. Whether you want a mentor who has been through an application like this one reading your drafts, or just a place to ask questions as you go, TAL has a path that costs nothing to start.</p>
+    <div class="cta-paths">
+        <div class="cta-path">
+            <span class="cta-path-kicker">1:1 Support</span>
+            <h3>Work with a mentor</h3>
+            <p>A mentor who has been through this exact application, knows what the sub-questions are really asking, and will tell you honestly where your draft is decoration.</p>
+            <ul class="cta-path-list">
+                <li>Scholarship Essay Review, two rounds of feedback</li>
+                <li>Lab Focus sessions for strategy, drafts and mock interviews</li>
+            </ul>
+            <a href="../../apply.html" class="btn btn-blue">Apply for Mentorship</a>
+        </div>
+        <div class="cta-path">
+            <span class="cta-path-kicker">Free, Always</span>
+            <h3>Join the community</h3>
+            <p>Thousands of applicants figuring this out together. No cost, no commitment, and a place to ask the questions that come up between drafts.</p>
+            <ul class="cta-path-list">
+                <li>Webinars and Lab Clinic Hours</li>
+                <li>Scholarship and programme opportunities, shared as they come up</li>
+            </ul>
+            <a href="../../community.html" class="btn btn-outline-white">Join the Free Community</a>
+        </div>
+    </div>
+    <p class="cta-note">Free to apply, no commitment &nbsp;&middot;&nbsp; Prefer email? <a href="mailto:info@theapplicationlab.com?subject=CSC Essay Support">info@theapplicationlab.com</a></p>
+</section>
+
+
+<footer>
+    <div class="footer-inner">
+        <img src="../../logo.png" alt="The Application Lab" width="1920" height="1080"/>
+        <div class="footer-links">
+            <a href="../../index.html">Website</a>
+            <a href="../../resources.html">Free Resources</a>
+            <a href="../../community.html">Free Community</a>
+            <a href="../../mentorship.html">Mentorship</a>
+            <a href="https://www.linkedin.com/company/theapplicationlab" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/theapplicationlab" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.youtube.com/@TheApplicationLab" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <p class="footer-bottom">The Application Lab &nbsp;&middot;&nbsp; Edspire Labs Ltd &nbsp;&middot;&nbsp; Company No. 16751243 &nbsp;&middot;&nbsp; Cambridge, UK</p>
+    </div>
+</footer>
+
+<script>
+const burger = document.getElementById('mob-burger');
+const mobMenu = document.getElementById('mob-menu');
+if (burger && mobMenu) {
+    burger.addEventListener('click', function() {
+        const isOpen = mobMenu.style.display === 'flex';
+        mobMenu.style.display = isOpen ? 'none' : 'flex';
+    });
+    mobMenu.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() { mobMenu.style.display = 'none'; });
+    });
+}
+const navLinks = document.querySelectorAll('.guide-sidebar a[data-nav]');
+const sections = Array.from(navLinks).map(a => document.querySelector(a.getAttribute('href')));
+if (navLinks.length) {
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const idx = sections.indexOf(entry.target);
+            if (idx === -1) return;
+            if (entry.isIntersecting) {
+                navLinks.forEach(a => a.classList.remove('active'));
+                navLinks[idx].classList.add('active');
+            }
+        });
+    }, { rootMargin: '-15% 0px -75% 0px', threshold: 0 });
+    sections.forEach(s => { if (s) sectionObserver.observe(s); });
+}
+</script>
+
+</body>
+</html>
