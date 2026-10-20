@@ -62,7 +62,7 @@
         .pdf-strip a { font-size: 0.82rem; font-weight: 700; color: var(--blue); text-decoration: none; }
         .pdf-strip a:hover { text-decoration: underline; }
 
-        .guide-layout { max-width: 1180px; margin: 0 auto; padding: 48px 24px 0; display: flex; gap: 56px; align-items: flex-start; }
+        .guide-layout { max-width: 1400px; margin: 0 auto; padding: 48px 24px 0; display: flex; gap: 60px; align-items: flex-start; }
         .guide-sidebar { display: none; }
         .toc-wrap {
             background: var(--navy); border-radius: 4px; max-width: 760px; margin: 0 auto 8px; padding: 28px 32px;
@@ -74,7 +74,7 @@
         .toc-list a { font-size: 0.86rem; color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 600; }
         .toc-list a:hover { color: #fff; }
 
-        article.guide-main { max-width: 720px; margin: 0 auto; padding: 8px 24px 0; flex: 1; min-width: 0; counter-reset: section 0; }
+        article.guide-main { max-width: 780px; margin: 0 auto; padding: 8px 24px 0; flex: 1; min-width: 0; counter-reset: section 0; }
         .guide-section { padding: 56px 0; border-bottom: 1px solid var(--border); counter-increment: section; }
         .guide-section:last-of-type { border-bottom: none; }
         .section-label { display: flex; align-items: center; gap: 12px; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 18px; }
@@ -164,17 +164,17 @@
         @media (min-width: 1024px) {
             .toc-wrap { display: none; }
             .guide-sidebar {
-                display: block; position: sticky; top: 88px; width: 230px; flex-shrink: 0;
+                display: block; position: sticky; top: 88px; width: 272px; flex-shrink: 0;
                 max-height: calc(100vh - 112px); overflow-y: auto;
-                background: var(--navy); border-radius: 4px; padding: 26px 22px;
+                background: var(--navy); border-radius: 6px; padding: 30px 26px;
                 background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px);
             }
-            .guide-sidebar h2 { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 18px; }
+            .guide-sidebar h2 { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 20px; }
             .guide-sidebar ul { list-style: none; }
-            .guide-sidebar li { margin-bottom: 4px; }
+            .guide-sidebar li { margin-bottom: 2px; }
             .guide-sidebar a {
-                display: block; font-size: 0.79rem; font-weight: 600; color: rgba(255,255,255,0.6); text-decoration: none;
-                padding: 8px 0 8px 14px; border-left: 2px solid rgba(255,255,255,0.14); transition: all 0.15s ease; line-height: 1.4;
+                display: block; font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.65); text-decoration: none;
+                padding: 10px 0 10px 16px; border-left: 2px solid rgba(255,255,255,0.14); transition: all 0.15s ease; line-height: 1.5;
             }
             .guide-sidebar a:hover { color: #fff; border-left-color: rgba(255,255,255,0.4); }
             .guide-sidebar a.active { color: #7ac8e8; border-left-color: var(--blue); font-weight: 700; }
