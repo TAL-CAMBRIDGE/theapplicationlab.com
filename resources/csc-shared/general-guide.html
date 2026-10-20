@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC Shared Scholarship General Guide | The Application Lab</title>
+    <meta name="description" content="What the CSC Shared Scholarship is actually funding, the eligibility checks, the three criteria, and how to build one coherent thread across the form.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.theapplicationlab.com/resources/csc-shared/general-guide.html">
+    <meta property="og:title" content="CSC Shared Scholarship General Guide | The Application Lab">
+    <meta property="og:description" content="What the CSC Shared Scholarship is actually funding, the eligibility checks, the three criteria, and how to build one coherent thread across the form.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.theapplicationlab.com/resources/csc-shared/general-guide.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { overflow-x: hidden; max-width: 100%; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; color: #0f1e35; background: #f7f9fc; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+        :root {
+            --navy: #0f1e35; --blue: #2e8bc0; --blue-050: #eaf4fb; --bg: #f7f9fc;
+            --muted: #6b7c93; --border: #dde4ee; --body-text: #3d4f63; --gold: #c9a84c; --amber-bg: #fbf3e6;
+        }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 800; color: var(--navy); line-height: 1.25; }
+        section[id] { scroll-margin-top: 24px; }
+        body { padding-top: 72px; }
+        @media (min-width: 769px) { #desktop-nav { display: flex; } #mob-burger { display: none; } }
+        @media (max-width: 768px) {
+            #desktop-nav { display: none !important; } #mob-burger { display: flex !important; }
+            #hdr { height: 64px !important; } #hdr img { height: 42px !important; }
+            #mob-menu { top: 64px !important; } body { padding-top: 64px; }
+        }
+
+        .breadcrumb { max-width: 1180px; margin: 0 auto; padding: 22px 24px 0; font-size: 0.78rem; color: var(--muted); }
+        .breadcrumb a { color: var(--blue); text-decoration: none; font-weight: 600; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        #hero-guide {
+            position: relative; min-height: 46vh; display: flex; align-items: flex-end;
+            background-image: url('../../oxford-hero.jpg'); background-size: cover; background-position: center center;
+            margin-top: 18px;
+        }
+        .hero-guide-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,15,24,0.35) 0%, rgba(8,15,24,0.55) 55%, rgba(8,15,24,0.94) 100%); }
+        .hero-guide-inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 44px 24px 40px; text-align: center; }
+        .hero-guide-inner .kicker { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 18px; }
+        .hero-guide-inner h1 { color: #fff; font-size: clamp(1.8rem, 4vw, 2.7rem); letter-spacing: -1px; line-height: 1.18; margin-bottom: 18px; text-shadow: 0 2px 24px rgba(0,0,0,0.4); }
+        .hero-guide-inner .byline { font-family: 'Lora', serif; font-style: italic; font-size: 1.02rem; color: rgba(255,255,255,0.88); line-height: 1.75; max-width: 580px; margin: 0 auto; }
+
+        #facts { background: var(--navy); padding: 0 24px 40px; }
+        .facts-strip { max-width: 800px; margin: 0 auto; display: flex; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 26px; }
+        .facts-strip > div { flex: 1; text-align: center; padding: 0 12px; border-right: 1px solid rgba(255,255,255,0.12); }
+        .facts-strip > div:last-child { border-right: none; }
+        .facts-strip strong { display: block; font-size: 1.3rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; line-height: 1; }
+        .facts-strip span { display: block; font-size: 0.58rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.55); font-weight: 600; margin-top: 8px; line-height: 1.5; }
+
+        .pdf-strip { background: var(--blue-050); border-bottom: 1px solid var(--border); text-align: center; padding: 16px 24px; }
+        .pdf-strip a { font-size: 0.82rem; font-weight: 700; color: var(--blue); text-decoration: none; }
+        .pdf-strip a:hover { text-decoration: underline; }
+
+        .guide-layout { max-width: 1180px; margin: 0 auto; padding: 48px 24px 0; display: flex; gap: 56px; align-items: flex-start; }
+        .guide-sidebar { display: none; }
+        .toc-wrap {
+            background: var(--navy); border-radius: 4px; max-width: 760px; margin: 0 auto 8px; padding: 28px 32px;
+            background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px);
+        }
+        .toc-wrap h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 16px; }
+        .toc-list { list-style: none; columns: 2; column-gap: 32px; }
+        .toc-list li { break-inside: avoid; margin-bottom: 10px; }
+        .toc-list a { font-size: 0.86rem; color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 600; }
+        .toc-list a:hover { color: #fff; }
+
+        article.guide-main { max-width: 720px; margin: 0 auto; padding: 8px 24px 0; flex: 1; min-width: 0; counter-reset: section 0; }
+        .guide-section { padding: 56px 0; border-bottom: 1px solid var(--border); counter-increment: section; }
+        .guide-section:last-of-type { border-bottom: none; }
+        .section-label { display: flex; align-items: center; gap: 12px; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 18px; }
+        .section-label::before {
+            content: counter(section, decimal-leading-zero);
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+            width: 34px; height: 34px; border-radius: 50%; background: var(--blue-050); color: var(--blue);
+            font-family: 'Lora', serif; font-style: italic; font-weight: 600; font-size: 0.9rem; letter-spacing: 0;
+        }
+        .guide-section h2 { font-size: clamp(1.3rem, 2.5vw, 1.65rem); letter-spacing: -0.5px; margin-bottom: 20px; }
+        .guide-section h3 { font-size: 1.08rem; margin: 32px 0 14px; scroll-margin-top: 90px; }
+        .guide-section h3:first-of-type { margin-top: 0; }
+        .guide-section h4 { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 22px 0 8px; }
+        .guide-section p { font-size: 0.96rem; color: var(--body-text); margin-bottom: 16px; }
+        .guide-section p:last-child { margin-bottom: 0; }
+        .guide-section ul, .guide-section ol { margin: 0 0 16px 22px; color: var(--body-text); font-size: 0.96rem; }
+        .guide-section li { margin-bottom: 8px; }
+        .guide-section li::marker { color: var(--blue); }
+        .guide-section strong { color: var(--navy); }
+        .guide-section.alt-bg { background: #fff; border-radius: 6px; padding: 48px 36px; margin: 8px 0; border-bottom: none; box-shadow: 0 1px 0 var(--border); }
+        .guide-section blockquote { border-left: 3px solid var(--blue); padding: 2px 0 2px 18px; margin: 0 0 16px; color: var(--navy); font-style: italic; }
+        .guide-section blockquote p { margin-bottom: 0; }
+        .guide-section hr { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+
+        .callout { border-radius: 4px; padding: 18px 22px; margin: 0 0 20px; font-size: 0.92rem; line-height: 1.8; }
+        .callout p { margin: 0 0 12px; font-size: 0.9rem; }
+        .callout p:last-child { margin-bottom: 0; }
+        .callout strong { display: block; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); margin-bottom: 4px; }
+        .callout-rule { background: var(--blue-050); border: 1px solid rgba(46,139,192,0.25); color: var(--navy); }
+        .callout-trap { background: var(--amber-bg); border: 1px solid rgba(184,134,58,0.3); color: #6b4f1f; font-size: 0.84rem; }
+        .callout-trap strong { color: #8a6a2a; }
+        .meta-wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 0; }
+
+        .table-scroll { overflow-x: auto; margin: 18px 0; -webkit-overflow-scrolling: touch; }
+        table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 0.85rem; }
+        table th, table td { padding: 11px 13px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.6; }
+        table thead th { background: var(--navy); color: #fff; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+        table thead th:first-child { border-top-left-radius: 4px; }
+        table thead th:last-child { border-top-right-radius: 4px; }
+        table tbody th { background: var(--bg); color: var(--navy); font-weight: 700; white-space: nowrap; }
+        table tbody td { color: var(--body-text); }
+        table tbody tr:last-child td, table tbody tr:last-child th { border-bottom: none; }
+
+        ul.checklist { list-style: none; margin: 0 0 8px; }
+        ul.checklist li.chk { display: flex; gap: 12px; align-items: flex-start; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--body-text); }
+        ul.checklist li.chk:last-child { border-bottom: none; }
+        ul.checklist li.chk::before { content: ''; flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; border: 1.5px solid var(--blue); border-radius: 3px; }
+
+        .series-nav { max-width: 720px; margin: 0 auto; padding: 8px 24px 56px; display: flex; justify-content: space-between; gap: 16px; }
+        .series-nav a { flex: 1; text-decoration: none; border: 1px solid var(--border); border-radius: 4px; padding: 16px 18px; background: #fff; transition: box-shadow 0.2s ease, transform 0.2s ease; }
+        .series-nav a:hover { box-shadow: 0 10px 28px rgba(15,30,53,0.1); transform: translateY(-2px); }
+        .series-nav .dir { display: block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+        .series-nav .lbl { display: block; font-size: 0.88rem; font-weight: 700; color: var(--navy); }
+        .series-nav .next-item { text-align: right; }
+
+        #mentorship-cta { background: var(--navy); background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px); padding: 72px 24px; text-align: center; }
+        #mentorship-cta .kicker { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #4a9fd4; margin-bottom: 16px; }
+        #mentorship-cta h2 { color: #fff; font-size: clamp(1.4rem, 3vw, 1.9rem); max-width: 640px; margin: 0 auto 18px; }
+        #mentorship-cta p { color: rgba(255,255,255,0.78); font-size: 0.96rem; line-height: 1.85; max-width: 600px; margin: 0 auto 32px; }
+        .cta-paths { display: flex; gap: 20px; max-width: 800px; margin: 0 auto 8px; text-align: left; }
+        .cta-path { flex: 1; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.14); border-top: 3px solid var(--blue); border-radius: 4px; padding: 28px 26px; display: flex; flex-direction: column; }
+        .cta-path:nth-child(2) { border-top-color: var(--gold); }
+        .cta-path-kicker { display: block; font-size: 0.64rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 12px; }
+        .cta-path:nth-child(2) .cta-path-kicker { color: #e4cb7a; }
+        .cta-path h3 { color: #fff; font-size: 1.15rem; margin-bottom: 10px; }
+        .cta-path p { color: rgba(255,255,255,0.68); font-size: 0.86rem; line-height: 1.75; margin: 0 0 16px; max-width: none; }
+        .cta-path-list { list-style: none; margin: 0 0 22px; flex: 1; }
+        .cta-path-list li { color: rgba(255,255,255,0.6); font-size: 0.82rem; line-height: 1.6; padding-left: 18px; position: relative; margin-bottom: 8px; }
+        .cta-path-list li::before { content: '→'; position: absolute; left: 0; color: var(--blue); }
+        .cta-path:nth-child(2) .cta-path-list li::before { color: var(--gold); }
+        .btn { display: inline-block; padding: 14px 26px; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: all 0.25s ease; text-align: center; }
+        .btn-blue { background: var(--blue); color: #fff; border: none; }
+        .btn-blue:hover { background: #1a6fa0; box-shadow: 0 8px 24px rgba(46,139,192,0.4); transform: translateY(-2px); }
+        .btn-outline-white { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.4); }
+        .btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+        .cta-note { margin-top: 30px; font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+        .cta-note a { color: #7ac8e8; text-decoration: none; font-weight: 600; }
+
+        footer { background: #080f18; padding: 48px 7% 28px; }
+        footer .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; }
+        footer img { height: 60px; width: auto; filter: brightness(0) invert(1); }
+        .footer-links { display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; }
+        .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.55); text-decoration: none; }
+        .footer-links a:hover { color: #fff; }
+        .footer-bottom { font-size: 0.68rem; color: rgba(255,255,255,0.25); margin-top: 6px; }
+
+        @media (min-width: 1024px) {
+            .toc-wrap { display: none; }
+            .guide-sidebar {
+                display: block; position: sticky; top: 88px; width: 230px; flex-shrink: 0;
+                max-height: calc(100vh - 112px); overflow-y: auto;
+                background: var(--navy); border-radius: 4px; padding: 26px 22px;
+                background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px);
+            }
+            .guide-sidebar h2 { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 18px; }
+            .guide-sidebar ul { list-style: none; }
+            .guide-sidebar li { margin-bottom: 4px; }
+            .guide-sidebar a {
+                display: block; font-size: 0.79rem; font-weight: 600; color: rgba(255,255,255,0.6); text-decoration: none;
+                padding: 8px 0 8px 14px; border-left: 2px solid rgba(255,255,255,0.14); transition: all 0.15s ease; line-height: 1.4;
+            }
+            .guide-sidebar a:hover { color: #fff; border-left-color: rgba(255,255,255,0.4); }
+            .guide-sidebar a.active { color: #7ac8e8; border-left-color: var(--blue); font-weight: 700; }
+        }
+        @media (max-width: 640px) {
+            .toc-list { columns: 1; }
+            .hero-guide-inner { padding: 32px 20px 32px; }
+            .facts-strip { flex-wrap: wrap; }
+            .facts-strip > div { flex: 1 1 45%; padding-bottom: 14px; }
+            .guide-section { padding: 40px 0; }
+            .guide-section.alt-bg { padding: 32px 20px; }
+            table { min-width: 460px; }
+            .cta-paths { flex-direction: column; }
+            .series-nav { flex-direction: column; }
+            .series-nav .next-item { text-align: left; }
+        }</style>
+</head>
+
+<style>
+@media print {
+    #hdr, #mob-menu, .breadcrumb, .pdf-strip, .toc-wrap, .guide-sidebar,
+    .series-nav, #mentorship-cta, footer { display: none !important; }
+    #hero-guide { min-height: 0; background: none !important; margin-top: 0; }
+    .hero-guide-overlay { display: none; }
+    .hero-guide-inner { text-align: left; padding: 0 0 20px; color: #0f1e35; }
+    .hero-guide-inner .kicker { color: #2e8bc0; }
+    .hero-guide-inner h1 { color: #0f1e35; text-shadow: none; }
+    .hero-guide-inner .byline { color: #3d4f63; }
+    #facts { background: none; padding: 0 0 20px; }
+    .facts-strip { border-top: 1px solid #dde4ee; }
+    .facts-strip strong, .facts-strip span { color: #0f1e35; }
+    .guide-layout { display: block; padding: 0; }
+    article.guide-main { max-width: 100%; padding: 0; }
+    .guide-section { padding: 18px 0; }
+    .guide-section.alt-bg { box-shadow: none; padding: 18px 0; }
+    body { padding-top: 0; }
+}
+</style>
+<style>
+.guide-section h3 .qn { display: inline-block; background: var(--blue); color: #fff; font-size: 0.68rem; font-weight: 700; border-radius: 3px; padding: 2px 8px; margin-right: 10px; vertical-align: 2px; }
+.guide-section p.warn { background: var(--amber-bg); border-left: 3px solid var(--gold); padding: 14px 18px; border-radius: 4px; }
+strong.check { background: var(--amber-bg); color: #7a5200; font-weight: 700; font-size: 0.72rem; padding: 2px 8px; border-radius: 3px; letter-spacing: 0.02em; }
+</style>
+<body>
+
+<header id="hdr" style="position:fixed; top:0; left:0; right:0; width:100%; height:72px; z-index:9999; display:flex; align-items:center; justify-content:space-between; padding:0 5%; background:rgba(15,30,53,0.97); box-shadow:0 2px 20px rgba(0,0,0,0.3);">
+  <a href="../../index.html" style="display:flex; align-items:center; text-decoration:none; flex-shrink:0; margin-right:20px;">
+    <img src="../../logo.png" alt="The Application Lab" width="1920" height="1080" style="height:56px; width:auto; display:block; object-fit:contain; filter:brightness(0) invert(1);"/>
+  </a>
+  <nav id="desktop-nav" style="align-items:center; gap:26px; margin-left:auto;">
+    <a href="../../index.html#about" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">About</a>
+    <a href="../../index.html#services" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Mentorship</a>
+    <a href="../../index.html#how" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">How It Works</a>
+    <a href="../../index.html#founders" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Founders</a>
+    <a href="../../community.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Community</a>
+    <a href="../../resources.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Resources</a>
+    <a href="../../immersive.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">The Immersive Lab</a>
+    <a href="../../apply.html" style="font-size:0.7rem; font-weight:700; color:#fff; letter-spacing:1px; text-transform:uppercase; text-decoration:none; background:#2e8bc0; padding:10px 20px; border-radius:2px;">Apply Now</a>
+  </nav>
+  <button id="mob-burger" aria-label="Open menu" style="flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; margin-left:16px;">
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+  </button>
+</header>
+
+<div id="mob-menu" style="display:none; position:fixed; top:72px; left:0; right:0; z-index:9998; background:rgba(15,30,53,0.98); flex-direction:column; padding:16px 5%; border-top:1px solid rgba(255,255,255,0.08);">
+  <a href="../../index.html#about" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">About</a>
+  <a href="../../index.html#services" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Mentorship</a>
+  <a href="../../index.html#how" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">How It Works</a>
+  <a href="../../index.html#founders" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Founders</a>
+  <a href="../../community.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Community</a>
+  <a href="../../resources.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Resources</a>
+  <a href="../../immersive.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">The Immersive Lab</a>
+  <a href="../../apply.html" style="display:block; margin-top:16px; padding:13px 20px; font-size:0.82rem; font-weight:700; color:#fff; text-transform:uppercase; letter-spacing:1px; text-decoration:none; background:#2e8bc0; text-align:center; border-radius:2px;">Apply Now</a>
+</div>
+
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../resources.html">Resources</a> / <a href="../../resources.html#csc-shared">CSC Shared Scholarship</a> / General Guide
+</nav>
+
+<section id="hero-guide">
+    <div class="hero-guide-overlay" aria-hidden="true"></div>
+    <div class="hero-guide-inner">
+        <span class="kicker">CSC Shared Scholarship Guide &middot; 1 of 7</span>
+        <h1>General Guide</h1>
+        <p class="byline">What the CSC is actually funding, the eligibility rules, and how to build one coherent thread across the whole form.</p>
+    </div>
+</section>
+
+<div id="facts">
+    <div class="facts-strip">
+        <div><strong>180</strong><span>Awards For 2027/28</span></div><div><strong>3</strong><span>Scored Criteria</span></div><div><strong>6</strong><span>Development Themes</span></div><div><strong>Free</strong><span>To Read & Download</span></div>
+    </div>
+</div>
+
+<div class="pdf-strip">
+    <a href="general-guide.pdf" target="_blank" rel="noopener">Download this guide as a PDF &darr;</a>
+</div>
+
+
+
+<nav class="toc-wrap" aria-label="Table of contents">
+    <h2>In This Guide</h2>
+    <ul class="toc-list">
+        <li><a href="#s0">01. What the Shared Scholarship is actually funding</a></li><li><a href="#s1">02. Who it is for, and the eligibility checks</a></li><li><a href="#s2">03. The three criteria the panel scores</a></li><li><a href="#s3">04. The six development themes and your SDGs</a></li><li><a href="#s4">05. What the form actually asks</a></li><li><a href="#s5">06. Mistakes that end an application early</a></li><li><a href="#s6">07. The development-impact chain</a></li><li><a href="#s7">08. Evidence: the underlying rules</a></li><li><a href="#s8">09. Strategic naming</a></li>
+    </ul>
+</nav>
+
+<div class="guide-layout">
+<nav class="guide-sidebar" aria-label="Section navigation">
+    <h2>In This Guide</h2>
+    <ul>
+        <li><a href="#s0" data-nav>01. What the Shared Scholarship is actually funding</a></li><li><a href="#s1" data-nav>02. Who it is for, and the eligibility checks</a></li><li><a href="#s2" data-nav>03. The three criteria the panel scores</a></li><li><a href="#s3" data-nav>04. The six development themes and your SDGs</a></li><li><a href="#s4" data-nav>05. What the form actually asks</a></li><li><a href="#s5" data-nav>06. Mistakes that end an application early</a></li><li><a href="#s6" data-nav>07. The development-impact chain</a></li><li><a href="#s7" data-nav>08. Evidence: the underlying rules</a></li><li><a href="#s8" data-nav>09. Strategic naming</a></li>
+    </ul>
+</nav>
+<article class="guide-main">
+
+
+<section class="guide-section" id="s0">
+    <span class="section-label">Section 1</span>
+    <h2>What the CSC Shared Scholarship is actually funding</h2>
+<p>The Commonwealth Shared Scholarship is not the same scheme as the Commonwealth Master's Scholarship, even though both are run by the Commonwealth Scholarship Commission (CSC) and both fund a Master's year in the UK. The difference is in who pays and how the places are created.</p>
+<p>Under the Shared Scholarship, a UK university first <strong>bids</strong> to the CSC for scholarship places on specific courses it names. The CSC currently expects to allocate <strong>around 180 new Commonwealth Shared Scholarships for 2027/28</strong>. A university may bid for up to ten scholarships, spread across up to eight individually named courses, and the CSC says it will give preference to bids for at least two awards, though a bid for one is still considered. This is why you cannot simply apply to "any course you like": you can only be considered for a course that a university has already successfully bid to put forward, and that list changes every year.</p>
+<p>Once a university's bid is approved, the CSC and the university <strong>share the cost</strong> of each scholarship, which is where the name comes from. The CSC pays your tuition fees (capped at £22,500), your approved return airfare to the UK, a thesis grant, a study travel grant, and a contribution to a TB test if you need one. The university pays your stipend: £1,712 per month, or £2,000 per month if the university is in the London metropolitan area, for the normal 12-month award. If you have a child under 16, you may also receive a child allowance, currently £622 per month for the first child and £154 per month for the second and third.</p>
+<p>Two restrictions follow directly from this funding model, and both catch applicants out every year:</p>
+<ul>
+<li><strong>One-year taught courses only.</strong> The scholarship funds a one-year, full-time, taught postgraduate course. It does not fund research degrees, part-time study, or courses that run longer than a year. MBA courses are supported only in exceptional circumstances.</li>
+<li><strong>The subject must be demonstrably developmental.</strong> Universities are only allowed to bid for courses whose subject matter aligns with the CSC's development themes (Section 4 below). A technically excellent course that cannot be connected to development will not have been bid for in the first place, or will be a weak fit for your Development Impact answers.</li>
+</ul>
+<p>What this means for your application: your course and university are not really "your choice" in the way they would be for a self-funded Master's. You are choosing from a published list of courses a university has already committed to supporting, and your job is to show, convincingly, why that specific course is the right place for you to close a specific gap.</p>
+</section>
+
+<section class="guide-section alt-bg" id="s1">
+    <span class="section-label">Section 2</span>
+    <h2>Who it is for, and the eligibility checks that end an application first</h2>
+<p>Run through these before you write a single word, because the CSC disqualifies incomplete or ineligible applications before anyone reads an essay.</p>
+<ul>
+<li><strong>Citizenship or refugee status.</strong> You must be a citizen of, or have refugee status in, an eligible Commonwealth country, and be permanently resident there.</li>
+<li><strong>Academic qualification.</strong> By September 2027 you must hold either a first degree of at least upper second-class (2:1) honours standard, or a second-class (2:2) degree plus a relevant postgraduate qualification (usually a Master's).</li>
+<li><strong>Not already based in a high-income country.</strong> You must not have studied or worked for one academic year or more in a high-income country, and you must not currently be living or studying in one.</li>
+<li><strong>Financial need.</strong> You must be unable to afford to study in the UK without this scholarship. This is a declaration you make directly on the form, before you can proceed to the rest of the application.</li>
+<li><strong>Availability.</strong> You must be available to start your course in the UK by the start of the UK academic year in September 2027.</li>
+<li><strong>No age limit.</strong> Unlike some other scholarships, the CSC sets no upper age limit for Shared Scholarship applicants.</li>
+</ul>
+<p class="warn"><strong>Previous Commonwealth Scholarship.</strong> If you have already studied at Master's level in the UK, or previously held a Commonwealth Scholarship at Master's level, you are not eligible to hold a second one. Check this before you invest time in the application.</p>
+<p>The CSC also runs due diligence checks on every potential Scholar before confirming an award, covering things like unspent criminal convictions and Politically Exposed Person (PEP) status. These do not automatically disqualify you, but you must answer honestly and consent to the checks, or you cannot proceed with the application.</p>
+</section>
+
+<section class="guide-section" id="s2">
+    <span class="section-label">Section 3</span>
+    <h2>The three criteria the panel actually scores</h2>
+<p>The CSC states that Shared Scholarship applications are assessed against three criteria. The exact weighting between them is not published, so treat all three as essential rather than trying to guess which matters most.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr><th>Criterion</th><th>Where the panel reads it</th><th>The question behind it</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Academic merit</strong></td><td>Transcripts, qualifications, references, publications and prizes, the personal statement where you explain any gap or dip</td><td>Can this person succeed on a one-year UK taught Master's?</td></tr>
+<tr><td><strong>Quality of the research proposal</strong></td><td>Study outline, detailed plan of study, keywords, award objectives</td><td>Is the plan for this specific course clear, realistic, and well-matched to a non-specialist reader?</td></tr>
+<tr><td><strong>Potential impact on development</strong></td><td>Development Impact statement (four parts), career plans, voluntary and leadership answer</td><td>Will this person change something that matters at home, and can that change be checked?</td></tr>
+</tbody>
+</table></div>
+<p>Notice what is missing from this list: there is no separate criterion for "need an employer reference" or "have relevant work experience", even though the form asks for both. Academic merit, the research proposal and development impact are the three things that are actually scored. Your employment history, publications and references exist to support those three criteria, not as a fourth one.</p>
+</section>
+
+<section class="guide-section alt-bg" id="s3">
+    <span class="section-label">Section 4</span>
+    <h2>The six development themes and your SDGs</h2>
+<p>As with every CSC scholarship, your area of study must sit under one of six development themes, and the course you are applying for will usually have been approved by the CSC because it already fits one or two of them clearly. Use the theme names exactly as they appear on your form.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Theme</th><th>What the CSC says it supports</th><th>Typical evidence base</th></tr></thead>
+<tbody>
+<tr><td><strong>Science and technology for development</strong></td><td>Applying scientific knowledge and skills to the needs and opportunities of low and middle-income countries, with reference to national or local priorities</td><td>Engineering, data, agriculture, environment, energy</td></tr>
+<tr><td><strong>Improving population health, health systems and capacity</strong></td><td>Applied health policy and public health research, disease prevention, better management systems and infrastructure</td><td>Clinical, public health, health systems, digital health</td></tr>
+<tr><td><strong>Promoting innovation and entrepreneurship</strong></td><td>Enterprise development and new value creation: start-ups, scale-ups, jobs, trade capacity</td><td>Business, finance, markets, youth and women's enterprise</td></tr>
+<tr><td><strong>Strengthening peace, security and governance</strong></td><td>Open and transparent governance, mutual understanding, systems for defusing and resolving conflict</td><td>Policy, law, security, institutions, diplomacy</td></tr>
+<tr><td><strong>Strengthening resilience and response to crises</strong></td><td>National capacity to handle disasters, pandemics, climate change and sudden economic or technological disruption</td><td>Climate, disaster risk, supply security, public health emergencies</td></tr>
+<tr><td><strong>Access, inclusion and opportunity</strong></td><td>Inclusive access among historically disadvantaged groups, expanded educational opportunity, community outreach, access to decision-making</td><td>Education, social policy, gender, rural development, labour</td></tr>
+</tbody>
+</table></div>
+<p>Most courses fit two themes depending on framing, so this is still a strategic choice. <strong>Choose the theme where your evidence is strongest, not the one that sounds most urgent</strong>, then name it in a full sentence in Development Impact Part 1 and let it echo, without repeating, through your career plans.</p>
+<p>The form also asks you to select up to three Sustainable Development Goals, starting with the most relevant. Only the first is required. Choose the goals your answers genuinely talk about, in the order your evidence supports them, rather than naming a third goal that does not appear anywhere in your evidence.</p>
+</section>
+
+<section class="guide-section" id="s4">
+    <span class="section-label">Section 5</span>
+    <h2>What the form actually asks</h2>
+<p>The CSC Central form for Shared Scholarships has eleven tabs. Word limits below are from the live 2027/28 form. <strong class="check">CHECK</strong> each limit in CSC Central before you finalise, because the system enforces them.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Tab</th><th>What it asks for</th><th>Limit</th></tr></thead>
+<tbody>
+<tr><td>Details</td><td>Personal details, one UK institution, one course (both chosen from the approved list, not ranked preferences)</td><td>&mdash;</td></tr>
+<tr><td>Academic</td><td>Up to 5 qualifications, education outside your home country and previous scholarships, up to 10 publications, academic distinctions and prizes</td><td>100 / 250 words</td></tr>
+<tr><td>Professional Background</td><td>Sector and area of work, up to 5 employment entries with main responsibilities</td><td>100 words each</td></tr>
+<tr><td>References</td><td>Three referees: your current or most recent employer, your most recent academic study, and a personal referee. A fourth only if you took a UK degree</td><td>&mdash;</td></tr>
+<tr><td>Development Impact</td><td>Up to 3 SDGs, then a 4-part statement: development issues, applying new skills, expected changes, how impact is measured</td><td>200 / 100 / 250 / 100 words</td></tr>
+<tr><td>Career Plans</td><td>Objectives during the award, 5-year career plan, long-term career plan</td><td>250 words each</td></tr>
+<tr><td>Proposed Study in the UK</td><td>University application number, study outline, detailed plan of study, 3 keywords</td><td>125 / 300 words</td></tr>
+<tr><td>Personal Statement</td><td>Personal statement, voluntary and leadership experience</td><td>500 words each</td></tr>
+<tr><td>Checklist and Confirmations</td><td>How you heard about CSC, due-diligence questions, confirmations</td><td>&mdash;</td></tr>
+<tr><td>Equity and Diversity</td><td>Optional, anonymised demographic questions, not seen by the panel</td><td>&mdash;</td></tr>
+<tr><td>Attachments</td><td>Passport, transcripts, degree certificates, university offer letter, references</td><td>&mdash;</td></tr>
+</tbody>
+</table></div>
+<p class="warn"><strong>The one difference most applicants miss.</strong> Unlike some other CSC schemes, the Shared Scholarship form does not have a separate "contact with your proposed universities" question, and it does not ask you to rank three courses in order of preference. You name one institution and one course on the Details tab, full stop. Guide 4 in this series (Study Proposal) is written around that single-choice reality, not a ranked list.</p>
+</section>
+
+<section class="guide-section alt-bg" id="s5">
+    <span class="section-label">Section 6</span>
+    <h2>Mistakes that end an application before the essays are read</h2>
+<p><strong>Eligibility.</strong> See Section 2 above. Re-check every line against the live form before you write anything.</p>
+<p><strong>No separate nominator.</strong> Unlike the Commonwealth Master's Scholarship, which usually runs through a national nominating agency, the Shared Scholarship has no separate nominating body. The <strong>university itself</strong> reviews everyone who applied to its bid-winning courses and sends its shortlist of nominees straight to the CSC, which then checks eligibility and confirms the award. There is no additional nomination step to track outside the university's own admissions and scholarship process.</p>
+<p><strong>Referees.</strong> Name three referees who can speak to both your capacity to benefit from the proposed study and your ability to deliver development impact afterwards: your current or most recent employer, your most recent academic study, and a personal referee who knows you in a personal rather than a professional capacity and is not related to you. If you have already taken a degree in the UK, add a fourth referee from that UK study. Your application is marked ineligible unless at least two references actually arrive.</p>
+<p><strong>Documents.</strong> Upload a scan of your passport or national ID, full transcripts for <strong>all</strong> higher education qualifications (merged into one file, with certified translations if not in English), your degree certificates (merged into one file), your university offer letter, and your references (merged into one file). Each file must be 10MB or smaller, in PDF, JPG or PNG. Missing any of these makes the application ineligible.</p>
+<p><strong>The course.</strong> You can only select an institution and course that appears on the approved list for that year. If your target course is not listed, it has not been bid for, and no amount of essay quality will make it eligible.</p>
+<p><strong>Admission.</strong> Apply to the university directly as well as through CSC Central. The two processes run in parallel but are not the same system, and a university cannot nominate you if you have not also applied for admission.</p>
+<p><strong>Form mechanics.</strong> Draft every answer outside the system and paste it in once you are happy with it. Save often: the form does not reliably preserve unsaved text if your session times out. You cannot edit an application after you submit it. Do not leave submission to the final hours before the 16:00 GMT deadline, since the system slows down under load and a late application is not accepted regardless of the reason.</p>
+<p><strong>Proofreading.</strong> Check the spelling of every institution, person, module and programme you name. If your answers mention a dozen proper nouns, a dozen spellings must be correct.</p>
+</section>
+
+<section class="guide-section" id="s6">
+    <span class="section-label">Section 7</span>
+    <h2>The development-impact chain</h2>
+<p>Underneath every essay answer sits one sequence. It applies wherever you describe your plan, whichever tab you are writing in.</p>
+<p><strong>Problem, then why it persists, then your capability gap, then the study, then your route home, then the change, then the evidence.</strong></p>
+<div class="table-scroll"><table>
+<thead><tr><th>Link</th><th>What it answers</th><th>Where it mostly lives</th></tr></thead>
+<tbody>
+<tr><td><strong>Problem</strong></td><td>What is wrong, how big, from global down to local?</td><td>Development Impact Part 1</td></tr>
+<tr><td><strong>Why it persists</strong></td><td>Which policy, institution or incentive has not fixed it?</td><td>Development Impact Part 1</td></tr>
+<tr><td><strong>Capability gap</strong></td><td>What can you not yet do?</td><td>Award objectives, study plan</td></tr>
+<tr><td><strong>The study</strong></td><td>Which module, academic and method closes the gap?</td><td>Detailed plan of study</td></tr>
+<tr><td><strong>Route home</strong></td><td>Which institution, partner and first pilot?</td><td>Development Impact Part 2, 5-year plan</td></tr>
+<tr><td><strong>The change</strong></td><td>Outcome, baseline, target, date, beneficiaries</td><td>Development Impact Part 3, long-term plan</td></tr>
+<tr><td><strong>The evidence</strong></td><td>Which indicator, from which source, checked by whom?</td><td>Development Impact Part 4</td></tr>
+</tbody>
+</table></div>
+<p>The link most often missing is the capability gap. Write it as a sentence beginning "I cannot currently" before you draft anything. If you cannot finish that sentence precisely, the study plan will read as generic.</p>
+</section>
+
+<section class="guide-section alt-bg" id="s7">
+    <span class="section-label">Section 8</span>
+    <h2>Evidence: the underlying rules</h2>
+<h3>Replace claims with evidence</h3>
+<div class="table-scroll"><table>
+<thead><tr><th>Instead of writing</th><th>Write about</th></tr></thead>
+<tbody>
+<tr><td>"I am passionate about development."</td><td>What you have already done, with a number attached</td></tr>
+<tr><td>"This is a world-class university."</td><td>The specific module, method or academic that closes your gap</td></tr>
+<tr><td>"I will improve healthcare in my country."</td><td>The disease, the district, the target, the date and the measure</td></tr>
+<tr><td>"My project will empower women."</td><td>How many women, through which institution, with what change in income or access</td></tr>
+<tr><td>"I will bring about a paradigm shift."</td><td>The practice that will be different, and who will do it</td></tr>
+</tbody>
+</table></div>
+<h3>Baseline and target</h3>
+<p><strong>A target without a baseline is a hope.</strong> Strong plans state where things stand and where they will be: a child labour rate of 6.7 per cent today and under 1 per cent in ten years, a pilot of 60 workers growing to 900, a diagnosis delay that falls by a stated share. Give the starting point from a named source, then the target, then the date.</p>
+<h3>Numbers and the precision rule</h3>
+<p>Use the exact figure, not the rounded one: 212,000 tonnes rather than "over two hundred thousand", 38,000 workers rather than "tens of thousands". A round number reads as an estimate and an odd one reads as something measured. <strong>Never manufacture a number.</strong> If a figure is a projection or your own estimate, say so. If your work has no metrics, use a checkable change of state: a protocol adopted, a partnership signed, a service that now reaches somewhere it did not.</p>
+<h3>Authenticity</h3>
+<p>Never inflate your role in a team achievement, invent a partnership, or promise an outcome you could not credibly deliver. Say what the team achieved and then state precisely what you contributed. A modest contribution described accurately reads as credible. A large one described vaguely reads as evasive.</p>
+</section>
+
+<section class="guide-section" id="s8">
+    <span class="section-label">Section 9</span>
+    <h2>Strategic naming</h2>
+<p>Naming does two jobs. It makes a claim checkable, and it places you inside a professional world that can carry your plan out.</p>
+<p><strong>The rule: name the person, institution, rule or programme, and in the same sentence say what you will do with it or did with it.</strong> A name with a relationship or action attached is evidence. A name with nothing attached is a list.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Weak, a list</th><th>Strong, a working link</th></tr></thead>
+<tbody>
+<tr><td>"I will work with the government and NGOs."</td><td>"I will join the Provincial Child Protection Commission as a policy analyst and test the model in the district I come from."</td></tr>
+<tr><td>"My country has policies on battery waste."</td><td>"The 2023 Battery Waste Management Rules recognise licensed recyclers only, so the workers who handle most of the waste cannot register."</td></tr>
+<tr><td>"I admire Professor Calder's work."</td><td>"Professor Calder's policy-simulation methods will let me model how the Rules change if informal workshops can register as collection partners."</td></tr>
+</tbody>
+</table></div>
+<h3>What is worth naming</h3>
+<ul>
+<li><strong>The national plan, rule or programme</strong> that already names your problem, by its title and year.</li>
+<li><strong>The institution you will join or build</strong>, and the one you will build it inside.</li>
+<li><strong>Delivery partners</strong>, with at least one who recurs across your answers.</li>
+<li><strong>One named flagship</strong>: give the thing you will build a single proper name and use it consistently. One named programme reads as a plan. Five reads as a brochure.</li>
+<li><strong>Academic modules and academics</strong>, from the current handbook, with the specific recent work that matters to you.</li>
+<li><strong>External selection</strong>: fellowships, microgrants, committee seats and awards, with the body that chose you.</li>
+</ul>
+<h3>Density, and when not to name</h3>
+<p>Aim for roughly four to eight proper nouns in a 250-word answer, each attached to something you did or will do. Do not name beneficiaries, patients, children or anyone whose identity could be exposed. Use their role instead. Do not name an academic whose work you have not read, because a name you cannot discuss is a liability.</p>
+</section>
+
+</article>
+</div>
+
+<div class="series-nav"><span></span><a href="development-impact.html" class="next-item"><span class="dir">Next &rarr;</span><span class="lbl">Development Impact</span></a></div>
+
+<section id="mentorship-cta">
+    <span class="kicker">Two Ways To Keep Going With TAL</span>
+    <h2>Everything in this guide is easy to see in someone else's application and hard to see in your own.</h2>
+    <p>That is what a second pair of eyes is for. Whether you want a mentor who has been through an application like this one reading your drafts, or just a place to ask questions as you go, TAL has a path that costs nothing to start.</p>
+    <div class="cta-paths">
+        <div class="cta-path">
+            <span class="cta-path-kicker">1:1 Support</span>
+            <h3>Work with a mentor</h3>
+            <p>A mentor who has been through this exact application, knows what the sub-questions are really asking, and will tell you honestly where your draft is decoration.</p>
+            <ul class="cta-path-list">
+                <li>Scholarship Essay Review, two rounds of feedback</li>
+                <li>Lab Focus sessions for strategy, drafts and mock interviews</li>
+            </ul>
+            <a href="../../apply.html" class="btn btn-blue">Apply for Mentorship</a>
+        </div>
+        <div class="cta-path">
+            <span class="cta-path-kicker">Free, Always</span>
+            <h3>Join the community</h3>
+            <p>Thousands of applicants figuring this out together. No cost, no commitment, and a place to ask the questions that come up between drafts.</p>
+            <ul class="cta-path-list">
+                <li>Webinars and Lab Clinic Hours</li>
+                <li>Scholarship and programme opportunities, shared as they come up</li>
+            </ul>
+            <a href="../../community.html" class="btn btn-outline-white">Join the Free Community</a>
+        </div>
+    </div>
+    <p class="cta-note">Free to apply, no commitment &nbsp;&middot;&nbsp; Prefer email? <a href="mailto:info@theapplicationlab.com?subject=CSC Essay Support">info@theapplicationlab.com</a></p>
+</section>
+
+
+<footer>
+    <div class="footer-inner">
+        <img src="../../logo.png" alt="The Application Lab" width="1920" height="1080"/>
+        <div class="footer-links">
+            <a href="../../index.html">Website</a>
+            <a href="../../resources.html">Free Resources</a>
+            <a href="../../community.html">Free Community</a>
+            <a href="../../mentorship.html">Mentorship</a>
+            <a href="https://www.linkedin.com/company/theapplicationlab" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/theapplicationlab" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.youtube.com/@TheApplicationLab" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <p class="footer-bottom">The Application Lab &nbsp;&middot;&nbsp; Edspire Labs Ltd &nbsp;&middot;&nbsp; Company No. 16751243 &nbsp;&middot;&nbsp; Cambridge, UK</p>
+    </div>
+</footer>
+
+<script>
+const burger = document.getElementById('mob-burger');
+const mobMenu = document.getElementById('mob-menu');
+if (burger && mobMenu) {
+    burger.addEventListener('click', function() {
+        const isOpen = mobMenu.style.display === 'flex';
+        mobMenu.style.display = isOpen ? 'none' : 'flex';
+    });
+    mobMenu.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() { mobMenu.style.display = 'none'; });
+    });
+}
+const navLinks = document.querySelectorAll('.guide-sidebar a[data-nav]');
+const sections = Array.from(navLinks).map(a => document.querySelector(a.getAttribute('href')));
+if (navLinks.length) {
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const idx = sections.indexOf(entry.target);
+            if (idx === -1) return;
+            if (entry.isIntersecting) {
+                navLinks.forEach(a => a.classList.remove('active'));
+                navLinks[idx].classList.add('active');
+            }
+        });
+    }, { rootMargin: '-15% 0px -75% 0px', threshold: 0 });
+    sections.forEach(s => { if (s) sectionObserver.observe(s); });
+}
+</script>
+
+</body>
+</html>
