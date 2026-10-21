@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A for Applicants | The Application Lab</title>
+    <meta name="description" content="Forty-eight answers taken from the nine Gates Cambridge pages, with the source named for each.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.theapplicationlab.com/resources/gates-cambridge/qa.html">
+    <meta property="og:title" content="Q&A for Applicants | The Application Lab">
+    <meta property="og:description" content="Forty-eight answers taken from the nine Gates Cambridge pages, with the source named for each.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.theapplicationlab.com/resources/gates-cambridge/qa.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { overflow-x: hidden; max-width: 100%; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; color: #0f1e35; background: #f7f9fc; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+        :root {
+            --navy: #0f1e35; --blue: #2e8bc0; --blue-050: #eaf4fb; --bg: #f7f9fc;
+            --muted: #6b7c93; --border: #dde4ee; --body-text: #3d4f63; --gold: #c9a84c; --amber-bg: #fbf3e6;
+        }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 800; color: var(--navy); line-height: 1.25; }
+        section[id] { scroll-margin-top: 24px; }
+        body { padding-top: 72px; }
+        @media (min-width: 769px) { #desktop-nav { display: flex; } #mob-burger { display: none; } }
+        @media (max-width: 768px) {
+            #desktop-nav { display: none !important; } #mob-burger { display: flex !important; }
+            #hdr { height: 64px !important; } #hdr img { height: 42px !important; }
+            #mob-menu { top: 64px !important; } body { padding-top: 64px; }
+        }
+
+        .breadcrumb { max-width: 1180px; margin: 0 auto; padding: 22px 24px 0; font-size: 0.78rem; color: var(--muted); }
+        .breadcrumb a { color: var(--blue); text-decoration: none; font-weight: 600; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        #hero-guide {
+            position: relative; min-height: 46vh; display: flex; align-items: flex-end;
+            background-image: url('../../oxford-hero.jpg'); background-size: cover; background-position: center center;
+            margin-top: 18px;
+        }
+        .hero-guide-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,15,24,0.35) 0%, rgba(8,15,24,0.55) 55%, rgba(8,15,24,0.94) 100%); }
+        .hero-guide-inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 44px 24px 40px; text-align: center; }
+        .hero-guide-inner .kicker { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 18px; }
+        .hero-guide-inner h1 { color: #fff; font-size: clamp(1.8rem, 4vw, 2.7rem); letter-spacing: -1px; line-height: 1.18; margin-bottom: 18px; text-shadow: 0 2px 24px rgba(0,0,0,0.4); }
+        .hero-guide-inner .byline { font-family: 'Lora', serif; font-style: italic; font-size: 1.02rem; color: rgba(255,255,255,0.88); line-height: 1.75; max-width: 580px; margin: 0 auto; }
+
+        #facts { background: var(--navy); padding: 0 24px 40px; }
+        .facts-strip { max-width: 800px; margin: 0 auto; display: flex; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 26px; }
+        .facts-strip > div { flex: 1; text-align: center; padding: 0 12px; border-right: 1px solid rgba(255,255,255,0.12); }
+        .facts-strip > div:last-child { border-right: none; }
+        .facts-strip strong { display: block; font-size: 1.3rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; line-height: 1; }
+        .facts-strip span { display: block; font-size: 0.58rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.55); font-weight: 600; margin-top: 8px; line-height: 1.5; }
+
+        .pdf-strip { background: var(--blue-050); border-bottom: 1px solid var(--border); text-align: center; padding: 16px 24px; }
+        .pdf-strip a { font-size: 0.82rem; font-weight: 700; color: var(--blue); text-decoration: none; }
+        .pdf-strip a:hover { text-decoration: underline; }
+
+        .guide-layout { max-width: 1400px; margin: 0 auto; padding: 48px 24px 0; display: flex; gap: 60px; align-items: flex-start; }
+        .guide-sidebar { display: none; }
+        .toc-wrap {
+            background: var(--navy); border-radius: 4px; max-width: 760px; margin: 0 auto 8px; padding: 28px 32px;
+            background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px);
+        }
+        .toc-wrap h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 16px; }
+        .toc-list { list-style: none; columns: 2; column-gap: 32px; }
+        .toc-list li { break-inside: avoid; margin-bottom: 10px; }
+        .toc-list a { font-size: 0.86rem; color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 600; }
+        .toc-list a:hover { color: #fff; }
+
+        article.guide-main { max-width: 780px; margin: 0 auto; padding: 8px 24px 0; flex: 1; min-width: 0; counter-reset: section 0; }
+        .guide-section { padding: 56px 0; border-bottom: 1px solid var(--border); counter-increment: section; }
+        .guide-section:last-of-type { border-bottom: none; }
+        .section-label { display: flex; align-items: center; gap: 12px; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 18px; }
+        .section-label::before {
+            content: counter(section, decimal-leading-zero);
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+            width: 34px; height: 34px; border-radius: 50%; background: var(--blue-050); color: var(--blue);
+            font-family: 'Lora', serif; font-style: italic; font-weight: 600; font-size: 0.9rem; letter-spacing: 0;
+        }
+        .guide-section h2 { font-size: clamp(1.3rem, 2.5vw, 1.65rem); letter-spacing: -0.5px; margin-bottom: 20px; }
+        .guide-section h3 { font-size: 1.08rem; margin: 32px 0 14px; scroll-margin-top: 90px; }
+        .guide-section h3:first-of-type { margin-top: 0; }
+        .guide-section h4 { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 22px 0 8px; }
+        .guide-section p { font-size: 0.96rem; color: var(--body-text); margin-bottom: 16px; }
+        .guide-section p:last-child { margin-bottom: 0; }
+        .guide-section ul, .guide-section ol { margin: 0 0 16px 22px; color: var(--body-text); font-size: 0.96rem; }
+        .guide-section li { margin-bottom: 8px; }
+        .guide-section li::marker { color: var(--blue); }
+        .guide-section strong { color: var(--navy); }
+        .guide-section.alt-bg { background: #fff; border-radius: 6px; padding: 48px 36px; margin: 8px 0; border-bottom: none; box-shadow: 0 1px 0 var(--border); }
+        .guide-section blockquote { border-left: 3px solid var(--blue); padding: 2px 0 2px 18px; margin: 0 0 16px; color: var(--navy); font-style: italic; }
+        .guide-section blockquote p { margin-bottom: 0; }
+        .guide-section hr { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+
+        .callout { border-radius: 4px; padding: 18px 22px; margin: 0 0 20px; font-size: 0.92rem; line-height: 1.8; }
+        .callout p { margin: 0 0 12px; font-size: 0.9rem; }
+        .callout p:last-child { margin-bottom: 0; }
+        .callout strong { display: block; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); margin-bottom: 4px; }
+        .callout-rule { background: var(--blue-050); border: 1px solid rgba(46,139,192,0.25); color: var(--navy); }
+        .callout-trap { background: var(--amber-bg); border: 1px solid rgba(184,134,58,0.3); color: #6b4f1f; font-size: 0.84rem; }
+        .callout-trap strong { color: #8a6a2a; }
+        .meta-wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 0; }
+
+        .table-scroll { overflow-x: auto; margin: 18px 0; -webkit-overflow-scrolling: touch; }
+        table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 0.85rem; }
+        table th, table td { padding: 11px 13px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.6; }
+        table thead th { background: var(--navy); color: #fff; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+        table thead th:first-child { border-top-left-radius: 4px; }
+        table thead th:last-child { border-top-right-radius: 4px; }
+        table tbody th { background: var(--bg); color: var(--navy); font-weight: 700; white-space: nowrap; }
+        table tbody td { color: var(--body-text); }
+        table tbody tr:last-child td, table tbody tr:last-child th { border-bottom: none; }
+
+        ul.checklist { list-style: none; margin: 0 0 8px; }
+        ul.checklist li.chk { display: flex; gap: 12px; align-items: flex-start; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--body-text); }
+        ul.checklist li.chk:last-child { border-bottom: none; }
+        ul.checklist li.chk::before { content: ''; flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; border: 1.5px solid var(--blue); border-radius: 3px; }
+
+        .series-nav { max-width: 720px; margin: 0 auto; padding: 8px 24px 56px; display: flex; justify-content: space-between; gap: 16px; }
+        .series-nav a { flex: 1; text-decoration: none; border: 1px solid var(--border); border-radius: 4px; padding: 16px 18px; background: #fff; transition: box-shadow 0.2s ease, transform 0.2s ease; }
+        .series-nav a:hover { box-shadow: 0 10px 28px rgba(15,30,53,0.1); transform: translateY(-2px); }
+        .series-nav .dir { display: block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+        .series-nav .lbl { display: block; font-size: 0.88rem; font-weight: 700; color: var(--navy); }
+        .series-nav .next-item { text-align: right; }
+
+        #mentorship-cta { background: var(--navy); background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px); padding: 72px 24px; text-align: center; }
+        #mentorship-cta .kicker { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #4a9fd4; margin-bottom: 16px; }
+        #mentorship-cta h2 { color: #fff; font-size: clamp(1.4rem, 3vw, 1.9rem); max-width: 640px; margin: 0 auto 18px; }
+        #mentorship-cta p { color: rgba(255,255,255,0.78); font-size: 0.96rem; line-height: 1.85; max-width: 600px; margin: 0 auto 32px; }
+        .cta-paths { display: flex; gap: 20px; max-width: 800px; margin: 0 auto 8px; text-align: left; }
+        .cta-path { flex: 1; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.14); border-top: 3px solid var(--blue); border-radius: 4px; padding: 28px 26px; display: flex; flex-direction: column; }
+        .cta-path:nth-child(2) { border-top-color: var(--gold); }
+        .cta-path-kicker { display: block; font-size: 0.64rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 12px; }
+        .cta-path:nth-child(2) .cta-path-kicker { color: #e4cb7a; }
+        .cta-path h3 { color: #fff; font-size: 1.15rem; margin-bottom: 10px; }
+        .cta-path p { color: rgba(255,255,255,0.68); font-size: 0.86rem; line-height: 1.75; margin: 0 0 16px; max-width: none; }
+        .cta-path-list { list-style: none; margin: 0 0 22px; flex: 1; }
+        .cta-path-list li { color: rgba(255,255,255,0.6); font-size: 0.82rem; line-height: 1.6; padding-left: 18px; position: relative; margin-bottom: 8px; }
+        .cta-path-list li::before { content: '→'; position: absolute; left: 0; color: var(--blue); }
+        .cta-path:nth-child(2) .cta-path-list li::before { color: var(--gold); }
+        .btn { display: inline-block; padding: 14px 26px; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: all 0.25s ease; text-align: center; }
+        .btn-blue { background: var(--blue); color: #fff; border: none; }
+        .btn-blue:hover { background: #1a6fa0; box-shadow: 0 8px 24px rgba(46,139,192,0.4); transform: translateY(-2px); }
+        .btn-outline-white { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.4); }
+        .btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+        .cta-note { margin-top: 30px; font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+        .cta-note a { color: #7ac8e8; text-decoration: none; font-weight: 600; }
+
+        footer { background: #080f18; padding: 48px 7% 28px; }
+        footer .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; }
+        footer img { height: 60px; width: auto; filter: brightness(0) invert(1); }
+        .footer-links { display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; }
+        .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.55); text-decoration: none; }
+        .footer-links a:hover { color: #fff; }
+        .footer-bottom { font-size: 0.68rem; color: rgba(255,255,255,0.25); margin-top: 6px; }
+
+        @media (min-width: 1024px) {
+            .toc-wrap { display: none; }
+            .guide-sidebar {
+                display: block; position: sticky; top: 88px; width: 272px; flex-shrink: 0;
+                max-height: calc(100vh - 112px); overflow-y: auto;
+                background: var(--navy); border-radius: 6px; padding: 30px 26px;
+                background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px);
+            }
+            .guide-sidebar h2 { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 20px; }
+            .guide-sidebar ul { list-style: none; }
+            .guide-sidebar li { margin-bottom: 2px; }
+            .guide-sidebar a {
+                display: block; font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.65); text-decoration: none;
+                padding: 10px 0 10px 16px; border-left: 2px solid rgba(255,255,255,0.14); transition: all 0.15s ease; line-height: 1.5;
+            }
+            .guide-sidebar a:hover { color: #fff; border-left-color: rgba(255,255,255,0.4); }
+            .guide-sidebar a.active { color: #7ac8e8; border-left-color: var(--blue); font-weight: 700; }
+        }
+        @media (max-width: 640px) {
+            .toc-list { columns: 1; }
+            .hero-guide-inner { padding: 32px 20px 32px; }
+            .facts-strip { flex-wrap: wrap; }
+            .facts-strip > div { flex: 1 1 45%; padding-bottom: 14px; }
+            .guide-section { padding: 40px 0; }
+            .guide-section.alt-bg { padding: 32px 20px; }
+            table { min-width: 460px; }
+            .cta-paths { flex-direction: column; }
+            .series-nav { flex-direction: column; }
+            .series-nav .next-item { text-align: left; }
+        }</style>
+</head>
+
+<style>
+@media print {
+    #hdr, #mob-menu, .breadcrumb, .pdf-strip, .toc-wrap, .guide-sidebar,
+    .series-nav, #mentorship-cta, footer { display: none !important; }
+    #hero-guide { min-height: 0; background: none !important; margin-top: 0; }
+    .hero-guide-overlay { display: none; }
+    .hero-guide-inner { text-align: left; padding: 0 0 20px; color: #0f1e35; }
+    .hero-guide-inner .kicker { color: #2e8bc0; }
+    .hero-guide-inner h1 { color: #0f1e35; text-shadow: none; }
+    .hero-guide-inner .byline { color: #3d4f63; }
+    #facts { background: none; padding: 0 0 20px; }
+    .facts-strip { border-top: 1px solid #dde4ee; }
+    .facts-strip strong, .facts-strip span { color: #0f1e35; }
+    .guide-layout { display: block; padding: 0; }
+    article.guide-main { max-width: 100%; padding: 0; }
+    .guide-section { padding: 18px 0; }
+    .guide-section.alt-bg { box-shadow: none; padding: 18px 0; }
+    body { padding-top: 0; }
+}
+</style>
+<style>
+.guide-section h3 .qn { display: inline-block; background: var(--blue); color: #fff; font-size: 0.68rem; font-weight: 700; border-radius: 3px; padding: 2px 8px; margin-right: 10px; vertical-align: 2px; }
+.guide-section p.warn { background: var(--amber-bg); border-left: 3px solid var(--gold); padding: 14px 18px; border-radius: 4px; }
+strong.check { background: var(--amber-bg); color: #7a5200; font-weight: 700; font-size: 0.72rem; padding: 2px 8px; border-radius: 3px; letter-spacing: 0.02em; }
+</style>
+<body>
+
+<header id="hdr" style="position:fixed; top:0; left:0; right:0; width:100%; height:72px; z-index:9999; display:flex; align-items:center; justify-content:space-between; padding:0 5%; background:rgba(15,30,53,0.97); box-shadow:0 2px 20px rgba(0,0,0,0.3);">
+  <a href="../../index.html" style="display:flex; align-items:center; text-decoration:none; flex-shrink:0; margin-right:20px;">
+    <img src="../../logo.png" alt="The Application Lab" width="1920" height="1080" style="height:56px; width:auto; display:block; object-fit:contain; filter:brightness(0) invert(1);"/>
+  </a>
+  <nav id="desktop-nav" style="align-items:center; gap:26px; margin-left:auto;">
+    <a href="../../index.html#about" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">About</a>
+    <a href="../../index.html#services" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Mentorship</a>
+    <a href="../../index.html#how" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">How It Works</a>
+    <a href="../../index.html#founders" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Founders</a>
+    <a href="../../community.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Community</a>
+    <a href="../../resources.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Resources</a>
+    <a href="../../immersive.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">The Immersive Lab</a>
+    <a href="../../apply.html" style="font-size:0.7rem; font-weight:700; color:#fff; letter-spacing:1px; text-transform:uppercase; text-decoration:none; background:#2e8bc0; padding:10px 20px; border-radius:2px;">Apply Now</a>
+  </nav>
+  <button id="mob-burger" aria-label="Open menu" style="flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; margin-left:16px;">
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+  </button>
+</header>
+
+<div id="mob-menu" style="display:none; position:fixed; top:72px; left:0; right:0; z-index:9998; background:rgba(15,30,53,0.98); flex-direction:column; padding:16px 5%; border-top:1px solid rgba(255,255,255,0.08);">
+  <a href="../../index.html#about" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">About</a>
+  <a href="../../index.html#services" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Mentorship</a>
+  <a href="../../index.html#how" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">How It Works</a>
+  <a href="../../index.html#founders" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Founders</a>
+  <a href="../../community.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Community</a>
+  <a href="../../resources.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Resources</a>
+  <a href="../../immersive.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">The Immersive Lab</a>
+  <a href="../../apply.html" style="display:block; margin-top:16px; padding:13px 20px; font-size:0.82rem; font-weight:700; color:#fff; text-transform:uppercase; letter-spacing:1px; text-decoration:none; background:#2e8bc0; text-align:center; border-radius:2px;">Apply Now</a>
+</div>
+
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../resources.html">Resources</a> / <a href="../../resources.html#gates-cambridge">Gates Cambridge Scholarship</a> / Q&A for Applicants
+</nav>
+
+<section id="hero-guide">
+    <div class="hero-guide-overlay" aria-hidden="true"></div>
+    <div class="hero-guide-inner">
+        <span class="kicker">Gates Cambridge Guide &middot; 6 of 6</span>
+        <h1>Q&amp;A for Applicants</h1>
+        <p class="byline">Forty-eight answers taken from the nine Gates Cambridge pages, with the source named for each.</p>
+    </div>
+</section>
+
+<div id="facts">
+    <div class="facts-strip">
+        <div><strong>48</strong><span>questions answered</span></div><div><strong>6</strong><span>topic areas</span></div><div><strong>9</strong><span>Gates pages used</span></div><div><strong>8</strong><span>mistakes to avoid</span></div>
+    </div>
+</div>
+
+<div class="pdf-strip">
+    <a href="qa.pdf" target="_blank" rel="noopener">Download this guide as a PDF &darr;</a>
+</div>
+
+<div class="meta-wrap"><p style="font-size:1.05rem; color:var(--body-text); line-height:1.8;"><strong>48 questions on eligibility, rounds, the form, references, selection, interviews and funding, a final checklist and eight mistakes to avoid.</strong> Every answer comes from the nine Gates Cambridge pages (Programme and Apply sections), read on 21 October 2026. The Source column names the page. Where the site is silent, the answer says so and points you to info@gatescambridge.org. Check dates and amounts on the live pages before you act.</p></div>
+
+<nav class="toc-wrap" aria-label="Table of contents">
+    <h2>In This Guide</h2>
+    <ul class="toc-list">
+        <li><a href="#g6-1-eligibility">01. Eligibility</a></li><li><a href="#g6-2-rounds-and-dates">02. Rounds and dates</a></li><li><a href="#g6-3-the-application-form">03. The application form</a></li><li><a href="#g6-4-references">04. References</a></li><li><a href="#g6-5-selection-and-interviews">05. Selection and interviews</a></li><li><a href="#g6-6-funding-and-life-as-a-scholar">06. Funding and life as a Scholar</a></li><li><a href="#g6-questions-the-site-does-not-answer">07. Questions the site does not answer</a></li><li><a href="#g6-7-final-checklist">08. Final checklist</a></li><li><a href="#g6-8-eight-mistakes-to-avoid">09. Eight mistakes to avoid</a></li>
+    </ul>
+</nav>
+
+<div class="guide-layout">
+<nav class="guide-sidebar" aria-label="Section navigation">
+    <h2>In This Guide</h2>
+    <ul>
+        <li><a href="#g6-1-eligibility" data-nav>01. Eligibility</a></li><li><a href="#g6-2-rounds-and-dates" data-nav>02. Rounds and dates</a></li><li><a href="#g6-3-the-application-form" data-nav>03. The application form</a></li><li><a href="#g6-4-references" data-nav>04. References</a></li><li><a href="#g6-5-selection-and-interviews" data-nav>05. Selection and interviews</a></li><li><a href="#g6-6-funding-and-life-as-a-scholar" data-nav>06. Funding and life as a Scholar</a></li><li><a href="#g6-questions-the-site-does-not-answer" data-nav>07. Questions the site does not answer</a></li><li><a href="#g6-7-final-checklist" data-nav>08. Final checklist</a></li><li><a href="#g6-8-eight-mistakes-to-avoid" data-nav>09. Eight mistakes to avoid</a></li>
+    </ul>
+</nav>
+<article class="guide-main">
+
+
+<section class="guide-section" id="g6-1-eligibility"><span class="section-label">Section 1</span><h2>Eligibility</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Question</th>
+<th>Answer</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="#">1</td>
+<td data-label="Question">Who can apply?</td>
+<td data-label="Answer">A citizen of any country outside the UK, applying to a PhD (full-time or part-time), an MLitt (full-time) or a one-year full-time postgraduate course, with some exceptions</td>
+<td data-label="Source">Eligibility</td>
+</tr>
+<tr>
+<td data-label="#">2</td>
+<td data-label="Question">I hold UK and another citizenship. Can I apply?</td>
+<td data-label="Answer">Yes. Dual citizens of the UK and another country are eligible</td>
+<td data-label="Source">FAQ</td>
+</tr>
+<tr>
+<td data-label="#">3</td>
+<td data-label="Question">Which courses are eligible?</td>
+<td data-label="Answer">MPhil, MLitt, MRes, LLM and PhD. Master's level degrees must be full-time. PhDs can be full-time or part-time</td>
+<td data-label="Source">FAQ</td>
+</tr>
+<tr>
+<td data-label="#">4</td>
+<td data-label="Question">Which courses are not eligible?</td>
+<td data-label="Answer">Undergraduate degrees, MASt, MSt, PGCert, PGDip, MBA, EMBA, MFin, Executive Master of Accounting, Business Doctorate, Doctor of Education, PGCE, MBBChir Clinical Studies, MD, the Graduate Course in Medicine (A101) and the Master of Conservation of Easel Painting, plus any part-time degree other than the PhD</td>
+<td data-label="Source">Eligibility, FAQ</td>
+</tr>
+<tr>
+<td data-label="#">5</td>
+<td data-label="Question">Can I apply for a part-time course?</td>
+<td data-label="Answer">Only a part-time PhD. Gates is still piloting funding for part-time doctoral degrees. Master's applications must be full-time</td>
+<td data-label="Source">Eligibility, FAQ</td>
+</tr>
+<tr>
+<td data-label="#">6</td>
+<td data-label="Question">I already have a master's. Can I apply for another?</td>
+<td data-label="Answer">Yes. Give a strong justification for a second master's and check with the department that the course suits you and that you meet its criteria</td>
+<td data-label="Source">FAQ</td>
+</tr>
+<tr>
+<td data-label="#">7</td>
+<td data-label="Question">I am studying at Cambridge now. Can I apply?</td>
+<td data-label="Answer">Yes, for a new course, such as an MPhil student applying for a PhD. Current students are considered in the second, international round</td>
+<td data-label="Source">Eligibility</td>
+</tr>
+<tr>
+<td data-label="#">8</td>
+<td data-label="Question">I am part-way through a PhD. Can Gates fund the rest?</td>
+<td data-label="Answer">No. You cannot apply to fund the remainder of a course you have already started</td>
+<td data-label="Source">Eligibility</td>
+</tr>
+<tr>
+<td data-label="#">9</td>
+<td data-label="Question">Is there a minimum GPA?</td>
+<td data-label="Answer">No. Academic excellence is a criterion, and it is considered holistically across the application and references</td>
+<td data-label="Source">FAQ</td>
+</tr>
+<tr>
+<td data-label="#">10</td>
+<td data-label="Question">Do I need an English language test for Gates?</td>
+<td data-label="Answer">Gates has no English test requirement. The University of Cambridge does, so check the Postgraduate Admissions Office guidance</td>
+<td data-label="Source">FAQ</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="guide-section" id="g6-2-rounds-and-dates"><span class="section-label">Section 2</span><h2>Rounds and dates</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Question</th>
+<th>Answer</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="#">11</td>
+<td data-label="Question">How many rounds are there?</td>
+<td data-label="Answer">Two: an earlier round for US citizens resident in the USA, and a later round for all other eligible applicants</td>
+<td data-label="Source">Timeline</td>
+</tr>
+<tr>
+<td data-label="#">12</td>
+<td data-label="Question">I am a US citizen living abroad. Which round?</td>
+<td data-label="Answer">The later round. US citizens studying or working overseas at the time of application apply there</td>
+<td data-label="Source">Timeline</td>
+</tr>
+<tr>
+<td data-label="#">13</td>
+<td data-label="Question">I am a US citizen in the US and missed October 2026. Can I use the later round?</td>
+<td data-label="Answer">No. US citizens resident in the US must apply in October and are not eligible for the later round, so you would wait for the next cycle</td>
+<td data-label="Source">Timeline</td>
+</tr>
+<tr>
+<td data-label="#">14</td>
+<td data-label="Question">What is the deadline in the main round?</td>
+<td data-label="Answer">Set by your course in the Course Directory: either Tuesday 8 December 2026 or Wednesday 6 January 2027, with every document submitted by 11:59pm UK time</td>
+<td data-label="Source">Timeline</td>
+</tr>
+<tr>
+<td data-label="#">15</td>
+<td data-label="Question">When will I hear whether I am invited to interview?</td>
+<td data-label="Answer">US round: by Monday 14 December 2026. Main round: by Monday 8 March 2027. Admission is reviewed separately, so you may get an admission decision first</td>
+<td data-label="Source">Timeline, FAQ</td>
+</tr>
+<tr>
+<td data-label="#">16</td>
+<td data-label="Question">When are the panels and offers?</td>
+<td data-label="Answer">US round: panels 22 and 23 January 2027, offers by early February. Main round: panels 22 and 23 March 2027, offers by early April. You have 72 hours to accept</td>
+<td data-label="Source">Timeline</td>
+</tr>
+<tr>
+<td data-label="#">17</td>
+<td data-label="Question">If I am rejected, can I apply again?</td>
+<td data-label="Answer">Yes. A previous unsuccessful application does not affect how you are considered in future, by Gates or other funders</td>
+<td data-label="Source">FAQ</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="guide-section" id="g6-3-the-application-form"><span class="section-label">Section 3</span><h2>The application form</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Question</th>
+<th>Answer</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="#">18</td>
+<td data-label="Question">How do I apply?</td>
+<td data-label="Answer">One combined application through the University's Graduate Application Portal, covering admission and funding</td>
+<td data-label="Source">How to apply</td>
+</tr>
+<tr>
+<td data-label="#">19</td>
+<td data-label="Question">What must I complete to be considered?</td>
+<td data-label="Answer">The admission section (course and College place) and the Gates Cambridge part of the funding section. Gates can see the full application</td>
+<td data-label="Source">How to apply</td>
+</tr>
+<tr>
+<td data-label="#">20</td>
+<td data-label="Question">What are the four Gates questions?</td>
+<td data-label="Answer">Academic excellence (about 200 words), why this course and how it facilitates your plans (about 200), commitment to improving the lives of others (about 300), and capacity for leadership (about 300)</td>
+<td data-label="Source">How to apply</td>
+</tr>
+<tr>
+<td data-label="#">21</td>
+<td data-label="Question">Are the limits in words or characters?</td>
+<td data-label="Answer">Both are stated: about 200 words up to 1,400 characters, and about 300 words up to 2,100 characters. Treat the character count as the hard cap</td>
+<td data-label="Source">How to apply</td>
+</tr>
+<tr>
+<td data-label="#">22</td>
+<td data-label="Question">What are the four questions for?</td>
+<td data-label="Answer">They help Gates distinguish between candidates already nominated by departments, and are the only part of the form where you are specifically asked about fit with Gates</td>
+<td data-label="Source">How to apply</td>
+</tr>
+<tr>
+<td data-label="#">23</td>
+<td data-label="Question">Is there a right answer to them?</td>
+<td data-label="Answer">No. Use specific examples from your background, achievements, experiences and future plans, and reflect widely on your values</td>
+<td data-label="Source">How to apply</td>
+</tr>
+<tr>
+<td data-label="#">24</td>
+<td data-label="Question">Do I need a research proposal?</td>
+<td data-label="Answer">PhD applicants only. Most upload it for admission. If the course application does not ask for one, you need one for Gates</td>
+<td data-label="Source">How to apply, FAQ</td>
+</tr>
+<tr>
+<td data-label="#">25</td>
+<td data-label="Question">Do I need a confirmed supervisor before applying?</td>
+<td data-label="Answer">Gates does not require it, but advises you to check the department can support your interests. The Criteria page expects PhD and most research MPhil applicants to contact a potential supervisor</td>
+<td data-label="Source">FAQ, Criteria</td>
+</tr>
+<tr>
+<td data-label="#">26</td>
+<td data-label="Question">How many applications can I make?</td>
+<td data-label="Answer">As many as you make eligible course applications. In 2025/6 the maximum was 7, and a withdrawn application still counted. Each needs its own Gates funding section. Check the current cap</td>
+<td data-label="Source">FAQ</td>
+</tr>
+<tr>
+<td data-label="#">27</td>
+<td data-label="Question">Can I edit after submitting?</td>
+<td data-label="Answer">No</td>
+<td data-label="Source">FAQ</td>
+</tr>
+<tr>
+<td data-label="#">28</td>
+<td data-label="Question">Does Gates pay the application fee?</td>
+<td data-label="Answer">No. The Postgraduate Admissions Office administers fee waivers</td>
+<td data-label="Source">FAQ</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="guide-section" id="g6-4-references"><span class="section-label">Section 4</span><h2>References</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Question</th>
+<th>Answer</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="#">29</td>
+<td data-label="Question">How many references do I need?</td>
+<td data-label="Answer">Two academic references for admission, plus one Gates Cambridge reference on how you meet the scholarship criteria</td>
+<td data-label="Source">How to apply</td>
+</tr>
+<tr>
+<td data-label="#">30</td>
+<td data-label="Question">Who should write the Gates reference?</td>
+<td data-label="Answer">Someone of appropriate standing who can speak with authority and who understands the criteria, the competition and Cambridge's standards. Examples: an academic advisor, an employer, a senior member of an organisation where you volunteered</td>
+<td data-label="Source">How to apply</td>
+</tr>
+<tr>
+<td data-label="#">31</td>
+<td data-label="Question">Can one of my academic referees also write it?</td>
+<td data-label="Answer">Yes, if they know your personal qualities and write specifically about the Gates criteria rather than a third academic reference</td>
+<td data-label="Source">How to apply, FAQ</td>
+</tr>
+<tr>
+<td data-label="#">32</td>
+<td data-label="Question">What does the form ask the referee?</td>
+<td data-label="Answer">Your suitability on four criteria, how highly they rank you, the group they rank you against, the group's size, and a rating of exceptional, strong, not strong or weak. Up to 4,000 characters, or an uploaded letter</td>
+<td data-label="Source">How to apply</td>
+</tr>
+<tr>
+<td data-label="#">33</td>
+<td data-label="Question">Who should not write it?</td>
+<td data-label="Answer">A friend, a family member or anyone unable to comment on your suitability. All referees must submit by the deadline, and you must brief the Gates referee on the criteria</td>
+<td data-label="Source">How to apply</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="guide-section" id="g6-5-selection-and-interviews"><span class="section-label">Section 5</span><h2>Selection and interviews</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Question</th>
+<th>Answer</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="#">34</td>
+<td data-label="Question">How does selection work?</td>
+<td data-label="Answer">Two stages. Departments nominate a small number of eligible applicants who meet all four criteria to a very high level, then all nominees are interviewed and Scholars are selected after interview</td>
+<td data-label="Source">How we select</td>
+</tr>
+<tr>
+<td data-label="#">35</td>
+<td data-label="Question">How many applicants are nominated?</td>
+<td data-label="Answer">The site says a relatively small number, and gives no figure. Ask info@gatescambridge.org if you need more</td>
+<td data-label="Source">How we select</td>
+</tr>
+<tr>
+<td data-label="#">36</td>
+<td data-label="Question">What is the interview like?</td>
+<td data-label="Answer">25 to 30 minutes, with one of four subject panels: Arts, Biological Sciences, Physical Sciences or Social Sciences. Panels include experienced academics and practitioners and may include alumni and a Trust representative</td>
+<td data-label="Source">How we select</td>
+</tr>
+<tr>
+<td data-label="#">37</td>
+<td data-label="Question">What are the four sections?</td>
+<td data-label="Answer">Welcome and introduction; Gates Cambridge (what you know, motivation, why you could be a Scholar, the responsibilities of a full-cost scholarship); academic and career plans, possibly with probing ethical questions; and final thoughts and optional questions</td>
+<td data-label="Source">How we select</td>
+</tr>
+<tr>
+<td data-label="#">38</td>
+<td data-label="Question">Can I interview online?</td>
+<td data-label="Answer">Yes. Panels are experienced with online interviews and aim to give online candidates the same opportunity, though in-person is encouraged where you can attend</td>
+<td data-label="Source">FAQ, How we select</td>
+</tr>
+<tr>
+<td data-label="#">39</td>
+<td data-label="Question">Does Gates pay interview expenses?</td>
+<td data-label="Answer">One night of accommodation and parking, if required</td>
+<td data-label="Source">FAQ</td>
+</tr>
+<tr>
+<td data-label="#">40</td>
+<td data-label="Question">What if I am nominated for more than one course?</td>
+<td data-label="Answer">You are interviewed once and will be asked which course to progress with</td>
+<td data-label="Source">FAQ</td>
+</tr>
+<tr>
+<td data-label="#">41</td>
+<td data-label="Question">Will I get feedback?</td>
+<td data-label="Answer">No. Gates gives no feedback to unsuccessful applicants, including those interviewed, and cannot provide recognition letters</td>
+<td data-label="Source">FAQ, How we select</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="guide-section" id="g6-6-funding-and-life-as-a-scholar"><span class="section-label">Section 6</span><h2>Funding and life as a Scholar</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Question</th>
+<th>Answer</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="#">42</td>
+<td data-label="Question">What does it cover?</td>
+<td data-label="Answer">The University Composition Fee, a maintenance allowance, one economy single airfare at the start and end, and inbound visa costs plus the Immigration Health Surcharge</td>
+<td data-label="Source">The scholarship</td>
+</tr>
+<tr>
+<td data-label="#">43</td>
+<td data-label="Question">How much is the maintenance allowance?</td>
+<td data-label="Answer">£23,152 for 12 months at the 2026-27 rate for a single student, pro rata for shorter courses. For PhD Scholars, up to 4 years</td>
+<td data-label="Source">The scholarship</td>
+</tr>
+<tr>
+<td data-label="#">44</td>
+<td data-label="Question">Can I hold another scholarship?</td>
+<td data-label="Answer">Yes, but not with duplicate funds such as two maintenance payments. The Trust will agree shared funding. If you receive a salary or another substantial scholarship, the Trust may reduce or withhold maintenance, so tell it promptly</td>
+<td data-label="Source">FAQ, The scholarship</td>
+</tr>
+<tr>
+<td data-label="#">45</td>
+<td data-label="Question">Is there help for children or a partner?</td>
+<td data-label="Answer">Up to £12,793 a year for one child and up to £18,244 for two or more, on application. No funding is provided for a partner</td>
+<td data-label="Source">The scholarship</td>
+</tr>
+<tr>
+<td data-label="#">46</td>
+<td data-label="Question">What discretionary funding exists?</td>
+<td data-label="Answer">Academic development funding of up to £750 to £4,000 by course length, fieldwork maintenance for PhD students, maternity or paternity intermission of up to 6 months with maintenance, and hardship funding</td>
+<td data-label="Source">The scholarship</td>
+</tr>
+<tr>
+<td data-label="#">47</td>
+<td data-label="Question">What is not covered?</td>
+<td data-label="Answer">Bench fees and the costs of scientific equipment or similar resources. The Trust expects the department to cover core course costs</td>
+<td data-label="Source">The scholarship</td>
+</tr>
+<tr>
+<td data-label="#">48</td>
+<td data-label="Question">What is the community like?</td>
+<td data-label="Answer">About 250 Scholars are in Cambridge at any time, with orientation, a welcome dinner, professional development through Learning for Purpose, an annual lecture, a gala, symposia, a Scholars' Room and a Scholars' Council. Alumni (1,700+ from 116 countries) stay connected through Gates Connect and events</td>
+<td data-label="Source">The experience, The scholarship</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="guide-section" id="g6-questions-the-site-does-not-answer"><h2>Questions the site does not answer</h2>
+<p>The pages do not state a position on these, so confirm them before relying on any assumption. Email info@gatescambridge.org.</p>
+<ul>
+<li>How many applicants are nominated and interviewed each year.</li>
+<li>Whether a Scholar can defer the start of the award.</li>
+<li>The Trust's policy on using AI tools when writing answers.</li>
+<li>Whether information webinars are running this cycle. The FAQ said they would begin in summer 2026.</li>
+</ul>
+</section><section class="guide-section" id="g6-7-final-checklist"><span class="section-label">Section 7</span><h2>Final checklist</h2>
+<ul class="checklist">
+<li class="chk"><p>I am a non-UK citizen (or a dual citizen) and my round is confirmed</p></li>
+<li class="chk"><p>My course is eligible, full-time (or a PhD), and not already under way</p></li>
+<li class="chk"><p>I know my Course Funding Deadline and I plan to submit a week early</p></li>
+<li class="chk"><p>I completed the admission section and the Gates funding section</p></li>
+<li class="chk"><p>My four answers are within about 200, 200, 300 and 300 words, and inside the character caps</p></li>
+<li class="chk"><p>My research proposal is ready (PhD) and I have contacted supervisors</p></li>
+<li class="chk"><p>Two academic referees and one Gates referee are briefed and have confirmed dates</p></li>
+<li class="chk"><p>Every name, number and spelling is checked</p></li>
+<li class="chk"><p>I have prepared for the interview, with a story bank and a view on the scholarship's responsibilities</p></li>
+<li class="chk"><p>I have a plan if I am not selected: other funding and a possible reapplication</p></li>
+</ul>
+</section><section class="guide-section" id="g6-8-eight-mistakes-to-avoid"><span class="section-label">Section 8</span><h2>Eight mistakes to avoid</h2>
+<ol>
+<li><strong>Using the wrong round or deadline.</strong> US citizens in the US who miss October cannot use the later round, and everyone else follows the Course Funding Deadline.</li>
+<li><strong>Applying to an ineligible course.</strong> MASt, MSt, PGDip, MBA and part-time masters are not funded.</li>
+<li><strong>Neglecting the admission application.</strong> The department nominates first.</li>
+<li><strong>Repeating your transcript in Question 1.</strong> The panel already has it.</li>
+<li><strong>Praising Cambridge in Question 2.</strong> Give specific, checkable reasons.</li>
+<li><strong>Listing activities in Question 3 or titles in Question 4.</strong> Show a change in people's lives and a decision you made.</li>
+<li><strong>Choosing a referee for prestige.</strong> Choose someone who can rank you against a real group and speak first-hand.</li>
+<li><strong>Submitting late, or relying on editing.</strong> Everything, references included, is due by 11:59pm UK time, and you cannot edit after submitting.</li>
+</ol></section>
+
+</article>
+</div>
+
+<div class="series-nav"><a href="question-4-leadership.html" class="prev-item"><span class="dir">&larr; Previous</span><span class="lbl">Question 4: Leadership</span></a></div>
+
+<section id="mentorship-cta">
+    <span class="kicker">Two Ways To Keep Going With TAL</span>
+    <h2>Everything in this guide is easy to see in someone else's application and hard to see in your own.</h2>
+    <p>That is what a second pair of eyes is for. Whether you want a mentor who has been through an application like this one reading your drafts, or just a place to ask questions as you go, TAL has a path that costs nothing to start.</p>
+    <div class="cta-paths">
+        <div class="cta-path">
+            <span class="cta-path-kicker">1:1 Support</span>
+            <h3>Work with a mentor</h3>
+            <p>A mentor who has been through this exact application, knows what the sub-questions are really asking, and will tell you honestly where your draft is decoration.</p>
+            <ul class="cta-path-list">
+                <li>Scholarship Essay Review, two rounds of feedback</li>
+                <li>Lab Focus sessions for strategy, drafts and mock interviews</li>
+            </ul>
+            <a href="../../apply.html" class="btn btn-blue">Apply for Mentorship</a>
+        </div>
+        <div class="cta-path">
+            <span class="cta-path-kicker">Free, Always</span>
+            <h3>Join the community</h3>
+            <p>Thousands of applicants figuring this out together. No cost, no commitment, and a place to ask the questions that come up between drafts.</p>
+            <ul class="cta-path-list">
+                <li>Webinars and Lab Clinic Hours</li>
+                <li>Scholarship and programme opportunities, shared as they come up</li>
+            </ul>
+            <a href="../../community.html" class="btn btn-outline-white">Join the Free Community</a>
+        </div>
+    </div>
+    <p class="cta-note">Free to apply, no commitment &nbsp;&middot;&nbsp; Prefer email? <a href="mailto:info@theapplicationlab.com?subject=CSC Essay Support">info@theapplicationlab.com</a></p>
+</section>
+
+
+<footer>
+    <div class="footer-inner">
+        <img src="../../logo.png" alt="The Application Lab" width="1920" height="1080"/>
+        <div class="footer-links">
+            <a href="../../index.html">Website</a>
+            <a href="../../resources.html">Free Resources</a>
+            <a href="../../community.html">Free Community</a>
+            <a href="../../mentorship.html">Mentorship</a>
+            <a href="https://www.linkedin.com/company/theapplicationlab" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/theapplicationlab" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.youtube.com/@TheApplicationLab" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <p class="footer-bottom">The Application Lab &nbsp;&middot;&nbsp; Edspire Labs Ltd &nbsp;&middot;&nbsp; Company No. 16751243 &nbsp;&middot;&nbsp; Cambridge, UK</p>
+    </div>
+</footer>
+
+<script>
+const burger = document.getElementById('mob-burger');
+const mobMenu = document.getElementById('mob-menu');
+if (burger && mobMenu) {
+    burger.addEventListener('click', function() {
+        const isOpen = mobMenu.style.display === 'flex';
+        mobMenu.style.display = isOpen ? 'none' : 'flex';
+    });
+    mobMenu.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() { mobMenu.style.display = 'none'; });
+    });
+}
+const navLinks = document.querySelectorAll('.guide-sidebar a[data-nav]');
+const sections = Array.from(navLinks).map(a => document.querySelector(a.getAttribute('href')));
+if (navLinks.length) {
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const idx = sections.indexOf(entry.target);
+            if (idx === -1) return;
+            if (entry.isIntersecting) {
+                navLinks.forEach(a => a.classList.remove('active'));
+                navLinks[idx].classList.add('active');
+            }
+        });
+    }, { rootMargin: '-15% 0px -75% 0px', threshold: 0 });
+    sections.forEach(s => { if (s) sectionObserver.observe(s); });
+}
+</script>
+
+</body>
+</html>

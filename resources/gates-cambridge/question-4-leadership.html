@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4: Leadership | The Application Lab</title>
+    <meta name="description" content="Prove the method: an obstacle, a decision, persuasion, a result and a lesson.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.theapplicationlab.com/resources/gates-cambridge/question-4-leadership.html">
+    <meta property="og:title" content="Question 4: Leadership | The Application Lab">
+    <meta property="og:description" content="Prove the method: an obstacle, a decision, persuasion, a result and a lesson.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.theapplicationlab.com/resources/gates-cambridge/question-4-leadership.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { overflow-x: hidden; max-width: 100%; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; color: #0f1e35; background: #f7f9fc; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+        :root {
+            --navy: #0f1e35; --blue: #2e8bc0; --blue-050: #eaf4fb; --bg: #f7f9fc;
+            --muted: #6b7c93; --border: #dde4ee; --body-text: #3d4f63; --gold: #c9a84c; --amber-bg: #fbf3e6;
+        }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 800; color: var(--navy); line-height: 1.25; }
+        section[id] { scroll-margin-top: 24px; }
+        body { padding-top: 72px; }
+        @media (min-width: 769px) { #desktop-nav { display: flex; } #mob-burger { display: none; } }
+        @media (max-width: 768px) {
+            #desktop-nav { display: none !important; } #mob-burger { display: flex !important; }
+            #hdr { height: 64px !important; } #hdr img { height: 42px !important; }
+            #mob-menu { top: 64px !important; } body { padding-top: 64px; }
+        }
+
+        .breadcrumb { max-width: 1180px; margin: 0 auto; padding: 22px 24px 0; font-size: 0.78rem; color: var(--muted); }
+        .breadcrumb a { color: var(--blue); text-decoration: none; font-weight: 600; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        #hero-guide {
+            position: relative; min-height: 46vh; display: flex; align-items: flex-end;
+            background-image: url('../../oxford-hero.jpg'); background-size: cover; background-position: center center;
+            margin-top: 18px;
+        }
+        .hero-guide-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,15,24,0.35) 0%, rgba(8,15,24,0.55) 55%, rgba(8,15,24,0.94) 100%); }
+        .hero-guide-inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 44px 24px 40px; text-align: center; }
+        .hero-guide-inner .kicker { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 18px; }
+        .hero-guide-inner h1 { color: #fff; font-size: clamp(1.8rem, 4vw, 2.7rem); letter-spacing: -1px; line-height: 1.18; margin-bottom: 18px; text-shadow: 0 2px 24px rgba(0,0,0,0.4); }
+        .hero-guide-inner .byline { font-family: 'Lora', serif; font-style: italic; font-size: 1.02rem; color: rgba(255,255,255,0.88); line-height: 1.75; max-width: 580px; margin: 0 auto; }
+
+        #facts { background: var(--navy); padding: 0 24px 40px; }
+        .facts-strip { max-width: 800px; margin: 0 auto; display: flex; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 26px; }
+        .facts-strip > div { flex: 1; text-align: center; padding: 0 12px; border-right: 1px solid rgba(255,255,255,0.12); }
+        .facts-strip > div:last-child { border-right: none; }
+        .facts-strip strong { display: block; font-size: 1.3rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; line-height: 1; }
+        .facts-strip span { display: block; font-size: 0.58rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.55); font-weight: 600; margin-top: 8px; line-height: 1.5; }
+
+        .pdf-strip { background: var(--blue-050); border-bottom: 1px solid var(--border); text-align: center; padding: 16px 24px; }
+        .pdf-strip a { font-size: 0.82rem; font-weight: 700; color: var(--blue); text-decoration: none; }
+        .pdf-strip a:hover { text-decoration: underline; }
+
+        .guide-layout { max-width: 1400px; margin: 0 auto; padding: 48px 24px 0; display: flex; gap: 60px; align-items: flex-start; }
+        .guide-sidebar { display: none; }
+        .toc-wrap {
+            background: var(--navy); border-radius: 4px; max-width: 760px; margin: 0 auto 8px; padding: 28px 32px;
+            background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px);
+        }
+        .toc-wrap h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 16px; }
+        .toc-list { list-style: none; columns: 2; column-gap: 32px; }
+        .toc-list li { break-inside: avoid; margin-bottom: 10px; }
+        .toc-list a { font-size: 0.86rem; color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 600; }
+        .toc-list a:hover { color: #fff; }
+
+        article.guide-main { max-width: 780px; margin: 0 auto; padding: 8px 24px 0; flex: 1; min-width: 0; counter-reset: section 0; }
+        .guide-section { padding: 56px 0; border-bottom: 1px solid var(--border); counter-increment: section; }
+        .guide-section:last-of-type { border-bottom: none; }
+        .section-label { display: flex; align-items: center; gap: 12px; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 18px; }
+        .section-label::before {
+            content: counter(section, decimal-leading-zero);
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+            width: 34px; height: 34px; border-radius: 50%; background: var(--blue-050); color: var(--blue);
+            font-family: 'Lora', serif; font-style: italic; font-weight: 600; font-size: 0.9rem; letter-spacing: 0;
+        }
+        .guide-section h2 { font-size: clamp(1.3rem, 2.5vw, 1.65rem); letter-spacing: -0.5px; margin-bottom: 20px; }
+        .guide-section h3 { font-size: 1.08rem; margin: 32px 0 14px; scroll-margin-top: 90px; }
+        .guide-section h3:first-of-type { margin-top: 0; }
+        .guide-section h4 { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 22px 0 8px; }
+        .guide-section p { font-size: 0.96rem; color: var(--body-text); margin-bottom: 16px; }
+        .guide-section p:last-child { margin-bottom: 0; }
+        .guide-section ul, .guide-section ol { margin: 0 0 16px 22px; color: var(--body-text); font-size: 0.96rem; }
+        .guide-section li { margin-bottom: 8px; }
+        .guide-section li::marker { color: var(--blue); }
+        .guide-section strong { color: var(--navy); }
+        .guide-section.alt-bg { background: #fff; border-radius: 6px; padding: 48px 36px; margin: 8px 0; border-bottom: none; box-shadow: 0 1px 0 var(--border); }
+        .guide-section blockquote { border-left: 3px solid var(--blue); padding: 2px 0 2px 18px; margin: 0 0 16px; color: var(--navy); font-style: italic; }
+        .guide-section blockquote p { margin-bottom: 0; }
+        .guide-section hr { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+
+        .callout { border-radius: 4px; padding: 18px 22px; margin: 0 0 20px; font-size: 0.92rem; line-height: 1.8; }
+        .callout p { margin: 0 0 12px; font-size: 0.9rem; }
+        .callout p:last-child { margin-bottom: 0; }
+        .callout strong { display: block; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); margin-bottom: 4px; }
+        .callout-rule { background: var(--blue-050); border: 1px solid rgba(46,139,192,0.25); color: var(--navy); }
+        .callout-trap { background: var(--amber-bg); border: 1px solid rgba(184,134,58,0.3); color: #6b4f1f; font-size: 0.84rem; }
+        .callout-trap strong { color: #8a6a2a; }
+        .meta-wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 0; }
+
+        .table-scroll { overflow-x: auto; margin: 18px 0; -webkit-overflow-scrolling: touch; }
+        table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 0.85rem; }
+        table th, table td { padding: 11px 13px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.6; }
+        table thead th { background: var(--navy); color: #fff; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+        table thead th:first-child { border-top-left-radius: 4px; }
+        table thead th:last-child { border-top-right-radius: 4px; }
+        table tbody th { background: var(--bg); color: var(--navy); font-weight: 700; white-space: nowrap; }
+        table tbody td { color: var(--body-text); }
+        table tbody tr:last-child td, table tbody tr:last-child th { border-bottom: none; }
+
+        ul.checklist { list-style: none; margin: 0 0 8px; }
+        ul.checklist li.chk { display: flex; gap: 12px; align-items: flex-start; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--body-text); }
+        ul.checklist li.chk:last-child { border-bottom: none; }
+        ul.checklist li.chk::before { content: ''; flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; border: 1.5px solid var(--blue); border-radius: 3px; }
+
+        .series-nav { max-width: 720px; margin: 0 auto; padding: 8px 24px 56px; display: flex; justify-content: space-between; gap: 16px; }
+        .series-nav a { flex: 1; text-decoration: none; border: 1px solid var(--border); border-radius: 4px; padding: 16px 18px; background: #fff; transition: box-shadow 0.2s ease, transform 0.2s ease; }
+        .series-nav a:hover { box-shadow: 0 10px 28px rgba(15,30,53,0.1); transform: translateY(-2px); }
+        .series-nav .dir { display: block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+        .series-nav .lbl { display: block; font-size: 0.88rem; font-weight: 700; color: var(--navy); }
+        .series-nav .next-item { text-align: right; }
+
+        #mentorship-cta { background: var(--navy); background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px); padding: 72px 24px; text-align: center; }
+        #mentorship-cta .kicker { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #4a9fd4; margin-bottom: 16px; }
+        #mentorship-cta h2 { color: #fff; font-size: clamp(1.4rem, 3vw, 1.9rem); max-width: 640px; margin: 0 auto 18px; }
+        #mentorship-cta p { color: rgba(255,255,255,0.78); font-size: 0.96rem; line-height: 1.85; max-width: 600px; margin: 0 auto 32px; }
+        .cta-paths { display: flex; gap: 20px; max-width: 800px; margin: 0 auto 8px; text-align: left; }
+        .cta-path { flex: 1; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.14); border-top: 3px solid var(--blue); border-radius: 4px; padding: 28px 26px; display: flex; flex-direction: column; }
+        .cta-path:nth-child(2) { border-top-color: var(--gold); }
+        .cta-path-kicker { display: block; font-size: 0.64rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 12px; }
+        .cta-path:nth-child(2) .cta-path-kicker { color: #e4cb7a; }
+        .cta-path h3 { color: #fff; font-size: 1.15rem; margin-bottom: 10px; }
+        .cta-path p { color: rgba(255,255,255,0.68); font-size: 0.86rem; line-height: 1.75; margin: 0 0 16px; max-width: none; }
+        .cta-path-list { list-style: none; margin: 0 0 22px; flex: 1; }
+        .cta-path-list li { color: rgba(255,255,255,0.6); font-size: 0.82rem; line-height: 1.6; padding-left: 18px; position: relative; margin-bottom: 8px; }
+        .cta-path-list li::before { content: '→'; position: absolute; left: 0; color: var(--blue); }
+        .cta-path:nth-child(2) .cta-path-list li::before { color: var(--gold); }
+        .btn { display: inline-block; padding: 14px 26px; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: all 0.25s ease; text-align: center; }
+        .btn-blue { background: var(--blue); color: #fff; border: none; }
+        .btn-blue:hover { background: #1a6fa0; box-shadow: 0 8px 24px rgba(46,139,192,0.4); transform: translateY(-2px); }
+        .btn-outline-white { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.4); }
+        .btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+        .cta-note { margin-top: 30px; font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+        .cta-note a { color: #7ac8e8; text-decoration: none; font-weight: 600; }
+
+        footer { background: #080f18; padding: 48px 7% 28px; }
+        footer .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; }
+        footer img { height: 60px; width: auto; filter: brightness(0) invert(1); }
+        .footer-links { display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; }
+        .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.55); text-decoration: none; }
+        .footer-links a:hover { color: #fff; }
+        .footer-bottom { font-size: 0.68rem; color: rgba(255,255,255,0.25); margin-top: 6px; }
+
+        @media (min-width: 1024px) {
+            .toc-wrap { display: none; }
+            .guide-sidebar {
+                display: block; position: sticky; top: 88px; width: 272px; flex-shrink: 0;
+                max-height: calc(100vh - 112px); overflow-y: auto;
+                background: var(--navy); border-radius: 6px; padding: 30px 26px;
+                background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px);
+            }
+            .guide-sidebar h2 { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 20px; }
+            .guide-sidebar ul { list-style: none; }
+            .guide-sidebar li { margin-bottom: 2px; }
+            .guide-sidebar a {
+                display: block; font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.65); text-decoration: none;
+                padding: 10px 0 10px 16px; border-left: 2px solid rgba(255,255,255,0.14); transition: all 0.15s ease; line-height: 1.5;
+            }
+            .guide-sidebar a:hover { color: #fff; border-left-color: rgba(255,255,255,0.4); }
+            .guide-sidebar a.active { color: #7ac8e8; border-left-color: var(--blue); font-weight: 700; }
+        }
+        @media (max-width: 640px) {
+            .toc-list { columns: 1; }
+            .hero-guide-inner { padding: 32px 20px 32px; }
+            .facts-strip { flex-wrap: wrap; }
+            .facts-strip > div { flex: 1 1 45%; padding-bottom: 14px; }
+            .guide-section { padding: 40px 0; }
+            .guide-section.alt-bg { padding: 32px 20px; }
+            table { min-width: 460px; }
+            .cta-paths { flex-direction: column; }
+            .series-nav { flex-direction: column; }
+            .series-nav .next-item { text-align: left; }
+        }</style>
+</head>
+
+<style>
+@media print {
+    #hdr, #mob-menu, .breadcrumb, .pdf-strip, .toc-wrap, .guide-sidebar,
+    .series-nav, #mentorship-cta, footer { display: none !important; }
+    #hero-guide { min-height: 0; background: none !important; margin-top: 0; }
+    .hero-guide-overlay { display: none; }
+    .hero-guide-inner { text-align: left; padding: 0 0 20px; color: #0f1e35; }
+    .hero-guide-inner .kicker { color: #2e8bc0; }
+    .hero-guide-inner h1 { color: #0f1e35; text-shadow: none; }
+    .hero-guide-inner .byline { color: #3d4f63; }
+    #facts { background: none; padding: 0 0 20px; }
+    .facts-strip { border-top: 1px solid #dde4ee; }
+    .facts-strip strong, .facts-strip span { color: #0f1e35; }
+    .guide-layout { display: block; padding: 0; }
+    article.guide-main { max-width: 100%; padding: 0; }
+    .guide-section { padding: 18px 0; }
+    .guide-section.alt-bg { box-shadow: none; padding: 18px 0; }
+    body { padding-top: 0; }
+}
+</style>
+<style>
+.guide-section h3 .qn { display: inline-block; background: var(--blue); color: #fff; font-size: 0.68rem; font-weight: 700; border-radius: 3px; padding: 2px 8px; margin-right: 10px; vertical-align: 2px; }
+.guide-section p.warn { background: var(--amber-bg); border-left: 3px solid var(--gold); padding: 14px 18px; border-radius: 4px; }
+strong.check { background: var(--amber-bg); color: #7a5200; font-weight: 700; font-size: 0.72rem; padding: 2px 8px; border-radius: 3px; letter-spacing: 0.02em; }
+</style>
+<body>
+
+<header id="hdr" style="position:fixed; top:0; left:0; right:0; width:100%; height:72px; z-index:9999; display:flex; align-items:center; justify-content:space-between; padding:0 5%; background:rgba(15,30,53,0.97); box-shadow:0 2px 20px rgba(0,0,0,0.3);">
+  <a href="../../index.html" style="display:flex; align-items:center; text-decoration:none; flex-shrink:0; margin-right:20px;">
+    <img src="../../logo.png" alt="The Application Lab" width="1920" height="1080" style="height:56px; width:auto; display:block; object-fit:contain; filter:brightness(0) invert(1);"/>
+  </a>
+  <nav id="desktop-nav" style="align-items:center; gap:26px; margin-left:auto;">
+    <a href="../../index.html#about" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">About</a>
+    <a href="../../index.html#services" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Mentorship</a>
+    <a href="../../index.html#how" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">How It Works</a>
+    <a href="../../index.html#founders" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Founders</a>
+    <a href="../../community.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Community</a>
+    <a href="../../resources.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Resources</a>
+    <a href="../../immersive.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">The Immersive Lab</a>
+    <a href="../../apply.html" style="font-size:0.7rem; font-weight:700; color:#fff; letter-spacing:1px; text-transform:uppercase; text-decoration:none; background:#2e8bc0; padding:10px 20px; border-radius:2px;">Apply Now</a>
+  </nav>
+  <button id="mob-burger" aria-label="Open menu" style="flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; margin-left:16px;">
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+  </button>
+</header>
+
+<div id="mob-menu" style="display:none; position:fixed; top:72px; left:0; right:0; z-index:9998; background:rgba(15,30,53,0.98); flex-direction:column; padding:16px 5%; border-top:1px solid rgba(255,255,255,0.08);">
+  <a href="../../index.html#about" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">About</a>
+  <a href="../../index.html#services" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Mentorship</a>
+  <a href="../../index.html#how" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">How It Works</a>
+  <a href="../../index.html#founders" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Founders</a>
+  <a href="../../community.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Community</a>
+  <a href="../../resources.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Resources</a>
+  <a href="../../immersive.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">The Immersive Lab</a>
+  <a href="../../apply.html" style="display:block; margin-top:16px; padding:13px 20px; font-size:0.82rem; font-weight:700; color:#fff; text-transform:uppercase; letter-spacing:1px; text-decoration:none; background:#2e8bc0; text-align:center; border-radius:2px;">Apply Now</a>
+</div>
+
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../resources.html">Resources</a> / <a href="../../resources.html#gates-cambridge">Gates Cambridge Scholarship</a> / Question 4: Leadership
+</nav>
+
+<section id="hero-guide">
+    <div class="hero-guide-overlay" aria-hidden="true"></div>
+    <div class="hero-guide-inner">
+        <span class="kicker">Gates Cambridge Guide &middot; 5 of 6</span>
+        <h1>Question 4: Leadership</h1>
+        <p class="byline">Prove the method: an obstacle, a decision, persuasion, a result and a lesson.</p>
+    </div>
+</section>
+
+<div id="facts">
+    <div class="facts-strip">
+        <div><strong>A capacity for leadership</strong><span>Criterion</span></div><div><strong>About 300 words, up to 2,100 characters</strong><span>Word limit</span></div><div><strong>Obstacle, decision, persuasion, result, lesson, future</strong><span>Method</span></div><div><strong>Proves the method</strong><span>Job in your thread</span></div>
+    </div>
+</div>
+
+<div class="pdf-strip">
+    <a href="question-4-leadership.pdf" target="_blank" rel="noopener">Download this guide as a PDF &darr;</a>
+</div>
+
+<div class="meta-wrap"><div class="callout callout-trap"><p><strong>About the examples.</strong> Every example here is invented. The people, organisations, places and numbers are fictional. In your own answer every figure must be one you can explain, and your Gates referee should be able to confirm the story.</p></div></div><div class="meta-wrap"><div class="callout callout-rule"><p><strong>The prompt in short.</strong> Examples of leadership, by initiating a change or bringing others together, and how it will help you make an impact in future</p></div></div>
+
+<nav class="toc-wrap" aria-label="Table of contents">
+    <h2>In This Guide</h2>
+    <ul class="toc-list">
+        <li><a href="#g5-1-what-the-question-asks">01. What the question asks</a></li><li><a href="#g5-2-the-two-shapes-of-leadership">02. The two shapes of leadership</a></li><li><a href="#g5-3-leadership-versus-delivery">03. Leadership versus delivery</a></li><li><a href="#g5-4-the-evidence-ladder">04. The evidence ladder</a></li><li><a href="#g5-5-choosing-your-story">05. Choosing your story</a></li><li><a href="#g5-6-the-structure-and-the-word-budget">06. The structure and the word budget</a></li><li><a href="#g5-7-showing-how-you-moved-people">07. Showing how you moved people</a></li><li><a href="#g5-8-how-question-4-differs-from-question-3">08. How Question 4 differs from Question 3</a></li><li><a href="#g5-9-leading-without-a-title">09. Leading without a title</a></li><li><a href="#g5-10-the-future-clause">10. The future clause</a></li><li><a href="#g5-11-three-worked-examples-all-invented">11. Three worked examples (all invented)</a></li><li><a href="#g5-12-weak-versus-strong">12. Weak versus strong</a></li><li><a href="#g5-13-the-test-suite">13. The test suite</a></li><li><a href="#g5-14-common-mistakes">14. Common mistakes</a></li><li><a href="#g5-15-checklist">15. Checklist</a></li>
+    </ul>
+</nav>
+
+<div class="guide-layout">
+<nav class="guide-sidebar" aria-label="Section navigation">
+    <h2>In This Guide</h2>
+    <ul>
+        <li><a href="#g5-1-what-the-question-asks" data-nav>01. What the question asks</a></li><li><a href="#g5-2-the-two-shapes-of-leadership" data-nav>02. The two shapes of leadership</a></li><li><a href="#g5-3-leadership-versus-delivery" data-nav>03. Leadership versus delivery</a></li><li><a href="#g5-4-the-evidence-ladder" data-nav>04. The evidence ladder</a></li><li><a href="#g5-5-choosing-your-story" data-nav>05. Choosing your story</a></li><li><a href="#g5-6-the-structure-and-the-word-budget" data-nav>06. The structure and the word budget</a></li><li><a href="#g5-7-showing-how-you-moved-people" data-nav>07. Showing how you moved people</a></li><li><a href="#g5-8-how-question-4-differs-from-question-3" data-nav>08. How Question 4 differs from Question 3</a></li><li><a href="#g5-9-leading-without-a-title" data-nav>09. Leading without a title</a></li><li><a href="#g5-10-the-future-clause" data-nav>10. The future clause</a></li><li><a href="#g5-11-three-worked-examples-all-invented" data-nav>11. Three worked examples (all invented)</a></li><li><a href="#g5-12-weak-versus-strong" data-nav>12. Weak versus strong</a></li><li><a href="#g5-13-the-test-suite" data-nav>13. The test suite</a></li><li><a href="#g5-14-common-mistakes" data-nav>14. Common mistakes</a></li><li><a href="#g5-15-checklist" data-nav>15. Checklist</a></li>
+    </ul>
+</nav>
+<article class="guide-main">
+
+
+<section class="guide-section" id="g5-1-what-the-question-asks"><span class="section-label">Section 1</span><h2>What the question asks</h2>
+<p>The prompt asks for an example or examples of how you have demonstrated a capacity for leadership, "by initiating a change or bringing others together to achieve a goal," and how this will help you make an impact in the future. Both halves are marked. A leadership story with no forward link fails, and so does a confident plan with no evidence behind it.</p>
+<p>The Criteria page says leadership "can be expressed in a multitude of ways." A student representative, a team captain, a nurse leading a shift, a junior official building a coalition and a researcher forming a collaboration can all qualify. What matters is evidence of leadership so far and a clear line to impact in a future career.</p>
+</section><section class="guide-section" id="g5-2-the-two-shapes-of-leadership"><span class="section-label">Section 2</span><h2>The two shapes of leadership</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Shape</th>
+<th>What it means</th>
+<th>Proof the panel wants</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Shape">The initiator</td>
+<td data-label="What it means">You saw a gap, nobody owned it, and you started something</td>
+<td data-label="Proof the panel wants">A change that exists because you began it and that outlasted your first push</td>
+</tr>
+<tr>
+<td data-label="Shape">The convener</td>
+<td data-label="What it means">You brought together people who were not already aligned</td>
+<td data-label="Proof the panel wants">People who did not report to you and who changed what they did</td>
+</tr>
+</tbody>
+</table></div>
+<p>A third shape appears in many strong answers: <strong>the person who takes charge when nobody has</strong> , in a crisis or a vacuum. It fits the prompt because it is initiating change under pressure.</p>
+</section><section class="guide-section" id="g5-3-leadership-versus-delivery"><span class="section-label">Section 3</span><h2>Leadership versus delivery</h2>
+<p>Doing something well yourself is delivery. Getting other people to act differently is leadership. A strong answer always contains the moment you had to move someone: the sceptic, the rival, the person with authority who said no.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Delivery</th>
+<th>Leadership</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Delivery">"I organised the event and 200 people attended."</td>
+<td data-label="Leadership">"The faculty refused the hall, so I persuaded the dean with a pilot that cost nothing, and 200 people attended."</td>
+</tr>
+<tr>
+<td data-label="Delivery">"I managed a team of eight."</td>
+<td data-label="Leadership">"Two engineers wanted a rewrite and two wanted a patch. I ran a one-week test of both, and we shipped the patch on time."</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="guide-section" id="g5-4-the-evidence-ladder"><span class="section-label">Section 4</span><h2>The evidence ladder</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Evidence</th>
+<th>What it shows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Rank">1</td>
+<td data-label="Evidence">Transformation</td>
+<td data-label="What it shows">Something changed because of you, and it lasted</td>
+</tr>
+<tr>
+<td data-label="Rank">2</td>
+<td data-label="Evidence">Mobilisation</td>
+<td data-label="What it shows">You moved people who did not report to you</td>
+</tr>
+<tr>
+<td data-label="Rank">3</td>
+<td data-label="Evidence">Ownership</td>
+<td data-label="What it shows">You took responsibility for a problem nobody had claimed</td>
+</tr>
+<tr>
+<td data-label="Rank">4</td>
+<td data-label="Evidence">Decision under constraint</td>
+<td data-label="What it shows">You chose between real options with limited resources, and can say why</td>
+</tr>
+<tr>
+<td data-label="Rank">5</td>
+<td data-label="Evidence">A title with a decision</td>
+<td data-label="What it shows">You held a role and made a consequential call in it</td>
+</tr>
+<tr>
+<td data-label="Rank">6</td>
+<td data-label="Evidence">A title alone</td>
+<td data-label="What it shows">Participation only. Do not rely on it</td>
+</tr>
+</tbody>
+</table></div>
+<p>If your best story sits at rank 5 or 6, find another story before you try to write it better.</p>
+</section><section class="guide-section" id="g5-5-choosing-your-story"><span class="section-label">Section 5</span><h2>Choosing your story</h2>
+<p>Score each candidate story against five tests. Pick the one that passes most.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Test">Obstacle</td>
+<td data-label="Question">Was someone or something genuinely in the way?</td>
+</tr>
+<tr>
+<td data-label="Test">Decision</td>
+<td data-label="Question">Did you make a choice with a trade-off?</td>
+</tr>
+<tr>
+<td data-label="Test">Persuasion</td>
+<td data-label="Question">Did you move someone who did not have to follow you?</td>
+</tr>
+<tr>
+<td data-label="Test">Result</td>
+<td data-label="Question">Is there a number, and did it outlast you?</td>
+</tr>
+<tr>
+<td data-label="Test">Different from Question 3</td>
+<td data-label="Question">Does it tell a different half of the story, or a different story?</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="guide-section" id="g5-6-the-structure-and-the-word-budget"><span class="section-label">Section 6</span><h2>The structure and the word budget</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Move</th>
+<th>Words (of 300)</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Move">1. The situation and the obstacle</td>
+<td data-label="Words (of 300)">About 45</td>
+<td data-label="What it does">What was not working, and why nobody was fixing it</td>
+</tr>
+<tr>
+<td data-label="Move">2. Your decision</td>
+<td data-label="Words (of 300)">About 80</td>
+<td data-label="What it does">The initiative you took, or how you convened, with the choices you made</td>
+</tr>
+<tr>
+<td data-label="Move">3. How you brought others with you</td>
+<td data-label="Words (of 300)">About 55</td>
+<td data-label="What it does">The resistance, what each side feared, and what moved them</td>
+</tr>
+<tr>
+<td data-label="Move">4. The result</td>
+<td data-label="Words (of 300)">About 45</td>
+<td data-label="What it does">What changed, with exact numbers, and whether it lasted without you</td>
+</tr>
+<tr>
+<td data-label="Move">5. The lesson</td>
+<td data-label="Words (of 300)">About 30</td>
+<td data-label="What it does">One specific thing you now do differently</td>
+</tr>
+<tr>
+<td data-label="Move">6. Future impact</td>
+<td data-label="Words (of 300)">About 45</td>
+<td data-label="What it does">The role you will hold and how this approach will be used there</td>
+</tr>
+</tbody>
+</table></div>
+<p>Roughly half the marks sit in moves 3 and 4. Protect them when you cut.</p>
+</section><section class="guide-section" id="g5-7-showing-how-you-moved-people"><span class="section-label">Section 7</span><h2>Showing how you moved people</h2>
+<p>This is the part most answers miss. Use one of four patterns:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>How it reads</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Pattern">Answer the real objection</td>
+<td data-label="How it reads">"The dean feared liability, so I drafted a protocol with the legal office."</td>
+</tr>
+<tr>
+<td data-label="Pattern">Show, do not argue</td>
+<td data-label="How it reads">"I ran a two-district pilot and showed the three heads real cases."</td>
+</tr>
+<tr>
+<td data-label="Pattern">Change the ask</td>
+<td data-label="How it reads">"I dropped the merger and proposed a shared index so every department kept its data."</td>
+</tr>
+<tr>
+<td data-label="Pattern">Borrow credibility</td>
+<td data-label="How it reads">"I asked two residents to co-sign each inspection, which the neighbourhood trusted."</td>
+</tr>
+</tbody>
+</table></div>
+<p>Identify what the other side feared or wanted. That shows you listened rather than pushed.</p>
+</section><section class="guide-section" id="g5-8-how-question-4-differs-from-question-3"><span class="section-label">Section 8</span><h2>How Question 4 differs from Question 3</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>Question 3</th>
+<th>Question 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Focus</td>
+<td data-label="Question 3">Who benefited, and why it matters to you</td>
+<td data-label="Question 4">What you started, and how you moved other people</td>
+</tr>
+<tr>
+<td>Hero of the story</td>
+<td data-label="Question 3">The people whose lives changed</td>
+<td data-label="Question 4">You, working through others</td>
+</tr>
+<tr>
+<td>Key evidence</td>
+<td data-label="Question 3">Change in people's lives</td>
+<td data-label="Question 4">Decisions, persuasion, what others did differently</td>
+</tr>
+<tr>
+<td>Tone</td>
+<td data-label="Question 3">Care and commitment</td>
+<td data-label="Question 4">Judgement and agency</td>
+</tr>
+</tbody>
+</table></div>
+<p>If you use one project for both, tell different halves of it and let the reader see they belong together.</p>
+</section><section class="guide-section" id="g5-9-leading-without-a-title"><span class="section-label">Section 9</span><h2>Leading without a title</h2>
+<p>The panel does not need a title. Test your story by removing it: if the actions still show leadership, it is strong. Good sources for untitled leadership:</p>
+<ul>
+<li>Persuading a department that does not report to you.</li>
+<li>Taking charge when the plan failed.</li>
+<li>Starting a group, a protocol or a programme nobody had asked for.</li>
+<li>Coordinating volunteers across disagreements.</li>
+<li>Mentoring in a way that produced new leaders.</li>
+</ul>
+</section><section class="guide-section" id="g5-10-the-future-clause"><span class="section-label">Section 10</span><h2>The future clause</h2>
+<p>The prompt asks how this will help you make an impact in future. Name the role, the setting and the method you will carry. "I will be a leader" says nothing. "I will lead my state's evaluation unit and use the same approach to bring three departments to agree on which schemes work" says everything.</p>
+</section><section class="guide-section" id="g5-11-three-worked-examples-all-invented"><span class="section-label">Section 11</span><h2>Three worked examples (all invented)</h2>
+<h3 id="g5-example-a-the-initiator-about-285-words">Example A: the initiator (about 285 words)</h3>
+<blockquote>
+<p>In my fourth year of engineering I noticed that we could model a masonry wall to the third decimal place and had never entered a house that was built badly. When I asked the faculty to let us work in neighbourhoods, the answer was that it was not part of the curriculum and no one would supervise it.</p>
+<p>I decided to build the case rather than argue it. I asked 14 classmates to give up three weekends and ran a pilot in two hillside districts, with two lecturers who agreed to join only as observers. Students inspected 60 houses, wrote plain-language reports for families, and presented findings to the neighbourhood association. The dean's first concern was liability, so I drafted a protocol with the university's legal office, added a mandatory safety briefing, and asked residents to co-sign each inspection.</p>
+<p>The pilot persuaded the faculty. In 2022 it became a credit-bearing field module, and 120 students have since taken it, completing 780 inspections. Eleven of the original 14 stayed on to supervise newer students, and two municipalities have asked to use our report template.</p>
+<p>I learned that people will back a change they can watch working more readily than one they are asked to imagine, and that the person who calls the first meeting also has to write the protocol. I also learned I cannot scale this alone. Within Chile's housing ministry I intend to lead a technical unit that turns an idea tested at one university into a standard a hundred municipalities can use, with the same method: pilot small, answer the sceptic's real objection, then let the evidence persuade.</p>
+</blockquote>
+<div class="callout callout-rule"><p><strong>Why it works.</strong> The obstacle is specific: no curriculum slot, no supervisor. The decision has a trade-off: build the case first. The persuasion step answers the dean's actual fear with an actual document. The result outlasts him: a credit-bearing module, 11 of 14 students supervising others. The final sentence carries the method into the future role.</p></div>
+<h3 id="g5-example-b-the-convener-about-290-words">Example B: the convener (about 290 words)</h3>
+<blockquote>
+<p>In 2023 I found that three departments in my state each kept a separate register of migrant workers, and that 34,000 people appeared in two or more with different spellings and addresses. Each register had been built for a good reason. None of the departments had authority over the others, and I was a deputy director with authority over none of them.</p>
+<p>I began by listening. I met each department head alone and asked what they were afraid of. Labour feared losing control of its worker data, Health feared a breach, and Food Supply feared a mandate it could not fund. I dropped the idea of a merger. Instead I proposed a shared index that held only a worker's identifier and which register held the rest, so every department kept its own data. I drafted a one-page agreement, ran a two-district pilot, and showed the three heads, with real cases, what happened to a worker in each system.</p>
+<p>The pilot found 6,100 duplicate records in two months and recovered ration entitlements for 1,900 workers who had lost them on moving. The cabinet adopted the index in 2024, and it now operates in 11 districts. One department head who first opposed it now chairs the steering group.</p>
+<p>I learned that leadership without authority is mostly translation: finding what each party needs and showing how a shared answer protects it. I also learned that I lack the evidence to prove which design is best, which is why I am applying. On return I will lead my state's evaluation unit and use the same approach to bring finance, planning and delivery departments to agree on which schemes work.</p>
+</blockquote>
+<div class="callout callout-rule"><p><strong>Why it works.</strong> The convener's problem is stated plainly: no authority over anyone involved. He names what each party feared, which shows he listened. The key decision (a shared index, not a merger) is a trade-off that unlocked agreement. The opponent who became chair is a vivid, checkable sign of influence. The lesson links to why he needs the course and to the role he will hold. His Question 2 and Question 4 share a theme but tell different parts of one career, which is the golden thread working.</p></div>
+<h3 id="g5-example-c-taking-charge-in-a-crisis-about-290-words">Example C: taking charge in a crisis (about 290 words)</h3>
+<blockquote>
+<p>In August 2022 floods cut the road to our district hospital, and on the second night I was the senior nurse on a ward of 38 patients with two colleagues and a generator that would last nine hours. The hospital's emergency plan assumed the road would be open. Nobody was in charge of the problem, and I was the most senior person there.</p>
+<p>I decided to triage the ward by who could not survive without power. I identified six patients on oxygen or dialysis, moved them to the one room with a wired circuit, and asked the three families still on the ward to hand-pump equipment for the others. I then called the district commissioner's office every two hours with the same message: a number of litres and a number of hours. On the third morning a boat delivered fuel, because the same number, repeated, had reached the person who controlled the boats.</p>
+<p>All 38 patients survived the flood. When the hospital reviewed its emergency plan, I wrote the section on power continuity, and 14 hospitals in the province adopted it in</p>
+</blockquote>
+<ol start="2023">
+<li>Two of the nurses on that ward now train others in triage.</li>
+</ol>
+<blockquote>
+<p>I learned that in a crisis leadership is deciding what not to do, and making one message impossible to ignore. I also learned that a plan never tested fails on the second night. At Cambridge I want the methods to design and test such plans at provincial scale, and afterwards I will lead emergency preparedness for my province's health department.</p>
+</blockquote>
+<div class="callout callout-rule"><p><strong>Why it works.</strong> The title is minor, and the leadership is in the decisions: triage, repeated numbers, families recruited. The persuasion was aimed at a distant authority with a single, simple message. The result lasted: a plan adopted by 14 hospitals. The lesson is specific to the situation, and the future is a role with a scale.</p></div>
+</section><section class="guide-section" id="g5-12-weak-versus-strong"><span class="section-label">Section 12</span><h2>Weak versus strong</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Weak</th>
+<th>Why it fails</th>
+<th>Strong</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Weak">"As President of the Debate Society, I led 60 members and organised events."</td>
+<td data-label="Why it fails">A title and an activity list</td>
+<td data-label="Strong">"When our society lost its funding, I proposed a paid-entry tournament, persuaded the faculty to waive the hall fee, and raised enough to keep 60 members debating."</td>
+</tr>
+<tr>
+<td data-label="Weak">"I led my team to success."</td>
+<td data-label="Why it fails">No decision, no obstacle</td>
+<td data-label="Strong">"Two engineers wanted a rewrite and two wanted a patch. I ran a one-week test of both, and the patch won, so we shipped on time."</td>
+</tr>
+<tr>
+<td data-label="Weak">"I learned that leadership is about listening."</td>
+<td data-label="Why it fails">A platitude</td>
+<td data-label="Strong">"I learned to ask each side what they feared before I proposed anything, because the fear is usually the real objection."</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="guide-section" id="g5-13-the-test-suite"><span class="section-label">Section 13</span><h2>The test suite</h2>
+<ul>
+<li><strong>The title test.</strong> Remove your job title. Do the actions still show leadership?</li>
+<li><strong>The resistance test.</strong> Is there someone who said no, and how did you move them?</li>
+<li><strong>The trade-off test.</strong> Did you choose X over Y, and can you say why?</li>
+<li><strong>The survival test.</strong> Did the change continue after you stepped back?</li>
+<li><strong>The credit test.</strong> Can the reader see what the team did and what you did?</li>
+<li><strong>The lesson test.</strong> Could a different applicant have written your lesson?</li>
+<li><strong>The referee test.</strong> Can your Gates referee confirm it first-hand?</li>
+</ul>
+</section><section class="guide-section" id="g5-14-common-mistakes"><span class="section-label">Section 14</span><h2>Common mistakes</h2>
+<ol>
+<li>A title instead of a decision.</li>
+<li>"We" throughout, so the panel cannot see you.</li>
+<li>No obstacle.</li>
+<li>A result without numbers, or one that did not last.</li>
+<li>A platitude as the lesson.</li>
+<li>A future role that is vague.</li>
+<li>Reusing the Question 3 story with the same emphasis.</li>
+<li>Claiming a team's result as your own.</li>
+</ol>
+</section><section class="guide-section" id="g5-15-checklist"><span class="section-label">Section 15</span><h2>Checklist</h2>
+<ul class="checklist">
+<li class="chk"><p>The first paragraph states a real obstacle, not just a role</p></li>
+<li class="chk"><p>I describe a specific decision and its trade-off</p></li>
+<li class="chk"><p>I show how I moved someone who did not have to follow me</p></li>
+<li class="chk"><p>I separate what the team did from what I did</p></li>
+<li class="chk"><p>The result has exact numbers and lasted beyond my involvement</p></li>
+<li class="chk"><p>The lesson is specific to me</p></li>
+<li class="chk"><p>The future role and method are stated</p></li>
+<li class="chk"><p>My Gates referee can confirm the story first-hand</p></li>
+<li class="chk"><p>It stays under 2,100 characters including spaces</p></li>
+</ul></section>
+
+</article>
+</div>
+
+<div class="series-nav"><a href="question-3-improving-lives.html" class="prev-item"><span class="dir">&larr; Previous</span><span class="lbl">Question 3: Improving the Lives of Others</span></a><a href="qa.html" class="next-item"><span class="dir">Next &rarr;</span><span class="lbl">Q&A for Applicants</span></a></div>
+
+<section id="mentorship-cta">
+    <span class="kicker">Two Ways To Keep Going With TAL</span>
+    <h2>Everything in this guide is easy to see in someone else's application and hard to see in your own.</h2>
+    <p>That is what a second pair of eyes is for. Whether you want a mentor who has been through an application like this one reading your drafts, or just a place to ask questions as you go, TAL has a path that costs nothing to start.</p>
+    <div class="cta-paths">
+        <div class="cta-path">
+            <span class="cta-path-kicker">1:1 Support</span>
+            <h3>Work with a mentor</h3>
+            <p>A mentor who has been through this exact application, knows what the sub-questions are really asking, and will tell you honestly where your draft is decoration.</p>
+            <ul class="cta-path-list">
+                <li>Scholarship Essay Review, two rounds of feedback</li>
+                <li>Lab Focus sessions for strategy, drafts and mock interviews</li>
+            </ul>
+            <a href="../../apply.html" class="btn btn-blue">Apply for Mentorship</a>
+        </div>
+        <div class="cta-path">
+            <span class="cta-path-kicker">Free, Always</span>
+            <h3>Join the community</h3>
+            <p>Thousands of applicants figuring this out together. No cost, no commitment, and a place to ask the questions that come up between drafts.</p>
+            <ul class="cta-path-list">
+                <li>Webinars and Lab Clinic Hours</li>
+                <li>Scholarship and programme opportunities, shared as they come up</li>
+            </ul>
+            <a href="../../community.html" class="btn btn-outline-white">Join the Free Community</a>
+        </div>
+    </div>
+    <p class="cta-note">Free to apply, no commitment &nbsp;&middot;&nbsp; Prefer email? <a href="mailto:info@theapplicationlab.com?subject=CSC Essay Support">info@theapplicationlab.com</a></p>
+</section>
+
+
+<footer>
+    <div class="footer-inner">
+        <img src="../../logo.png" alt="The Application Lab" width="1920" height="1080"/>
+        <div class="footer-links">
+            <a href="../../index.html">Website</a>
+            <a href="../../resources.html">Free Resources</a>
+            <a href="../../community.html">Free Community</a>
+            <a href="../../mentorship.html">Mentorship</a>
+            <a href="https://www.linkedin.com/company/theapplicationlab" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/theapplicationlab" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.youtube.com/@TheApplicationLab" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <p class="footer-bottom">The Application Lab &nbsp;&middot;&nbsp; Edspire Labs Ltd &nbsp;&middot;&nbsp; Company No. 16751243 &nbsp;&middot;&nbsp; Cambridge, UK</p>
+    </div>
+</footer>
+
+<script>
+const burger = document.getElementById('mob-burger');
+const mobMenu = document.getElementById('mob-menu');
+if (burger && mobMenu) {
+    burger.addEventListener('click', function() {
+        const isOpen = mobMenu.style.display === 'flex';
+        mobMenu.style.display = isOpen ? 'none' : 'flex';
+    });
+    mobMenu.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() { mobMenu.style.display = 'none'; });
+    });
+}
+const navLinks = document.querySelectorAll('.guide-sidebar a[data-nav]');
+const sections = Array.from(navLinks).map(a => document.querySelector(a.getAttribute('href')));
+if (navLinks.length) {
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const idx = sections.indexOf(entry.target);
+            if (idx === -1) return;
+            if (entry.isIntersecting) {
+                navLinks.forEach(a => a.classList.remove('active'));
+                navLinks[idx].classList.add('active');
+            }
+        });
+    }, { rootMargin: '-15% 0px -75% 0px', threshold: 0 });
+    sections.forEach(s => { if (s) sectionObserver.observe(s); });
+}
+</script>
+
+</body>
+</html>

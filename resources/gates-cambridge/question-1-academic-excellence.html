@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1: Academic Excellence | The Application Lab</title>
+    <meta name="description" content="Prove the mind: one piece of work, one validation, one honest bridge to the course.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.theapplicationlab.com/resources/gates-cambridge/question-1-academic-excellence.html">
+    <meta property="og:title" content="Question 1: Academic Excellence | The Application Lab">
+    <meta property="og:description" content="Prove the mind: one piece of work, one validation, one honest bridge to the course.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.theapplicationlab.com/resources/gates-cambridge/question-1-academic-excellence.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { overflow-x: hidden; max-width: 100%; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; color: #0f1e35; background: #f7f9fc; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+        :root {
+            --navy: #0f1e35; --blue: #2e8bc0; --blue-050: #eaf4fb; --bg: #f7f9fc;
+            --muted: #6b7c93; --border: #dde4ee; --body-text: #3d4f63; --gold: #c9a84c; --amber-bg: #fbf3e6;
+        }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 800; color: var(--navy); line-height: 1.25; }
+        section[id] { scroll-margin-top: 24px; }
+        body { padding-top: 72px; }
+        @media (min-width: 769px) { #desktop-nav { display: flex; } #mob-burger { display: none; } }
+        @media (max-width: 768px) {
+            #desktop-nav { display: none !important; } #mob-burger { display: flex !important; }
+            #hdr { height: 64px !important; } #hdr img { height: 42px !important; }
+            #mob-menu { top: 64px !important; } body { padding-top: 64px; }
+        }
+
+        .breadcrumb { max-width: 1180px; margin: 0 auto; padding: 22px 24px 0; font-size: 0.78rem; color: var(--muted); }
+        .breadcrumb a { color: var(--blue); text-decoration: none; font-weight: 600; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        #hero-guide {
+            position: relative; min-height: 46vh; display: flex; align-items: flex-end;
+            background-image: url('../../oxford-hero.jpg'); background-size: cover; background-position: center center;
+            margin-top: 18px;
+        }
+        .hero-guide-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,15,24,0.35) 0%, rgba(8,15,24,0.55) 55%, rgba(8,15,24,0.94) 100%); }
+        .hero-guide-inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 44px 24px 40px; text-align: center; }
+        .hero-guide-inner .kicker { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 18px; }
+        .hero-guide-inner h1 { color: #fff; font-size: clamp(1.8rem, 4vw, 2.7rem); letter-spacing: -1px; line-height: 1.18; margin-bottom: 18px; text-shadow: 0 2px 24px rgba(0,0,0,0.4); }
+        .hero-guide-inner .byline { font-family: 'Lora', serif; font-style: italic; font-size: 1.02rem; color: rgba(255,255,255,0.88); line-height: 1.75; max-width: 580px; margin: 0 auto; }
+
+        #facts { background: var(--navy); padding: 0 24px 40px; }
+        .facts-strip { max-width: 800px; margin: 0 auto; display: flex; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 26px; }
+        .facts-strip > div { flex: 1; text-align: center; padding: 0 12px; border-right: 1px solid rgba(255,255,255,0.12); }
+        .facts-strip > div:last-child { border-right: none; }
+        .facts-strip strong { display: block; font-size: 1.3rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; line-height: 1; }
+        .facts-strip span { display: block; font-size: 0.58rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.55); font-weight: 600; margin-top: 8px; line-height: 1.5; }
+
+        .pdf-strip { background: var(--blue-050); border-bottom: 1px solid var(--border); text-align: center; padding: 16px 24px; }
+        .pdf-strip a { font-size: 0.82rem; font-weight: 700; color: var(--blue); text-decoration: none; }
+        .pdf-strip a:hover { text-decoration: underline; }
+
+        .guide-layout { max-width: 1400px; margin: 0 auto; padding: 48px 24px 0; display: flex; gap: 60px; align-items: flex-start; }
+        .guide-sidebar { display: none; }
+        .toc-wrap {
+            background: var(--navy); border-radius: 4px; max-width: 760px; margin: 0 auto 8px; padding: 28px 32px;
+            background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px);
+        }
+        .toc-wrap h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 16px; }
+        .toc-list { list-style: none; columns: 2; column-gap: 32px; }
+        .toc-list li { break-inside: avoid; margin-bottom: 10px; }
+        .toc-list a { font-size: 0.86rem; color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 600; }
+        .toc-list a:hover { color: #fff; }
+
+        article.guide-main { max-width: 780px; margin: 0 auto; padding: 8px 24px 0; flex: 1; min-width: 0; counter-reset: section 0; }
+        .guide-section { padding: 56px 0; border-bottom: 1px solid var(--border); counter-increment: section; }
+        .guide-section:last-of-type { border-bottom: none; }
+        .section-label { display: flex; align-items: center; gap: 12px; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 18px; }
+        .section-label::before {
+            content: counter(section, decimal-leading-zero);
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+            width: 34px; height: 34px; border-radius: 50%; background: var(--blue-050); color: var(--blue);
+            font-family: 'Lora', serif; font-style: italic; font-weight: 600; font-size: 0.9rem; letter-spacing: 0;
+        }
+        .guide-section h2 { font-size: clamp(1.3rem, 2.5vw, 1.65rem); letter-spacing: -0.5px; margin-bottom: 20px; }
+        .guide-section h3 { font-size: 1.08rem; margin: 32px 0 14px; scroll-margin-top: 90px; }
+        .guide-section h3:first-of-type { margin-top: 0; }
+        .guide-section h4 { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 22px 0 8px; }
+        .guide-section p { font-size: 0.96rem; color: var(--body-text); margin-bottom: 16px; }
+        .guide-section p:last-child { margin-bottom: 0; }
+        .guide-section ul, .guide-section ol { margin: 0 0 16px 22px; color: var(--body-text); font-size: 0.96rem; }
+        .guide-section li { margin-bottom: 8px; }
+        .guide-section li::marker { color: var(--blue); }
+        .guide-section strong { color: var(--navy); }
+        .guide-section.alt-bg { background: #fff; border-radius: 6px; padding: 48px 36px; margin: 8px 0; border-bottom: none; box-shadow: 0 1px 0 var(--border); }
+        .guide-section blockquote { border-left: 3px solid var(--blue); padding: 2px 0 2px 18px; margin: 0 0 16px; color: var(--navy); font-style: italic; }
+        .guide-section blockquote p { margin-bottom: 0; }
+        .guide-section hr { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+
+        .callout { border-radius: 4px; padding: 18px 22px; margin: 0 0 20px; font-size: 0.92rem; line-height: 1.8; }
+        .callout p { margin: 0 0 12px; font-size: 0.9rem; }
+        .callout p:last-child { margin-bottom: 0; }
+        .callout strong { display: block; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); margin-bottom: 4px; }
+        .callout-rule { background: var(--blue-050); border: 1px solid rgba(46,139,192,0.25); color: var(--navy); }
+        .callout-trap { background: var(--amber-bg); border: 1px solid rgba(184,134,58,0.3); color: #6b4f1f; font-size: 0.84rem; }
+        .callout-trap strong { color: #8a6a2a; }
+        .meta-wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 0; }
+
+        .table-scroll { overflow-x: auto; margin: 18px 0; -webkit-overflow-scrolling: touch; }
+        table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 0.85rem; }
+        table th, table td { padding: 11px 13px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.6; }
+        table thead th { background: var(--navy); color: #fff; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+        table thead th:first-child { border-top-left-radius: 4px; }
+        table thead th:last-child { border-top-right-radius: 4px; }
+        table tbody th { background: var(--bg); color: var(--navy); font-weight: 700; white-space: nowrap; }
+        table tbody td { color: var(--body-text); }
+        table tbody tr:last-child td, table tbody tr:last-child th { border-bottom: none; }
+
+        ul.checklist { list-style: none; margin: 0 0 8px; }
+        ul.checklist li.chk { display: flex; gap: 12px; align-items: flex-start; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--body-text); }
+        ul.checklist li.chk:last-child { border-bottom: none; }
+        ul.checklist li.chk::before { content: ''; flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; border: 1.5px solid var(--blue); border-radius: 3px; }
+
+        .series-nav { max-width: 720px; margin: 0 auto; padding: 8px 24px 56px; display: flex; justify-content: space-between; gap: 16px; }
+        .series-nav a { flex: 1; text-decoration: none; border: 1px solid var(--border); border-radius: 4px; padding: 16px 18px; background: #fff; transition: box-shadow 0.2s ease, transform 0.2s ease; }
+        .series-nav a:hover { box-shadow: 0 10px 28px rgba(15,30,53,0.1); transform: translateY(-2px); }
+        .series-nav .dir { display: block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+        .series-nav .lbl { display: block; font-size: 0.88rem; font-weight: 700; color: var(--navy); }
+        .series-nav .next-item { text-align: right; }
+
+        #mentorship-cta { background: var(--navy); background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px); padding: 72px 24px; text-align: center; }
+        #mentorship-cta .kicker { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #4a9fd4; margin-bottom: 16px; }
+        #mentorship-cta h2 { color: #fff; font-size: clamp(1.4rem, 3vw, 1.9rem); max-width: 640px; margin: 0 auto 18px; }
+        #mentorship-cta p { color: rgba(255,255,255,0.78); font-size: 0.96rem; line-height: 1.85; max-width: 600px; margin: 0 auto 32px; }
+        .cta-paths { display: flex; gap: 20px; max-width: 800px; margin: 0 auto 8px; text-align: left; }
+        .cta-path { flex: 1; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.14); border-top: 3px solid var(--blue); border-radius: 4px; padding: 28px 26px; display: flex; flex-direction: column; }
+        .cta-path:nth-child(2) { border-top-color: var(--gold); }
+        .cta-path-kicker { display: block; font-size: 0.64rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 12px; }
+        .cta-path:nth-child(2) .cta-path-kicker { color: #e4cb7a; }
+        .cta-path h3 { color: #fff; font-size: 1.15rem; margin-bottom: 10px; }
+        .cta-path p { color: rgba(255,255,255,0.68); font-size: 0.86rem; line-height: 1.75; margin: 0 0 16px; max-width: none; }
+        .cta-path-list { list-style: none; margin: 0 0 22px; flex: 1; }
+        .cta-path-list li { color: rgba(255,255,255,0.6); font-size: 0.82rem; line-height: 1.6; padding-left: 18px; position: relative; margin-bottom: 8px; }
+        .cta-path-list li::before { content: '→'; position: absolute; left: 0; color: var(--blue); }
+        .cta-path:nth-child(2) .cta-path-list li::before { color: var(--gold); }
+        .btn { display: inline-block; padding: 14px 26px; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: all 0.25s ease; text-align: center; }
+        .btn-blue { background: var(--blue); color: #fff; border: none; }
+        .btn-blue:hover { background: #1a6fa0; box-shadow: 0 8px 24px rgba(46,139,192,0.4); transform: translateY(-2px); }
+        .btn-outline-white { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.4); }
+        .btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+        .cta-note { margin-top: 30px; font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+        .cta-note a { color: #7ac8e8; text-decoration: none; font-weight: 600; }
+
+        footer { background: #080f18; padding: 48px 7% 28px; }
+        footer .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; }
+        footer img { height: 60px; width: auto; filter: brightness(0) invert(1); }
+        .footer-links { display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; }
+        .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.55); text-decoration: none; }
+        .footer-links a:hover { color: #fff; }
+        .footer-bottom { font-size: 0.68rem; color: rgba(255,255,255,0.25); margin-top: 6px; }
+
+        @media (min-width: 1024px) {
+            .toc-wrap { display: none; }
+            .guide-sidebar {
+                display: block; position: sticky; top: 88px; width: 272px; flex-shrink: 0;
+                max-height: calc(100vh - 112px); overflow-y: auto;
+                background: var(--navy); border-radius: 6px; padding: 30px 26px;
+                background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px);
+            }
+            .guide-sidebar h2 { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 20px; }
+            .guide-sidebar ul { list-style: none; }
+            .guide-sidebar li { margin-bottom: 2px; }
+            .guide-sidebar a {
+                display: block; font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.65); text-decoration: none;
+                padding: 10px 0 10px 16px; border-left: 2px solid rgba(255,255,255,0.14); transition: all 0.15s ease; line-height: 1.5;
+            }
+            .guide-sidebar a:hover { color: #fff; border-left-color: rgba(255,255,255,0.4); }
+            .guide-sidebar a.active { color: #7ac8e8; border-left-color: var(--blue); font-weight: 700; }
+        }
+        @media (max-width: 640px) {
+            .toc-list { columns: 1; }
+            .hero-guide-inner { padding: 32px 20px 32px; }
+            .facts-strip { flex-wrap: wrap; }
+            .facts-strip > div { flex: 1 1 45%; padding-bottom: 14px; }
+            .guide-section { padding: 40px 0; }
+            .guide-section.alt-bg { padding: 32px 20px; }
+            table { min-width: 460px; }
+            .cta-paths { flex-direction: column; }
+            .series-nav { flex-direction: column; }
+            .series-nav .next-item { text-align: left; }
+        }</style>
+</head>
+
+<style>
+@media print {
+    #hdr, #mob-menu, .breadcrumb, .pdf-strip, .toc-wrap, .guide-sidebar,
+    .series-nav, #mentorship-cta, footer { display: none !important; }
+    #hero-guide { min-height: 0; background: none !important; margin-top: 0; }
+    .hero-guide-overlay { display: none; }
+    .hero-guide-inner { text-align: left; padding: 0 0 20px; color: #0f1e35; }
+    .hero-guide-inner .kicker { color: #2e8bc0; }
+    .hero-guide-inner h1 { color: #0f1e35; text-shadow: none; }
+    .hero-guide-inner .byline { color: #3d4f63; }
+    #facts { background: none; padding: 0 0 20px; }
+    .facts-strip { border-top: 1px solid #dde4ee; }
+    .facts-strip strong, .facts-strip span { color: #0f1e35; }
+    .guide-layout { display: block; padding: 0; }
+    article.guide-main { max-width: 100%; padding: 0; }
+    .guide-section { padding: 18px 0; }
+    .guide-section.alt-bg { box-shadow: none; padding: 18px 0; }
+    body { padding-top: 0; }
+}
+</style>
+<style>
+.guide-section h3 .qn { display: inline-block; background: var(--blue); color: #fff; font-size: 0.68rem; font-weight: 700; border-radius: 3px; padding: 2px 8px; margin-right: 10px; vertical-align: 2px; }
+.guide-section p.warn { background: var(--amber-bg); border-left: 3px solid var(--gold); padding: 14px 18px; border-radius: 4px; }
+strong.check { background: var(--amber-bg); color: #7a5200; font-weight: 700; font-size: 0.72rem; padding: 2px 8px; border-radius: 3px; letter-spacing: 0.02em; }
+</style>
+<body>
+
+<header id="hdr" style="position:fixed; top:0; left:0; right:0; width:100%; height:72px; z-index:9999; display:flex; align-items:center; justify-content:space-between; padding:0 5%; background:rgba(15,30,53,0.97); box-shadow:0 2px 20px rgba(0,0,0,0.3);">
+  <a href="../../index.html" style="display:flex; align-items:center; text-decoration:none; flex-shrink:0; margin-right:20px;">
+    <img src="../../logo.png" alt="The Application Lab" width="1920" height="1080" style="height:56px; width:auto; display:block; object-fit:contain; filter:brightness(0) invert(1);"/>
+  </a>
+  <nav id="desktop-nav" style="align-items:center; gap:26px; margin-left:auto;">
+    <a href="../../index.html#about" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">About</a>
+    <a href="../../index.html#services" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Mentorship</a>
+    <a href="../../index.html#how" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">How It Works</a>
+    <a href="../../index.html#founders" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Founders</a>
+    <a href="../../community.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Community</a>
+    <a href="../../resources.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Resources</a>
+    <a href="../../immersive.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">The Immersive Lab</a>
+    <a href="../../apply.html" style="font-size:0.7rem; font-weight:700; color:#fff; letter-spacing:1px; text-transform:uppercase; text-decoration:none; background:#2e8bc0; padding:10px 20px; border-radius:2px;">Apply Now</a>
+  </nav>
+  <button id="mob-burger" aria-label="Open menu" style="flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; margin-left:16px;">
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+  </button>
+</header>
+
+<div id="mob-menu" style="display:none; position:fixed; top:72px; left:0; right:0; z-index:9998; background:rgba(15,30,53,0.98); flex-direction:column; padding:16px 5%; border-top:1px solid rgba(255,255,255,0.08);">
+  <a href="../../index.html#about" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">About</a>
+  <a href="../../index.html#services" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Mentorship</a>
+  <a href="../../index.html#how" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">How It Works</a>
+  <a href="../../index.html#founders" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Founders</a>
+  <a href="../../community.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Community</a>
+  <a href="../../resources.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Resources</a>
+  <a href="../../immersive.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">The Immersive Lab</a>
+  <a href="../../apply.html" style="display:block; margin-top:16px; padding:13px 20px; font-size:0.82rem; font-weight:700; color:#fff; text-transform:uppercase; letter-spacing:1px; text-decoration:none; background:#2e8bc0; text-align:center; border-radius:2px;">Apply Now</a>
+</div>
+
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../resources.html">Resources</a> / <a href="../../resources.html#gates-cambridge">Gates Cambridge Scholarship</a> / Question 1: Academic Excellence
+</nav>
+
+<section id="hero-guide">
+    <div class="hero-guide-overlay" aria-hidden="true"></div>
+    <div class="hero-guide-inner">
+        <span class="kicker">Gates Cambridge Guide &middot; 2 of 6</span>
+        <h1>Question 1: Academic Excellence</h1>
+        <p class="byline">Prove the mind: one piece of work, one validation, one honest bridge to the course.</p>
+    </div>
+</section>
+
+<div id="facts">
+    <div class="facts-strip">
+        <div><strong>Academic excellence</strong><span>Criterion</span></div><div><strong>About 200 words, up to 1,400 characters</strong><span>Word limit</span></div><div><strong>Claim, work, validation, range, bridge</strong><span>Method</span></div><div><strong>Proves the mind</strong><span>Job in your thread</span></div>
+    </div>
+</div>
+
+<div class="pdf-strip">
+    <a href="question-1-academic-excellence.pdf" target="_blank" rel="noopener">Download this guide as a PDF &darr;</a>
+</div>
+
+<div class="meta-wrap"><div class="callout callout-trap"><p><strong>About the examples.</strong> Every example here is invented: the people, institutions, scholars and numbers are fictional and exist only to show technique. In your own answer every name and figure must be real and defensible at interview.</p></div></div><div class="meta-wrap"><div class="callout callout-rule"><p><strong>The prompt in short.</strong> How, through your education and past experiences, you have displayed academic excellence</p></div></div>
+
+<nav class="toc-wrap" aria-label="Table of contents">
+    <h2>In This Guide</h2>
+    <ul class="toc-list">
+        <li><a href="#g2-1-what-the-question-asks">01. What the question asks</a></li><li><a href="#g2-2-what-the-reader-is-checking">02. What the reader is checking</a></li><li><a href="#g2-3-where-question-1-sits-in-your-thread">03. Where Question 1 sits in your thread</a></li><li><a href="#g2-4-the-evidence-ladder">04. The evidence ladder</a></li><li><a href="#g2-5-choosing-your-evidence">05. Choosing your evidence</a></li><li><a href="#g2-6-the-structure-and-the-word-budget">06. The structure and the word budget</a></li><li><a href="#g2-7-numbers-and-denominators">07. Numbers and denominators</a></li><li><a href="#g2-8-adapting-to-your-profile">08. Adapting to your profile</a></li><li><a href="#g2-9-the-writing-process">09. The writing process</a></li><li><a href="#g2-10-three-worked-examples-all-invented">10. Three worked examples (all invented)</a></li><li><a href="#g2-11-weak-versus-strong">11. Weak versus strong</a></li><li><a href="#g2-12-the-test-suite">12. The test suite</a></li><li><a href="#g2-13-common-mistakes">13. Common mistakes</a></li><li><a href="#g2-14-checklist">14. Checklist</a></li>
+    </ul>
+</nav>
+
+<div class="guide-layout">
+<nav class="guide-sidebar" aria-label="Section navigation">
+    <h2>In This Guide</h2>
+    <ul>
+        <li><a href="#g2-1-what-the-question-asks" data-nav>01. What the question asks</a></li><li><a href="#g2-2-what-the-reader-is-checking" data-nav>02. What the reader is checking</a></li><li><a href="#g2-3-where-question-1-sits-in-your-thread" data-nav>03. Where Question 1 sits in your thread</a></li><li><a href="#g2-4-the-evidence-ladder" data-nav>04. The evidence ladder</a></li><li><a href="#g2-5-choosing-your-evidence" data-nav>05. Choosing your evidence</a></li><li><a href="#g2-6-the-structure-and-the-word-budget" data-nav>06. The structure and the word budget</a></li><li><a href="#g2-7-numbers-and-denominators" data-nav>07. Numbers and denominators</a></li><li><a href="#g2-8-adapting-to-your-profile" data-nav>08. Adapting to your profile</a></li><li><a href="#g2-9-the-writing-process" data-nav>09. The writing process</a></li><li><a href="#g2-10-three-worked-examples-all-invented" data-nav>10. Three worked examples (all invented)</a></li><li><a href="#g2-11-weak-versus-strong" data-nav>11. Weak versus strong</a></li><li><a href="#g2-12-the-test-suite" data-nav>12. The test suite</a></li><li><a href="#g2-13-common-mistakes" data-nav>13. Common mistakes</a></li><li><a href="#g2-14-checklist" data-nav>14. Checklist</a></li>
+    </ul>
+</nav>
+<article class="guide-main">
+
+
+<section class="guide-section" id="g2-1-what-the-question-asks"><span class="section-label">Section 1</span><h2>What the question asks</h2>
+<p>The form asks you to describe how, through your education and past experiences, you have <strong>displayed</strong> academic excellence. Two words matter. "Displayed" asks for evidence, not a claim. "Past experiences" means the answer is not limited to your degree: research, work, self-teaching and teaching others all count.</p>
+<p>It is the only one of the four answers that does not ask about your future. It still needs to point forward, in one closing clause, so the four answers read as one trajectory.</p>
+</section><section class="guide-section" id="g2-2-what-the-reader-is-checking"><span class="section-label">Section 2</span><h2>What the reader is checking</h2>
+<p>The Criteria page says academic excellence is shown through transcripts, references, experience and the potential to succeed on your chosen course. Your transcript and your two academic referees cover the first two. This answer covers experience and potential.</p>
+<p>By the time Gates reads it, your department has already nominated you as one of its most outstanding applicants. The panel is not asking "is this person clever?" It is asking "among clever people, whose mind do we most want in the Gates community?" That is why a list of grades fails: everyone in the pool has them.</p>
+</section><section class="guide-section" id="g2-3-where-question-1-sits-in-your-thread"><span class="section-label">Section 3</span><h2>Where Question 1 sits in your thread</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Answer</th>
+<th>Its job</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Answer">Q1</td>
+<td data-label="Its job">Proves the mind</td>
+</tr>
+<tr>
+<td data-label="Answer">Q2</td>
+<td data-label="Its job">Proves the direction</td>
+</tr>
+<tr>
+<td data-label="Answer">Q3</td>
+<td data-label="Its job">Proves the purpose</td>
+</tr>
+<tr>
+<td data-label="Answer">Q4</td>
+<td data-label="Its job">Proves the method</td>
+</tr>
+</tbody>
+</table></div>
+<p>Use a different story here from Questions 3 and 4. If your Question 3 story is a research project that helped farmers, Question 1 should describe the intellectual problem inside it, not the farmers.</p>
+</section><section class="guide-section" id="g2-4-the-evidence-ladder"><span class="section-label">Section 4</span><h2>The evidence ladder</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Type of evidence</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Rank">1</td>
+<td data-label="Type of evidence">Original contribution</td>
+<td data-label="Example">A finding, method, dataset, design, argument or archive you created</td>
+</tr>
+<tr>
+<td data-label="Rank">2</td>
+<td data-label="Type of evidence">Recognition by people who judged</td>
+<td data-label="Example">A prize, a paper or presentation, a competitive selection, being asked to teach or assist</td>
+</tr>
+<tr>
+<td data-label="Rank">3</td>
+<td data-label="Type of evidence">Going past the syllabus</td>
+<td data-label="Example">A self-started project, a second discipline, a hard problem taken on after the course ended</td>
+</tr>
+<tr>
+<td data-label="Rank">4</td>
+<td data-label="Type of evidence">Performance</td>
+<td data-label="Example">A rank, a distinction, a first, with cohort size and meaning</td>
+</tr>
+<tr>
+<td data-label="Rank">5</td>
+<td data-label="Type of evidence">Participation</td>
+<td data-label="Example">Attending, completing, being enrolled</td>
+</tr>
+</tbody>
+</table></div>
+<p>Weak answers spend most of their words at ranks 4 and 5. Start at rank 1 or 2, and use rank 4 as one supporting number.</p>
+</section><section class="guide-section" id="g2-5-choosing-your-evidence"><span class="section-label">Section 5</span><h2>Choosing your evidence</h2>
+<p>List six to eight candidates and score each against four tests. Pick the one or two that pass most.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Candidate</th>
+<th>Original?</th>
+<th>Checkable?</th>
+<th>Shows thinking?</th>
+<th>Not already on my transcript?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Candidate">Final-year thesis</td>
+<td data-label="Original?"></td>
+<td data-label="Checkable?"></td>
+<td data-label="Shows thinking?"></td>
+<td data-label="Not already on my transcript?"></td>
+</tr>
+<tr>
+<td data-label="Candidate">A research assistantship</td>
+<td data-label="Original?"></td>
+<td data-label="Checkable?"></td>
+<td data-label="Shows thinking?"></td>
+<td data-label="Not already on my transcript?"></td>
+</tr>
+<tr>
+<td data-label="Candidate">A prize or competition</td>
+<td data-label="Original?"></td>
+<td data-label="Checkable?"></td>
+<td data-label="Shows thinking?"></td>
+<td data-label="Not already on my transcript?"></td>
+</tr>
+<tr>
+<td data-label="Candidate">A self-taught skill used at work</td>
+<td data-label="Original?"></td>
+<td data-label="Checkable?"></td>
+<td data-label="Shows thinking?"></td>
+<td data-label="Not already on my transcript?"></td>
+</tr>
+<tr>
+<td data-label="Candidate">A published or presented paper</td>
+<td data-label="Original?"></td>
+<td data-label="Checkable?"></td>
+<td data-label="Shows thinking?"></td>
+<td data-label="Not already on my transcript?"></td>
+</tr>
+<tr>
+<td data-label="Candidate">Teaching or tutoring</td>
+<td data-label="Original?"></td>
+<td data-label="Checkable?"></td>
+<td data-label="Shows thinking?"></td>
+<td data-label="Not already on my transcript?"></td>
+</tr>
+</tbody>
+</table></div>
+<p>"Checkable" means a referee or interviewer could confirm it. "Shows thinking" means you can describe a choice you made and why, not only a result.</p>
+</section><section class="guide-section" id="g2-6-the-structure-and-the-word-budget"><span class="section-label">Section 6</span><h2>The structure and the word budget</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Move</th>
+<th>Words (of 200)</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Move">1. A claim in your own terms</td>
+<td data-label="Words (of 200)">About 20</td>
+<td data-label="What it does">Says what kind of thinker you are, as something the evidence then proves</td>
+</tr>
+<tr>
+<td data-label="Move">2. Your strongest piece of work</td>
+<td data-label="Words (of 200)">About 80</td>
+<td data-label="What it does">The question, what you did, what you found, one exact figure</td>
+</tr>
+<tr>
+<td data-label="Move">3. External validation</td>
+<td data-label="Words (of 200)">About 45</td>
+<td data-label="What it does">A rank with its cohort size, a prize, a presentation, a selection</td>
+</tr>
+<tr>
+<td data-label="Move">4. Range or growth</td>
+<td data-label="Words (of 200)">About 30</td>
+<td data-label="What it does">A second discipline, a field switch, teaching others, or recovery from a poor start</td>
+</tr>
+<tr>
+<td data-label="Move">5. The bridge</td>
+<td data-label="Words (of 200)">About 25</td>
+<td data-label="What it does">The question your work leaves open, pointing to the course without making Question 2's case</td>
+</tr>
+</tbody>
+</table></div>
+<p>Roughly half the marks sit in moves 2 and 3. Protect them when you cut.</p>
+</section><section class="guide-section" id="g2-7-numbers-and-denominators"><span class="section-label">Section 7</span><h2>Numbers and denominators</h2>
+<ul>
+<li><strong>Give every rank a denominator.</strong> "First of 212" is evidence. "Top of my class" is a claim.</li>
+<li><strong>Explain an unfamiliar grading scale in a clause.</strong> "A first, awarded to about 8 per cent of the year" tells an international panel what it needs.</li>
+<li><strong>Use the exact figure.</strong> 359 of 380 reads as measured. "About 95 per cent" reads as remembered.</li>
+<li><strong>Never manufacture a number.</strong> If your work has no metrics, use a concrete change of state: a method adopted, a dataset still in use, an argument cited by someone else.</li>
+<li><strong>Do not rely on institution prestige.</strong> Relative standing inside your institution is clearer than its name.</li>
+</ul>
+</section><section class="guide-section" id="g2-8-adapting-to-your-profile"><span class="section-label">Section 8</span><h2>Adapting to your profile</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Profile</th>
+<th>Your best evidence</th>
+<th>Watch out for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Profile">Laboratory or quantitative scientist</td>
+<td data-label="Your best evidence">A problem you solved, a method you changed, a result with a number</td>
+<td data-label="Watch out for">Listing techniques instead of describing a decision</td>
+</tr>
+<tr>
+<td data-label="Profile">Humanities or social science</td>
+<td data-label="Your best evidence">The argument, the archive, the languages, the sources you built</td>
+<td data-label="Watch out for">Topic description with no claim or method</td>
+</tr>
+<tr>
+<td data-label="Profile">Professional returning to study</td>
+<td data-label="Your best evidence">Self-taught skill applied to a real problem, a working paper, recognition from a professional body</td>
+<td data-label="Watch out for">Apologising for your grades. State them once, then show the later work</td>
+</tr>
+<tr>
+<td data-label="Profile">Uneven record</td>
+<td data-label="Your best evidence">The upward trajectory, with the later ranks and numbers</td>
+<td data-label="Watch out for">Long explanations. There is no minimum GPA, so one sentence is enough</td>
+</tr>
+<tr>
+<td data-label="Profile">Switched disciplines</td>
+<td data-label="Your best evidence">The bridge you built between the two fields</td>
+<td data-label="Watch out for">Presenting the switch as a lack of focus</td>
+</tr>
+<tr>
+<td data-label="Profile">Limited-resource institution</td>
+<td data-label="Your best evidence">What you made with what you had</td>
+<td data-label="Watch out for">Comparing your institution to others</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="guide-section" id="g2-9-the-writing-process"><span class="section-label">Section 9</span><h2>The writing process</h2>
+<ol>
+<li><strong>Pick the story.</strong> Use the scoring table in section 5.</li>
+<li><strong>Write the claim last.</strong> Draft moves 2 to 5 first. The claim then writes itself from the evidence.</li>
+<li><strong>Draft long, then cut.</strong> Aim for 260 words, then reduce.</li>
+<li><strong>Cut in this order.</strong> Adjectives that do the work of numbers, then repeated grades, then a second prize, then background that is not the work.</li>
+<li><strong>Count characters, not words.</strong> The form's hard cap is 1,400 characters including spaces. About 200 words usually fits, but check.</li>
+<li><strong>Read it to someone outside your field.</strong> If they cannot say what you found, rewrite the second paragraph.</li>
+</ol>
+</section><section class="guide-section" id="g2-10-three-worked-examples-all-invented"><span class="section-label">Section 10</span><h2>Three worked examples (all invented)</h2>
+<h3 id="g2-example-a-laboratory-science-about-180-words">Example A: laboratory science (about 180 words)</h3>
+<blockquote>
+<p>My strongest academic work began as a failure. In my third year I was assigned to validate a published assay for cassava brown streak virus, and it gave false negatives on 22 of 60 field samples. Instead of reporting that and moving on, I spent four months testing why, and found that sap from older leaves inhibited the reaction. I redesigned the extraction step, and the revised assay agreed with laboratory PCR on 359 of 380 samples. My thesis became a paper presented at the Eastern Africa Plant Health Conference, where I was the only undergraduate speaker.</p>
+<p>I graduated first of 212 students in plant pathology with a first-class degree, awarded to about 8 per cent of my year, and was selected by my department as a teaching assistant for two later cohorts.</p>
+<p>What I learned is that I am strongest where a method meets a messy real sample. What I cannot yet do is explain why the virus keeps evolving past the tests we design, and that is the gap a PhD in Plant Sciences would let me close.</p>
+</blockquote>
+<div class="callout callout-rule"><p><strong>Why it works.</strong> It opens with rank 1 evidence, a problem she solved. The failure (22 of 60) makes the result (359 of 380) believable. The rank carries a denominator and a base rate. The last two sentences deliver the bridge: strength, gap, course. Every figure can be checked at interview.</p></div>
+<h3 id="g2-example-b-humanities-and-social-science-about-175-words">Example B: humanities and social science (about 175 words)</h3>
+<blockquote>
+<p>Academic excellence, for me, means asking a question the existing sources cannot answer and then building the evidence to answer it. My undergraduate dissertation asked how families displaced from a Beirut neighbourhood remember a street that no longer exists. No archive held the answer, so I recorded and transcribed 41 interviews in Arabic and Armenian over eight months, and cross-checked each account against municipal records and 1950s property deeds. The dissertation was awarded 91 per cent, the highest mark in the faculty that year, and the university library now holds the interview collection as a research resource.</p>
+<p>I also teach what I have learned. As a research assistant to Dr Nadia Khoury I coded 600 pages of testimony for an edited volume, and I co-taught a methods workshop to 25 first-year students. I earned a first in every year of my degree and received the Faculty Prize for Research in my final year.</p>
+<p>My next question is how such memories travel across generations in exile, which needs the comparative method and supervision that Cambridge anthropology offers.</p>
+</blockquote>
+<div class="callout callout-rule"><p><strong>Why it works.</strong> The opening claim defines excellence, and the rest proves it. The evidence is the argument and the archive: languages, interview counts and sources. The library keeping the collection is rank 2 evidence, because others judged it worth keeping. It shows range (assistant, co-teacher) without an awards list.</p></div>
+<h3 id="g2-example-c-a-professional-with-an-ordinary-record-about-170-w">Example C: a professional with an ordinary record (about 170 words)</h3>
+<blockquote>
+<p>My degree was in accounting, and my record there is solid but not remarkable: an upper second, ranked 31st of 160. What I did afterwards is the better evidence. As a bank analyst I found that our loan-default model ignored seasonality in market traders' incomes, and I taught myself time-series methods from open lectures and two textbooks, working through every exercise at night over eight months. I rebuilt the model, cutting its false-alarm rate from 23 to 14 per cent on 9,000 loans, and wrote it up as a working paper that the Central Bank's research department invited me to present in 2025.</p>
+<p>Since then I have completed an online econometrics programme with a mark of 91 per cent and tutored 18 junior analysts in the method.</p>
+<p>I do my best thinking where a messy real dataset meets a clean theoretical idea, and I now need the formal training in causal inference and macroeconomics that only a full research degree offers.</p>
+</blockquote>
+<div class="callout callout-rule"><p><strong>Why it works.</strong> It states the unimpressive grade once, with its denominator, and moves on. The self-taught method (rank 3) and the invited paper (rank 2) carry the answer. It is honest about the gap, and the bridge names exactly what a degree would add.</p></div>
+</section><section class="guide-section" id="g2-11-weak-versus-strong"><span class="section-label">Section 11</span><h2>Weak versus strong</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Weak</th>
+<th>Why it fails</th>
+<th>Strong</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Weak">"I have always been passionate about learning and graduated with excellent grades."</td>
+<td data-label="Why it fails">Adjectives, no evidence</td>
+<td data-label="Strong">"I graduated third of 140 in economics, and my thesis on informal credit changed the survey design my department used the next year."</td>
+</tr>
+<tr>
+<td data-label="Weak">"I achieved a CGPA of 3.9."</td>
+<td data-label="Why it fails">Duplicates the transcript</td>
+<td data-label="Strong">"My 3.9 included the only distinction awarded in advanced econometrics that year, on a course where the median mark was 52."</td>
+</tr>
+<tr>
+<td data-label="Weak">"I participated in several research projects."</td>
+<td data-label="Why it fails">Participation is rank 5</td>
+<td data-label="Strong">"On the three-person team studying soil carbon, I wrote the sampling protocol that all later fieldwork followed."</td>
+</tr>
+<tr>
+<td data-label="Weak">"I was awarded many scholarships and prizes."</td>
+<td data-label="Why it fails">A list with no meaning</td>
+<td data-label="Strong">"The Dean's Prize, given to one student in 300, went to my thesis on groundwater modelling."</td>
+</tr>
+</tbody>
+</table></div>
+</section><section class="guide-section" id="g2-12-the-test-suite"><span class="section-label">Section 12</span><h2>The test suite</h2>
+<ul>
+<li><strong>The denominator test.</strong> Does every rank, prize or grade carry a cohort size or a meaning?</li>
+<li><strong>The transcript test.</strong> Delete every grade that is already on your transcript. Does the answer still stand?</li>
+<li><strong>The so-what test.</strong> After each achievement, ask "so what?" until the answer is something that changed or something you can now do.</li>
+<li><strong>The outsider test.</strong> Can a smart reader from another field say what you found after one reading?</li>
+<li><strong>The referee test.</strong> Could your academic referee confirm every claim?</li>
+<li><strong>The thread test.</strong> Is this a different story from Questions 3 and 4?</li>
+</ul>
+</section><section class="guide-section" id="g2-13-common-mistakes"><span class="section-label">Section 13</span><h2>Common mistakes</h2>
+<ol>
+<li>Repeating the transcript.</li>
+<li>Describing a topic instead of a piece of work.</li>
+<li>Listing five prizes without saying what one of them proves.</li>
+<li>Ranks without cohort sizes.</li>
+<li>Explaining weak grades at length.</li>
+<li>Using the same story as Question 3 or 4.</li>
+<li>Starting with "I have always been passionate about learning."</li>
+<li>Exceeding 1,400 characters, and losing the ending.</li>
+</ol>
+</section><section class="guide-section" id="g2-14-checklist"><span class="section-label">Section 14</span><h2>Checklist</h2>
+<ul class="checklist">
+<li class="chk"><p>The first sentence is a claim or a piece of work, not a statement about learning</p></li>
+<li class="chk"><p>One piece of work is described in enough detail to follow</p></li>
+<li class="chk"><p>Every rank, prize or grade has a denominator or a meaning</p></li>
+<li class="chk"><p>Nothing is repeated from my transcript for its own sake</p></li>
+<li class="chk"><p>A reader from another discipline can follow every sentence</p></li>
+<li class="chk"><p>My academic referee could confirm every claim</p></li>
+<li class="chk"><p>The last clause points to the course without making Question 2's case</p></li>
+<li class="chk"><p>It stays under 1,400 characters including spaces</p></li>
+</ul></section>
+
+</article>
+</div>
+
+<div class="series-nav"><a href="general-guide.html" class="prev-item"><span class="dir">&larr; Previous</span><span class="lbl">General Guide</span></a><a href="question-2-course-choice.html" class="next-item"><span class="dir">Next &rarr;</span><span class="lbl">Question 2: Course Choice</span></a></div>
+
+<section id="mentorship-cta">
+    <span class="kicker">Two Ways To Keep Going With TAL</span>
+    <h2>Everything in this guide is easy to see in someone else's application and hard to see in your own.</h2>
+    <p>That is what a second pair of eyes is for. Whether you want a mentor who has been through an application like this one reading your drafts, or just a place to ask questions as you go, TAL has a path that costs nothing to start.</p>
+    <div class="cta-paths">
+        <div class="cta-path">
+            <span class="cta-path-kicker">1:1 Support</span>
+            <h3>Work with a mentor</h3>
+            <p>A mentor who has been through this exact application, knows what the sub-questions are really asking, and will tell you honestly where your draft is decoration.</p>
+            <ul class="cta-path-list">
+                <li>Scholarship Essay Review, two rounds of feedback</li>
+                <li>Lab Focus sessions for strategy, drafts and mock interviews</li>
+            </ul>
+            <a href="../../apply.html" class="btn btn-blue">Apply for Mentorship</a>
+        </div>
+        <div class="cta-path">
+            <span class="cta-path-kicker">Free, Always</span>
+            <h3>Join the community</h3>
+            <p>Thousands of applicants figuring this out together. No cost, no commitment, and a place to ask the questions that come up between drafts.</p>
+            <ul class="cta-path-list">
+                <li>Webinars and Lab Clinic Hours</li>
+                <li>Scholarship and programme opportunities, shared as they come up</li>
+            </ul>
+            <a href="../../community.html" class="btn btn-outline-white">Join the Free Community</a>
+        </div>
+    </div>
+    <p class="cta-note">Free to apply, no commitment &nbsp;&middot;&nbsp; Prefer email? <a href="mailto:info@theapplicationlab.com?subject=CSC Essay Support">info@theapplicationlab.com</a></p>
+</section>
+
+
+<footer>
+    <div class="footer-inner">
+        <img src="../../logo.png" alt="The Application Lab" width="1920" height="1080"/>
+        <div class="footer-links">
+            <a href="../../index.html">Website</a>
+            <a href="../../resources.html">Free Resources</a>
+            <a href="../../community.html">Free Community</a>
+            <a href="../../mentorship.html">Mentorship</a>
+            <a href="https://www.linkedin.com/company/theapplicationlab" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/theapplicationlab" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.youtube.com/@TheApplicationLab" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <p class="footer-bottom">The Application Lab &nbsp;&middot;&nbsp; Edspire Labs Ltd &nbsp;&middot;&nbsp; Company No. 16751243 &nbsp;&middot;&nbsp; Cambridge, UK</p>
+    </div>
+</footer>
+
+<script>
+const burger = document.getElementById('mob-burger');
+const mobMenu = document.getElementById('mob-menu');
+if (burger && mobMenu) {
+    burger.addEventListener('click', function() {
+        const isOpen = mobMenu.style.display === 'flex';
+        mobMenu.style.display = isOpen ? 'none' : 'flex';
+    });
+    mobMenu.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() { mobMenu.style.display = 'none'; });
+    });
+}
+const navLinks = document.querySelectorAll('.guide-sidebar a[data-nav]');
+const sections = Array.from(navLinks).map(a => document.querySelector(a.getAttribute('href')));
+if (navLinks.length) {
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const idx = sections.indexOf(entry.target);
+            if (idx === -1) return;
+            if (entry.isIntersecting) {
+                navLinks.forEach(a => a.classList.remove('active'));
+                navLinks[idx].classList.add('active');
+            }
+        });
+    }, { rootMargin: '-15% 0px -75% 0px', threshold: 0 });
+    sections.forEach(s => { if (s) sectionObserver.observe(s); });
+}
+</script>
+
+</body>
+</html>

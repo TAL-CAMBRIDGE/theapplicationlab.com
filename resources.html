@@ -166,6 +166,7 @@
         #commonwealth .dl-grid { grid-template-columns: repeat(3, minmax(0, 260px)); gap: 16px; justify-content: center; }
         #csc-shared .dl-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
         #csc-shared .dl-card { flex: 0 1 230px; }
+        #gates-cambridge .dl-grid { grid-template-columns: repeat(3, minmax(0, 260px)); gap: 16px; justify-content: center; }
         .dl-card {
             display: flex; flex-direction: column; background: #fff; border: 1px solid var(--border);
             border-top: 3px solid var(--blue); border-radius: 4px; padding: 18px 16px;
@@ -180,8 +181,8 @@
         .dl-actions a.dl-read:hover { text-decoration: underline; }
         .dl-actions a.dl-pdf { font-size: 0.68rem; font-weight: 600; color: var(--muted); text-decoration: none; }
         .dl-actions a.dl-pdf:hover { color: var(--navy); }
-        @media (max-width: 900px) { .dl-grid { grid-template-columns: repeat(2, 1fr); } #commonwealth .dl-grid { grid-template-columns: repeat(2, minmax(0, 260px)); } #csc-shared .dl-card { flex-basis: 45%; } }
-        @media (max-width: 480px) { .dl-grid { grid-template-columns: 1fr; } #commonwealth .dl-grid { grid-template-columns: minmax(0, 260px); } #csc-shared .dl-card { flex-basis: 100%; } }
+        @media (max-width: 900px) { .dl-grid { grid-template-columns: repeat(2, 1fr); } #commonwealth .dl-grid, #gates-cambridge .dl-grid { grid-template-columns: repeat(2, minmax(0, 260px)); } #csc-shared .dl-card { flex-basis: 45%; } }
+        @media (max-width: 480px) { .dl-grid { grid-template-columns: 1fr; } #commonwealth .dl-grid, #gates-cambridge .dl-grid { grid-template-columns: minmax(0, 260px); } #csc-shared .dl-card { flex-basis: 100%; } }
 
         /* MORE COLLECTIONS PLACEHOLDER */
         .more-collections { max-width: 1100px; margin: 0 auto; padding: 40px 24px; text-align: center; }
@@ -401,8 +402,8 @@
 
 <div id="facts">
     <div class="facts-strip">
-        <div><strong>3</strong><span>Collections Live</span></div>
-        <div><strong>18</strong><span>Free Guides</span></div>
+        <div><strong>4</strong><span>Collections Live</span></div>
+        <div><strong>24</strong><span>Free Guides</span></div>
         <div><strong>£0</strong><span>Cost, No Sign-Up</span></div>
         <div><strong>More</strong><span>Collections Coming</span></div>
     </div>
@@ -652,6 +653,82 @@
             <div class="dl-actions">
                 <a class="dl-read" href="resources/csc-shared/qa.html">Read Guide →</a>
                 <a class="dl-pdf" href="resources/csc-shared/qa.pdf" target="_blank" rel="noopener">PDF ↓</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</details>
+
+<!-- ============================================================ -->
+<!-- COLLECTION: Gates Cambridge Scholarship                        -->
+<!-- ============================================================ -->
+<details class="collection-block" id="gates-cambridge">
+    <summary class="collection-summary">
+        <div class="collection-hd">
+            <div>
+                <span class="eyebrow">Scholarship Guide</span>
+                <h2>Gates Cambridge Scholarship</h2>
+                <p>Six free guides covering what Gates Cambridge is actually funding, all four application questions and the interview, plus a 48-question Q&amp;A, available to read online or download as a PDF.</p>
+            </div>
+            <span class="collection-tag">6 Guides · Free</span>
+        </div>
+        <span class="collection-chevron" aria-hidden="true"></span>
+    </summary>
+
+    <div class="collection-body">
+    <div class="dl-grid">
+        <div class="dl-card">
+            <span class="dl-num">Guide 1 / 6</span>
+            <span class="dl-title">General Guide</span>
+            <span class="dl-desc">What Gates Cambridge is actually buying, eligibility and the traps, the golden thread, the research proposal, the reference and the interview.</span>
+            <div class="dl-actions">
+                <a class="dl-read" href="resources/gates-cambridge/general-guide.html">Read Guide →</a>
+                <a class="dl-pdf" href="resources/gates-cambridge/general-guide.pdf" target="_blank" rel="noopener">PDF ↓</a>
+            </div>
+        </div>
+        <div class="dl-card">
+            <span class="dl-num">Guide 2 / 6</span>
+            <span class="dl-title">Question 1: Academic Excellence</span>
+            <span class="dl-desc">Prove the mind: one piece of work, one validation, one honest bridge to the course, in about 200 words.</span>
+            <div class="dl-actions">
+                <a class="dl-read" href="resources/gates-cambridge/question-1-academic-excellence.html">Read Guide →</a>
+                <a class="dl-pdf" href="resources/gates-cambridge/question-1-academic-excellence.pdf" target="_blank" rel="noopener">PDF ↓</a>
+            </div>
+        </div>
+        <div class="dl-card">
+            <span class="dl-num">Guide 3 / 6</span>
+            <span class="dl-title">Question 2: Course Choice</span>
+            <span class="dl-desc">Prove the direction: the gap you cannot yet close, and why this course at Cambridge closes it.</span>
+            <div class="dl-actions">
+                <a class="dl-read" href="resources/gates-cambridge/question-2-course-choice.html">Read Guide →</a>
+                <a class="dl-pdf" href="resources/gates-cambridge/question-2-course-choice.pdf" target="_blank" rel="noopener">PDF ↓</a>
+            </div>
+        </div>
+        <div class="dl-card">
+            <span class="dl-num">Guide 4 / 6</span>
+            <span class="dl-title">Question 3: Improving the Lives of Others</span>
+            <span class="dl-desc">Prove the purpose: a person, an action, a change, a root and a plan, in about 300 words.</span>
+            <div class="dl-actions">
+                <a class="dl-read" href="resources/gates-cambridge/question-3-improving-lives.html">Read Guide →</a>
+                <a class="dl-pdf" href="resources/gates-cambridge/question-3-improving-lives.pdf" target="_blank" rel="noopener">PDF ↓</a>
+            </div>
+        </div>
+        <div class="dl-card">
+            <span class="dl-num">Guide 5 / 6</span>
+            <span class="dl-title">Question 4: Leadership</span>
+            <span class="dl-desc">Prove the method: an obstacle, a decision, persuasion, a result and a lesson, in about 300 words.</span>
+            <div class="dl-actions">
+                <a class="dl-read" href="resources/gates-cambridge/question-4-leadership.html">Read Guide →</a>
+                <a class="dl-pdf" href="resources/gates-cambridge/question-4-leadership.pdf" target="_blank" rel="noopener">PDF ↓</a>
+            </div>
+        </div>
+        <div class="dl-card">
+            <span class="dl-num">Guide 6 / 6</span>
+            <span class="dl-title">Q&amp;A for Applicants</span>
+            <span class="dl-desc">48 answers taken from the nine Gates Cambridge pages, with the source named for each, plus a final checklist and 8 mistakes to avoid.</span>
+            <div class="dl-actions">
+                <a class="dl-read" href="resources/gates-cambridge/qa.html">Read Guide →</a>
+                <a class="dl-pdf" href="resources/gates-cambridge/qa.pdf" target="_blank" rel="noopener">PDF ↓</a>
             </div>
         </div>
     </div>
