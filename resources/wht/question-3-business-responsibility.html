@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3: Business Responsibility | The Application Lab</title>
+    <meta name="description" content="How to answer 'What responsibilities do you think businesses have to people other than their shareholders?' in 200 words, with worked examples.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.theapplicationlab.com/resources/wht/question-3-business-responsibility.html">
+    <meta property="og:title" content="Question 3: Business Responsibility | The Application Lab">
+    <meta property="og:description" content="How to answer 'What responsibilities do you think businesses have to people other than their shareholders?' in 200 words, with worked examples.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.theapplicationlab.com/resources/wht/question-3-business-responsibility.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { overflow-x: hidden; max-width: 100%; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; color: #0f1e35; background: #f7f9fc; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+        :root {
+            --navy: #0f1e35; --blue: #2e8bc0; --blue-050: #eaf4fb; --bg: #f7f9fc;
+            --muted: #6b7c93; --border: #dde4ee; --body-text: #3d4f63; --gold: #c9a84c; --amber-bg: #fbf3e6;
+        }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 800; color: var(--navy); line-height: 1.25; }
+        section[id] { scroll-margin-top: 24px; }
+        body { padding-top: 72px; }
+        @media (min-width: 769px) { #desktop-nav { display: flex; } #mob-burger { display: none; } }
+        @media (max-width: 768px) {
+            #desktop-nav { display: none !important; } #mob-burger { display: flex !important; }
+            #hdr { height: 64px !important; } #hdr img { height: 42px !important; }
+            #mob-menu { top: 64px !important; } body { padding-top: 64px; }
+        }
+
+        .breadcrumb { max-width: 1180px; margin: 0 auto; padding: 22px 24px 0; font-size: 0.78rem; color: var(--muted); }
+        .breadcrumb a { color: var(--blue); text-decoration: none; font-weight: 600; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        #hero-guide {
+            position: relative; min-height: 46vh; display: flex; align-items: flex-end;
+            background-image: url('../../oxford-hero.jpg'); background-size: cover; background-position: center center;
+            margin-top: 18px;
+        }
+        .hero-guide-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,15,24,0.35) 0%, rgba(8,15,24,0.55) 55%, rgba(8,15,24,0.94) 100%); }
+        .hero-guide-inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 44px 24px 40px; text-align: center; }
+        .hero-guide-inner .kicker { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 18px; }
+        .hero-guide-inner h1 { color: #fff; font-size: clamp(1.8rem, 4vw, 2.7rem); letter-spacing: -1px; line-height: 1.18; margin-bottom: 18px; text-shadow: 0 2px 24px rgba(0,0,0,0.4); }
+        .hero-guide-inner .byline { font-family: 'Lora', serif; font-style: italic; font-size: 1.02rem; color: rgba(255,255,255,0.88); line-height: 1.75; max-width: 580px; margin: 0 auto; }
+
+        #facts { background: var(--navy); padding: 0 24px 40px; }
+        .facts-strip { max-width: 800px; margin: 0 auto; display: flex; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 26px; }
+        .facts-strip > div { flex: 1; text-align: center; padding: 0 12px; border-right: 1px solid rgba(255,255,255,0.12); }
+        .facts-strip > div:last-child { border-right: none; }
+        .facts-strip strong { display: block; font-size: 1.3rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; line-height: 1; }
+        .facts-strip span { display: block; font-size: 0.58rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.55); font-weight: 600; margin-top: 8px; line-height: 1.5; }
+
+        .pdf-strip { background: var(--blue-050); border-bottom: 1px solid var(--border); text-align: center; padding: 16px 24px; }
+        .pdf-strip a { font-size: 0.82rem; font-weight: 700; color: var(--blue); text-decoration: none; }
+        .pdf-strip a:hover { text-decoration: underline; }
+
+        .guide-layout { max-width: 1400px; margin: 0 auto; padding: 48px 24px 0; display: flex; gap: 60px; align-items: flex-start; }
+        .guide-sidebar { display: none; }
+        .toc-wrap {
+            background: var(--navy); border-radius: 4px; max-width: 760px; margin: 0 auto 8px; padding: 28px 32px;
+            background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px);
+        }
+        .toc-wrap h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 16px; }
+        .toc-list { list-style: none; columns: 2; column-gap: 32px; }
+        .toc-list li { break-inside: avoid; margin-bottom: 10px; }
+        .toc-list a { font-size: 0.86rem; color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 600; }
+        .toc-list a:hover { color: #fff; }
+
+        article.guide-main { max-width: 780px; margin: 0 auto; padding: 8px 24px 0; flex: 1; min-width: 0; counter-reset: section 0; }
+        .guide-section { padding: 56px 0; border-bottom: 1px solid var(--border); counter-increment: section; }
+        .guide-section:last-of-type { border-bottom: none; }
+        .section-label { display: flex; align-items: center; gap: 12px; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 18px; }
+        .section-label::before {
+            content: counter(section, decimal-leading-zero);
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+            width: 34px; height: 34px; border-radius: 50%; background: var(--blue-050); color: var(--blue);
+            font-family: 'Lora', serif; font-style: italic; font-weight: 600; font-size: 0.9rem; letter-spacing: 0;
+        }
+        .guide-section h2 { font-size: clamp(1.3rem, 2.5vw, 1.65rem); letter-spacing: -0.5px; margin-bottom: 20px; }
+        .guide-section h3 { font-size: 1.08rem; margin: 32px 0 14px; scroll-margin-top: 90px; }
+        .guide-section h3:first-of-type { margin-top: 0; }
+        .guide-section h4 { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 22px 0 8px; }
+        .guide-section p { font-size: 0.96rem; color: var(--body-text); margin-bottom: 16px; }
+        .guide-section p:last-child { margin-bottom: 0; }
+        .guide-section ul, .guide-section ol { margin: 0 0 16px 22px; color: var(--body-text); font-size: 0.96rem; }
+        .guide-section li { margin-bottom: 8px; }
+        .guide-section li::marker { color: var(--blue); }
+        .guide-section strong { color: var(--navy); }
+        .guide-section.alt-bg { background: #fff; border-radius: 6px; padding: 48px 36px; margin: 8px 0; border-bottom: none; box-shadow: 0 1px 0 var(--border); }
+        .guide-section blockquote { border-left: 3px solid var(--blue); padding: 2px 0 2px 18px; margin: 0 0 16px; color: var(--navy); font-style: italic; }
+        .guide-section blockquote p { margin-bottom: 0; }
+        .guide-section hr { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+
+        .callout { border-radius: 4px; padding: 18px 22px; margin: 0 0 20px; font-size: 0.92rem; line-height: 1.8; }
+        .callout p { margin: 0 0 12px; font-size: 0.9rem; }
+        .callout p:last-child { margin-bottom: 0; }
+        .callout strong { display: block; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); margin-bottom: 4px; }
+        .callout-rule { background: var(--blue-050); border: 1px solid rgba(46,139,192,0.25); color: var(--navy); }
+        .callout-trap { background: var(--amber-bg); border: 1px solid rgba(184,134,58,0.3); color: #6b4f1f; font-size: 0.84rem; }
+        .callout-trap strong { color: #8a6a2a; }
+        .meta-wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 0; }
+
+        .table-scroll { overflow-x: auto; margin: 18px 0; -webkit-overflow-scrolling: touch; }
+        table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 0.85rem; }
+        table th, table td { padding: 11px 13px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.6; }
+        table thead th { background: var(--navy); color: #fff; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+        table thead th:first-child { border-top-left-radius: 4px; }
+        table thead th:last-child { border-top-right-radius: 4px; }
+        table tbody th { background: var(--bg); color: var(--navy); font-weight: 700; white-space: nowrap; }
+        table tbody td { color: var(--body-text); }
+        table tbody tr:last-child td, table tbody tr:last-child th { border-bottom: none; }
+
+        ul.checklist { list-style: none; margin: 0 0 8px; }
+        ul.checklist li.chk { display: flex; gap: 12px; align-items: flex-start; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--body-text); }
+        ul.checklist li.chk:last-child { border-bottom: none; }
+        ul.checklist li.chk::before { content: ''; flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; border: 1.5px solid var(--blue); border-radius: 3px; }
+
+        .series-nav { max-width: 720px; margin: 0 auto; padding: 8px 24px 56px; display: flex; justify-content: space-between; gap: 16px; }
+        .series-nav a { flex: 1; text-decoration: none; border: 1px solid var(--border); border-radius: 4px; padding: 16px 18px; background: #fff; transition: box-shadow 0.2s ease, transform 0.2s ease; }
+        .series-nav a:hover { box-shadow: 0 10px 28px rgba(15,30,53,0.1); transform: translateY(-2px); }
+        .series-nav .dir { display: block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+        .series-nav .lbl { display: block; font-size: 0.88rem; font-weight: 700; color: var(--navy); }
+        .series-nav .next-item { text-align: right; }
+
+        #mentorship-cta { background: var(--navy); background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px); padding: 72px 24px; text-align: center; }
+        #mentorship-cta .kicker { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #4a9fd4; margin-bottom: 16px; }
+        #mentorship-cta h2 { color: #fff; font-size: clamp(1.4rem, 3vw, 1.9rem); max-width: 640px; margin: 0 auto 18px; }
+        #mentorship-cta p { color: rgba(255,255,255,0.78); font-size: 0.96rem; line-height: 1.85; max-width: 600px; margin: 0 auto 32px; }
+        .cta-paths { display: flex; gap: 20px; max-width: 800px; margin: 0 auto 8px; text-align: left; }
+        .cta-path { flex: 1; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.14); border-top: 3px solid var(--blue); border-radius: 4px; padding: 28px 26px; display: flex; flex-direction: column; }
+        .cta-path:nth-child(2) { border-top-color: var(--gold); }
+        .cta-path-kicker { display: block; font-size: 0.64rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 12px; }
+        .cta-path:nth-child(2) .cta-path-kicker { color: #e4cb7a; }
+        .cta-path h3 { color: #fff; font-size: 1.15rem; margin-bottom: 10px; }
+        .cta-path p { color: rgba(255,255,255,0.68); font-size: 0.86rem; line-height: 1.75; margin: 0 0 16px; max-width: none; }
+        .cta-path-list { list-style: none; margin: 0 0 22px; flex: 1; }
+        .cta-path-list li { color: rgba(255,255,255,0.6); font-size: 0.82rem; line-height: 1.6; padding-left: 18px; position: relative; margin-bottom: 8px; }
+        .cta-path-list li::before { content: '→'; position: absolute; left: 0; color: var(--blue); }
+        .cta-path:nth-child(2) .cta-path-list li::before { color: var(--gold); }
+        .btn { display: inline-block; padding: 14px 26px; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: all 0.25s ease; text-align: center; }
+        .btn-blue { background: var(--blue); color: #fff; border: none; }
+        .btn-blue:hover { background: #1a6fa0; box-shadow: 0 8px 24px rgba(46,139,192,0.4); transform: translateY(-2px); }
+        .btn-outline-white { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.4); }
+        .btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+        .cta-note { margin-top: 30px; font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+        .cta-note a { color: #7ac8e8; text-decoration: none; font-weight: 600; }
+
+        footer { background: #080f18; padding: 48px 7% 28px; }
+        footer .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; }
+        footer img { height: 60px; width: auto; filter: brightness(0) invert(1); }
+        .footer-links { display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; }
+        .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.55); text-decoration: none; }
+        .footer-links a:hover { color: #fff; }
+        .footer-bottom { font-size: 0.68rem; color: rgba(255,255,255,0.25); margin-top: 6px; }
+
+        @media (min-width: 1024px) {
+            .toc-wrap { display: none; }
+            .guide-sidebar {
+                display: block; position: sticky; top: 88px; width: 272px; flex-shrink: 0;
+                max-height: calc(100vh - 112px); overflow-y: auto;
+                background: var(--navy); border-radius: 6px; padding: 30px 26px;
+                background-image: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px);
+            }
+            .guide-sidebar h2 { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7ac8e8; margin-bottom: 20px; }
+            .guide-sidebar ul { list-style: none; }
+            .guide-sidebar li { margin-bottom: 2px; }
+            .guide-sidebar a {
+                display: block; font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.65); text-decoration: none;
+                padding: 10px 0 10px 16px; border-left: 2px solid rgba(255,255,255,0.14); transition: all 0.15s ease; line-height: 1.5;
+            }
+            .guide-sidebar a:hover { color: #fff; border-left-color: rgba(255,255,255,0.4); }
+            .guide-sidebar a.active { color: #7ac8e8; border-left-color: var(--blue); font-weight: 700; }
+        }
+        @media (max-width: 640px) {
+            .toc-list { columns: 1; }
+            .hero-guide-inner { padding: 32px 20px 32px; }
+            .facts-strip { flex-wrap: wrap; }
+            .facts-strip > div { flex: 1 1 45%; padding-bottom: 14px; }
+            .guide-section { padding: 40px 0; }
+            .guide-section.alt-bg { padding: 32px 20px; }
+            table { min-width: 460px; }
+            .cta-paths { flex-direction: column; }
+            .series-nav { flex-direction: column; }
+            .series-nav .next-item { text-align: left; }
+        }</style>
+</head>
+
+<style>
+@media print {
+    #hdr, #mob-menu, .breadcrumb, .pdf-strip, .toc-wrap, .guide-sidebar,
+    .series-nav, #mentorship-cta, footer { display: none !important; }
+    #hero-guide { min-height: 0; background: none !important; margin-top: 0; }
+    .hero-guide-overlay { display: none; }
+    .hero-guide-inner { text-align: left; padding: 0 0 20px; color: #0f1e35; }
+    .hero-guide-inner .kicker { color: #2e8bc0; }
+    .hero-guide-inner h1 { color: #0f1e35; text-shadow: none; }
+    .hero-guide-inner .byline { color: #3d4f63; }
+    #facts { background: none; padding: 0 0 20px; }
+    .facts-strip { border-top: 1px solid #dde4ee; }
+    .facts-strip strong, .facts-strip span { color: #0f1e35; }
+    .guide-layout { display: block; padding: 0; }
+    article.guide-main { max-width: 100%; padding: 0; }
+    .guide-section { padding: 18px 0; }
+    .guide-section.alt-bg { box-shadow: none; padding: 18px 0; }
+    body { padding-top: 0; }
+}
+</style>
+<style>
+.guide-section h3 .qn { display: inline-block; background: var(--blue); color: #fff; font-size: 0.68rem; font-weight: 700; border-radius: 3px; padding: 2px 8px; margin-right: 10px; vertical-align: 2px; }
+.guide-section p.warn { background: var(--amber-bg); border-left: 3px solid var(--gold); padding: 14px 18px; border-radius: 4px; }
+strong.check { background: var(--amber-bg); color: #7a5200; font-weight: 700; font-size: 0.72rem; padding: 2px 8px; border-radius: 3px; letter-spacing: 0.02em; }
+</style>
+<body>
+
+<header id="hdr" style="position:fixed; top:0; left:0; right:0; width:100%; height:72px; z-index:9999; display:flex; align-items:center; justify-content:space-between; padding:0 5%; background:rgba(15,30,53,0.97); box-shadow:0 2px 20px rgba(0,0,0,0.3);">
+  <a href="../../index.html" style="display:flex; align-items:center; text-decoration:none; flex-shrink:0; margin-right:20px;">
+    <img src="../../logo.png" alt="The Application Lab" width="1920" height="1080" style="height:56px; width:auto; display:block; object-fit:contain; filter:brightness(0) invert(1);"/>
+  </a>
+  <nav id="desktop-nav" style="align-items:center; gap:26px; margin-left:auto;">
+    <a href="../../index.html#about" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">About</a>
+    <a href="../../index.html#services" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Mentorship</a>
+    <a href="../../index.html#how" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">How It Works</a>
+    <a href="../../index.html#founders" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Founders</a>
+    <a href="../../community.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Community</a>
+    <a href="../../resources.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">Resources</a>
+    <a href="../../immersive.html" style="font-size:0.7rem; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.8px; text-transform:uppercase; text-decoration:none;">The Immersive Lab</a>
+    <a href="../../apply.html" style="font-size:0.7rem; font-weight:700; color:#fff; letter-spacing:1px; text-transform:uppercase; text-decoration:none; background:#2e8bc0; padding:10px 20px; border-radius:2px;">Apply Now</a>
+  </nav>
+  <button id="mob-burger" aria-label="Open menu" style="flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; margin-left:16px;">
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+    <span style="display:block; width:22px; height:1.5px; background:#fff;"></span>
+  </button>
+</header>
+
+<div id="mob-menu" style="display:none; position:fixed; top:72px; left:0; right:0; z-index:9998; background:rgba(15,30,53,0.98); flex-direction:column; padding:16px 5%; border-top:1px solid rgba(255,255,255,0.08);">
+  <a href="../../index.html#about" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">About</a>
+  <a href="../../index.html#services" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Mentorship</a>
+  <a href="../../index.html#how" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">How It Works</a>
+  <a href="../../index.html#founders" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Founders</a>
+  <a href="../../community.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Community</a>
+  <a href="../../resources.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">Resources</a>
+  <a href="../../immersive.html" style="display:block; padding:13px 0; font-size:0.85rem; font-weight:600; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.5px; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.06);">The Immersive Lab</a>
+  <a href="../../apply.html" style="display:block; margin-top:16px; padding:13px 20px; font-size:0.82rem; font-weight:700; color:#fff; text-transform:uppercase; letter-spacing:1px; text-decoration:none; background:#2e8bc0; text-align:center; border-radius:2px;">Apply Now</a>
+</div>
+
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../resources.html">Resources</a> / <a href="../../resources.html#wht">Weidenfeld-Hoffmann Scholarship</a> / Question 3: Business Responsibility
+</nav>
+
+<section id="hero-guide">
+    <div class="hero-guide-overlay" aria-hidden="true"></div>
+    <div class="hero-guide-inner">
+        <span class="kicker">Weidenfeld-Hoffmann Scholarship Guide &middot; 4 of 7</span>
+        <h1>Question 3: Business Responsibility</h1>
+        <p class="byline">Prove you can argue: a real position on stakeholder responsibility, a mechanism from your own context, and an honest limit.</p>
+    </div>
+</section>
+
+<div id="facts">
+    <div class="facts-strip">
+        <div><strong>200</strong><span>Word Limit</span></div><div><strong>3</strong><span>Beats To Cover</span></div><div><strong>2</strong><span>Worked Examples</span></div><div><strong>Free</strong><span>To Read & Download</span></div>
+    </div>
+</div>
+
+<div class="pdf-strip">
+    <a href="question-3-business-responsibility.pdf" target="_blank" rel="noopener">Download this guide as a PDF &darr;</a>
+</div>
+
+<div class="meta-wrap"><div class="callout callout-trap"><p><strong>About the examples.</strong> All examples below are invented, to show technique. Yours must be real and defensible at interview.</p></div></div>
+
+<nav class="toc-wrap" aria-label="Table of contents">
+    <h2>In This Guide</h2>
+    <ul class="toc-list">
+        <li><a href="#s0">01. What this question actually asks</a></li><li><a href="#s1">02. Writing it, beat by beat</a></li><li><a href="#s2">03. Two worked examples</a></li><li><a href="#s3">04. Dos and don'ts</a></li><li><a href="#s4">05. Common mistakes, and the fix</a></li><li><a href="#s5">06. Checklist</a></li>
+    </ul>
+</nav>
+
+<div class="guide-layout">
+<nav class="guide-sidebar" aria-label="Section navigation">
+    <h2>In This Guide</h2>
+    <ul>
+        <li><a href="#s0" data-nav>01. What this question actually asks</a></li><li><a href="#s1" data-nav>02. Writing it, beat by beat</a></li><li><a href="#s2" data-nav>03. Two worked examples</a></li><li><a href="#s3" data-nav>04. Dos and don'ts</a></li><li><a href="#s4" data-nav>05. Common mistakes, and the fix</a></li><li><a href="#s5" data-nav>06. Checklist</a></li>
+    </ul>
+</nav>
+<article class="guide-main">
+
+
+<section class="guide-section" id="s0">
+    <span class="section-label">Section 1</span>
+    <h2>What this question actually asks</h2>
+<p><strong>The question.</strong> "What responsibilities do you think businesses have to people other than their shareholders?" In no more than 200 words.</p>
+<p>This is the one question in the Statement that is not about you at all. It is an opinion question, testing whether you can hold and defend a position on a real debate in business ethics, the kind the enterprise challenge inside the Leadership Programme will actually put you through. There is no "correct" answer the Trust is looking for. There is a wrong way to answer it: vaguely, with no position, hedging between every stakeholder group so as to offend no one.</p>
+<h3>What a strong answer actually does</h3>
+<div class="table-scroll"><table>
+<thead><tr><th>Element</th><th>What it shows</th></tr></thead>
+<tbody>
+<tr><td><strong>A clear position</strong></td><td>You can commit to a view rather than listing every stakeholder equally</td></tr>
+<tr><td><strong>A real example or mechanism</strong></td><td>You are not reciting an abstract theory you read once</td></tr>
+<tr><td><strong>An acknowledged limit</strong></td><td>You understand that responsibility to non-shareholders has to be weighed against something, not treated as unlimited</td></tr>
+</tbody>
+</table></div>
+<p><strong>Word plan at 200 words.</strong> Your position, stated directly, around 40 words. The mechanism or example that supports it, around 110 words. The limit or trade-off you acknowledge, around 50 words.</p>
+</section>
+
+<section class="guide-section alt-bg" id="s1">
+    <span class="section-label">Section 2</span>
+    <h2>Writing it, beat by beat</h2>
+<h3>State a position, around 40 words</h3>
+<p>Open with your actual view, in one or two sentences. Do not open by listing the full set of stakeholder groups, employees, suppliers, communities, the environment, as if naming them is the answer. Naming them is the preamble to the answer.</p>
+<blockquote><p><strong>Weak:</strong> "Businesses have responsibilities to many stakeholders including employees, customers, suppliers, communities and the environment, and must balance all of these interests."</p>
+<p><strong>Strong:</strong> "A business's responsibility to non-shareholders should be judged by whether it could sustain its operating model if the people it affects most could see the full consequences of it."</p></blockquote>
+<h3>Support it with a mechanism or example, around 110 words</h3>
+<p>Use something you have actually seen, in your sector or your country, rather than a textbook case study everyone else will also reach for. A specific mechanism, a wage floor, a supply-chain audit, a community consent process, is more convincing than a general appeal to "doing the right thing".</p>
+<h3>Acknowledge the limit, around 50 words</h3>
+<p>The strongest answers show you understand that unlimited responsibility to non-shareholders is not a serious position either: a business that cannot sustain itself serves no one. Say briefly how you would decide where the responsibility ends, or what happens when obligations to different groups conflict.</p>
+</section>
+
+<section class="guide-section" id="s2">
+    <span class="section-label">Section 3</span>
+    <h2>Two worked examples</h2>
+<p><em>All examples are invented, to show technique.</em></p>
+<h3>Example A: supply chains and informal labour</h3>
+<blockquote><p>A business's responsibility to non-shareholders should be judged by whether it could sustain its operating model if the people most affected by it could see the full consequences. For a manufacturer sourcing from informal suppliers, that means knowing, and disclosing, the working conditions two tiers down its own supply chain, not only at the contracts it signs directly.</p>
+<p>In my sector, the clearest mechanism for this is independent supply-chain audits with published results, not self-reported compliance, since self-reporting predictably understates harm at the tiers furthest from head office.</p>
+<p>This responsibility has a limit. A business that absorbs every social cost in its supply chain regardless of its own viability protects no one once it collapses. The honest position is that responsibility extends as far as transparency and a credible plan to improve conditions over time, not as far as unlimited absorption of every externality.</p></blockquote>
+<h3>Example B: platforms and gig workers</h3>
+<blockquote><p>Businesses that structure their core operations around a class of workers should owe that class the same floor of protection they would owe direct employees, regardless of the contractual label attached to the relationship. The responsibility follows the economic dependence, not the paperwork.</p>
+<p>In practice this means a minimum income floor and basic injury cover for platform workers who derive the majority of their income from one platform, a mechanism several markets have now tested and shown to be financially viable at moderate cost.</p>
+<p>The limit is genuine flexibility: a worker who uses a platform occasionally alongside other income should not trigger the same obligations as one who depends on it entirely. Responsibility should scale with dependence, not apply as a flat rule regardless of it.</p></blockquote>
+</section>
+
+<section class="guide-section alt-bg" id="s3">
+    <span class="section-label">Section 4</span>
+    <h2>Dos and don'ts</h2>
+<p><strong>Do</strong></p>
+<ul>
+<li>State an actual position in the opening sentences</li>
+<li>Support it with a real mechanism or example from your own sector or country</li>
+<li>Acknowledge a genuine limit or trade-off</li>
+<li>Write as if you expect to be asked to defend this at interview, because you might be</li>
+</ul>
+<p><strong>Don't</strong></p>
+<ul>
+<li>List every stakeholder group with equal weight and call that an answer</li>
+<li>Reach for the most famous textbook case study rather than something you have seen</li>
+<li>Claim responsibility to non-shareholders is unlimited</li>
+<li>Avoid taking a position for fear of sounding one-sided</li>
+</ul>
+</section>
+
+<section class="guide-section" id="s4">
+    <span class="section-label">Section 5</span>
+    <h2>Common mistakes, and the fix</h2>
+<div class="table-scroll"><table>
+<thead><tr><th>Mistake</th><th>Why it costs marks</th><th>The fix</th></tr></thead>
+<tbody>
+<tr><td>A list of stakeholder groups with no position</td><td>Reads as a definition, not an argument</td><td>State what you actually think in the first sentence</td></tr>
+<tr><td>A famous case study with nothing of your own</td><td>Shows you can recall, not that you can reason</td><td>Use a mechanism or example from your own context</td></tr>
+<tr><td>No acknowledged limit</td><td>Reads as naive about how businesses actually operate</td><td>Say where the responsibility ends and why</td></tr>
+<tr><td>Pure business-school jargon with no concrete content</td><td>Sounds rehearsed rather than reasoned</td><td>Replace abstractions with one specific mechanism</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<section class="guide-section alt-bg" id="s5">
+    <span class="section-label">Section 6</span>
+    <h2>Checklist</h2>
+<ul>
+<li>A clear position stated in the opening sentences</li>
+<li>A real mechanism or example, not a textbook case study</li>
+<li>A genuine limit or trade-off acknowledged</li>
+<li>You could defend this position if challenged at interview</li>
+<li>Under 200 words</li>
+</ul>
+</section>
+
+</article>
+</div>
+
+<div class="series-nav"><a href="question-2-leadership-experience.html" class="prev-item"><span class="dir">&larr; Previous</span><span class="lbl">Question 2: Leadership Experience</span></a><a href="question-4-major-challenge.html" class="next-item"><span class="dir">Next &rarr;</span><span class="lbl">Question 4: Major Challenge</span></a></div>
+
+<section id="mentorship-cta">
+    <span class="kicker">Two Ways To Keep Going With TAL</span>
+    <h2>Everything in this guide is easy to see in someone else's application and hard to see in your own.</h2>
+    <p>That is what a second pair of eyes is for. Whether you want a mentor who has been through an application like this one reading your drafts, or just a place to ask questions as you go, TAL has a path that costs nothing to start.</p>
+    <div class="cta-paths">
+        <div class="cta-path">
+            <span class="cta-path-kicker">1:1 Support</span>
+            <h3>Work with a mentor</h3>
+            <p>A mentor who has been through this exact application, knows what the sub-questions are really asking, and will tell you honestly where your draft is decoration.</p>
+            <ul class="cta-path-list">
+                <li>Scholarship Essay Review, two rounds of feedback</li>
+                <li>Lab Focus sessions for strategy, drafts and mock interviews</li>
+            </ul>
+            <a href="../../apply.html" class="btn btn-blue">Apply for Mentorship</a>
+        </div>
+        <div class="cta-path">
+            <span class="cta-path-kicker">Free, Always</span>
+            <h3>Join the community</h3>
+            <p>Thousands of applicants figuring this out together. No cost, no commitment, and a place to ask the questions that come up between drafts.</p>
+            <ul class="cta-path-list">
+                <li>Webinars and Lab Clinic Hours</li>
+                <li>Scholarship and programme opportunities, shared as they come up</li>
+            </ul>
+            <a href="../../community.html" class="btn btn-outline-white">Join the Free Community</a>
+        </div>
+    </div>
+    <p class="cta-note">Free to apply, no commitment &nbsp;&middot;&nbsp; Prefer email? <a href="mailto:info@theapplicationlab.com?subject=CSC Essay Support">info@theapplicationlab.com</a></p>
+</section>
+
+
+<footer>
+    <div class="footer-inner">
+        <img src="../../logo.png" alt="The Application Lab" width="1920" height="1080"/>
+        <div class="footer-links">
+            <a href="../../index.html">Website</a>
+            <a href="../../resources.html">Free Resources</a>
+            <a href="../../community.html">Free Community</a>
+            <a href="../../mentorship.html">Mentorship</a>
+            <a href="https://www.linkedin.com/company/theapplicationlab" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/theapplicationlab" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.youtube.com/@TheApplicationLab" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <p class="footer-bottom">The Application Lab &nbsp;&middot;&nbsp; Edspire Labs Ltd &nbsp;&middot;&nbsp; Company No. 16751243 &nbsp;&middot;&nbsp; Cambridge, UK</p>
+    </div>
+</footer>
+
+<script>
+const burger = document.getElementById('mob-burger');
+const mobMenu = document.getElementById('mob-menu');
+if (burger && mobMenu) {
+    burger.addEventListener('click', function() {
+        const isOpen = mobMenu.style.display === 'flex';
+        mobMenu.style.display = isOpen ? 'none' : 'flex';
+    });
+    mobMenu.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() { mobMenu.style.display = 'none'; });
+    });
+}
+const navLinks = document.querySelectorAll('.guide-sidebar a[data-nav]');
+const sections = Array.from(navLinks).map(a => document.querySelector(a.getAttribute('href')));
+if (navLinks.length) {
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const idx = sections.indexOf(entry.target);
+            if (idx === -1) return;
+            if (entry.isIntersecting) {
+                navLinks.forEach(a => a.classList.remove('active'));
+                navLinks[idx].classList.add('active');
+            }
+        });
+    }, { rootMargin: '-15% 0px -75% 0px', threshold: 0 });
+    sections.forEach(s => { if (s) sectionObserver.observe(s); });
+}
+</script>
+
+</body>
+</html>

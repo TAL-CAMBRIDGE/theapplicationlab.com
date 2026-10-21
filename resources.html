@@ -167,6 +167,8 @@
         #csc-shared .dl-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
         #csc-shared .dl-card { flex: 0 1 230px; }
         #gates-cambridge .dl-grid { grid-template-columns: repeat(3, minmax(0, 260px)); gap: 16px; justify-content: center; }
+        #wht .dl-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+        #wht .dl-card { flex: 0 1 230px; }
         .dl-card {
             display: flex; flex-direction: column; background: #fff; border: 1px solid var(--border);
             border-top: 3px solid var(--blue); border-radius: 4px; padding: 18px 16px;
@@ -181,8 +183,8 @@
         .dl-actions a.dl-read:hover { text-decoration: underline; }
         .dl-actions a.dl-pdf { font-size: 0.68rem; font-weight: 600; color: var(--muted); text-decoration: none; }
         .dl-actions a.dl-pdf:hover { color: var(--navy); }
-        @media (max-width: 900px) { .dl-grid { grid-template-columns: repeat(2, 1fr); } #commonwealth .dl-grid, #gates-cambridge .dl-grid { grid-template-columns: repeat(2, minmax(0, 260px)); } #csc-shared .dl-card { flex-basis: 45%; } }
-        @media (max-width: 480px) { .dl-grid { grid-template-columns: 1fr; } #commonwealth .dl-grid, #gates-cambridge .dl-grid { grid-template-columns: minmax(0, 260px); } #csc-shared .dl-card { flex-basis: 100%; } }
+        @media (max-width: 900px) { .dl-grid { grid-template-columns: repeat(2, 1fr); } #commonwealth .dl-grid, #gates-cambridge .dl-grid { grid-template-columns: repeat(2, minmax(0, 260px)); } #csc-shared .dl-card, #wht .dl-card { flex-basis: 45%; } }
+        @media (max-width: 480px) { .dl-grid { grid-template-columns: 1fr; } #commonwealth .dl-grid, #gates-cambridge .dl-grid { grid-template-columns: minmax(0, 260px); } #csc-shared .dl-card, #wht .dl-card { flex-basis: 100%; } }
 
         /* MORE COLLECTIONS PLACEHOLDER */
         .more-collections { max-width: 1100px; margin: 0 auto; padding: 40px 24px; text-align: center; }
@@ -402,8 +404,8 @@
 
 <div id="facts">
     <div class="facts-strip">
-        <div><strong>4</strong><span>Collections Live</span></div>
-        <div><strong>24</strong><span>Free Guides</span></div>
+        <div><strong>5</strong><span>Collections Live</span></div>
+        <div><strong>31</strong><span>Free Guides</span></div>
         <div><strong>£0</strong><span>Cost, No Sign-Up</span></div>
         <div><strong>More</strong><span>Collections Coming</span></div>
     </div>
@@ -753,6 +755,91 @@
     </div>
 </details>
 
+<!-- ============================================================ -->
+<!-- COLLECTION: Weidenfeld-Hoffmann Scholarship                    -->
+<!-- ============================================================ -->
+<details class="collection-block" id="wht">
+    <summary class="collection-summary">
+        <div class="collection-hd">
+            <div>
+                <span class="eyebrow">Scholarship Guide</span>
+                <h2>2026-27 Weidenfeld-Hoffmann Scholarship</h2>
+                <p>Seven free guides covering what the Weidenfeld-Hoffmann Scholarship actually funds, all five questions on the Scholarships Statement, and a Q&amp;A on eligibility and process, available to read online or download as a PDF.</p>
+            </div>
+            <span class="collection-tag">7 Guides · Free</span>
+        </div>
+        <span class="collection-chevron" aria-hidden="true"></span>
+    </summary>
+
+    <div class="collection-body">
+    <div class="dl-grid">
+        <div class="dl-card">
+            <span class="dl-num">Guide 1 / 7</span>
+            <span class="dl-title">General Guide</span>
+            <span class="dl-desc">What the Weidenfeld-Hoffmann Scholarship is actually funding, eligibility, the four areas the panel assesses, and what the Scholarships Statement asks for.</span>
+            <div class="dl-actions">
+                <a class="dl-read" href="resources/wht/general-guide.html">Read Guide →</a>
+                <a class="dl-pdf" href="resources/wht/general-guide.pdf" target="_blank" rel="noopener">PDF ↓</a>
+            </div>
+        </div>
+        <div class="dl-card">
+            <span class="dl-num">Guide 2 / 7</span>
+            <span class="dl-title">Question 1: The Leadership Programme</span>
+            <span class="dl-desc">Prove the timing: the specific gap you have hit, and why the Leadership Programme closes it, in 200 words.</span>
+            <div class="dl-actions">
+                <a class="dl-read" href="resources/wht/question-1-leadership-programme.html">Read Guide →</a>
+                <a class="dl-pdf" href="resources/wht/question-1-leadership-programme.pdf" target="_blank" rel="noopener">PDF ↓</a>
+            </div>
+        </div>
+        <div class="dl-card">
+            <span class="dl-num">Guide 3 / 7</span>
+            <span class="dl-title">Question 2: Leadership Experience</span>
+            <span class="dl-desc">Prove the instance, not the title: a real decision with real risk, and a quality you admire in others.</span>
+            <div class="dl-actions">
+                <a class="dl-read" href="resources/wht/question-2-leadership-experience.html">Read Guide →</a>
+                <a class="dl-pdf" href="resources/wht/question-2-leadership-experience.pdf" target="_blank" rel="noopener">PDF ↓</a>
+            </div>
+        </div>
+        <div class="dl-card">
+            <span class="dl-num">Guide 4 / 7</span>
+            <span class="dl-title">Question 3: Business Responsibility</span>
+            <span class="dl-desc">Prove you can argue: a real position on stakeholder responsibility, a mechanism from your own context, and an honest limit.</span>
+            <div class="dl-actions">
+                <a class="dl-read" href="resources/wht/question-3-business-responsibility.html">Read Guide →</a>
+                <a class="dl-pdf" href="resources/wht/question-3-business-responsibility.pdf" target="_blank" rel="noopener">PDF ↓</a>
+            </div>
+        </div>
+        <div class="dl-card">
+            <span class="dl-num">Guide 5 / 7</span>
+            <span class="dl-title">Question 4: Major Challenge</span>
+            <span class="dl-desc">Prove the development case: a sized local challenge, a real contribution tied to your course, and an honest "why you".</span>
+            <div class="dl-actions">
+                <a class="dl-read" href="resources/wht/question-4-major-challenge.html">Read Guide →</a>
+                <a class="dl-pdf" href="resources/wht/question-4-major-challenge.pdf" target="_blank" rel="noopener">PDF ↓</a>
+            </div>
+        </div>
+        <div class="dl-card">
+            <span class="dl-num">Guide 6 / 7</span>
+            <span class="dl-title">Question 5: Career Progression</span>
+            <span class="dl-desc">Prove the sequence: a credible first step, a build with real markers, and a bounded year five that does not overreach.</span>
+            <div class="dl-actions">
+                <a class="dl-read" href="resources/wht/question-5-career-progression.html">Read Guide →</a>
+                <a class="dl-pdf" href="resources/wht/question-5-career-progression.pdf" target="_blank" rel="noopener">PDF ↓</a>
+            </div>
+        </div>
+        <div class="dl-card">
+            <span class="dl-num">Guide 7 / 7</span>
+            <span class="dl-title">Q&amp;A for Applicants</span>
+            <span class="dl-desc">Eligibility, the Scholarships Statement, deadlines, interviews and funding, answered from Oxford's and the Trust's own published guidance.</span>
+            <div class="dl-actions">
+                <a class="dl-read" href="resources/wht/qa.html">Read Guide →</a>
+                <a class="dl-pdf" href="resources/wht/qa.pdf" target="_blank" rel="noopener">PDF ↓</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</details>
+
 <div class="more-collections">
     <p>More collections, including CV &amp; SOP guides and a video library, are coming soon.</p>
 </div>
@@ -761,7 +848,7 @@
 <section id="mentorship-cta">
     <span class="kicker">Two Ways To Keep Going With TAL</span>
     <h2>Everything in these guides is easy to see in someone else's essay and hard to see in your own.</h2>
-    <p>That is what a second pair of eyes is for. Whether you want a mentor who has actually won Chevening reading your drafts, or just a place to ask questions as you go, TAL has a path that costs nothing to start.</p>
+    <p>That is what a second pair of eyes is for. Whether you want a mentor who has actually won one of these scholarships reading your drafts, or just a place to ask questions as you go, TAL has a path that costs nothing to start.</p>
     <div class="cta-paths">
         <div class="cta-path">
             <span class="cta-path-kicker">1:1 Support</span>
